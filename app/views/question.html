@@ -1,0 +1,836 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {{ govukErrorSummary({
+      titleText: "There is a problem",
+      errorList: [
+      {
+      text: "Enter your full name",
+      href: "#"
+      },
+      {
+      text: "The date your passport was issued must be in the past",
+      href: "#"
+      }
+      ]
+      }) }}
+
+      {{ govukBreadcrumbs({
+      items: [
+      {
+      text: "Home",
+      href: "#"
+      },
+      {
+      text: "Passports, travel and living abroad",
+      href: "#"
+      },
+      {
+      text: "Travel abroad",
+      href: "#"
+      }
+      ]
+      }) }}
+
+      <form class="form" action="/path/of/next/page" method="post">
+
+        {% set hintHtml %}
+        <p class="govuk-!-margin-top-0">These questions are optional. [Add a couple of sentences explaining why you’re asking the questions and what you’ll do with the information].</p>
+        <p>Your answers will not affect your application.</p>
+        {% endset -%}
+
+        <h1 class="govuk-heading-l">We have received your application</h1>
+
+        <p class="govuk-body govuk-!-font-weight-regular">govuk-!-font-weight-regular</p>
+        <p class="govuk-body govuk-!-font-weight-bold">govuk-!-font-weight-bold</p>
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <p class="govuk-body">Before you finish using the service, we’d like to ask some equality questions.</p>
+
+        <p class="govuk-body-l">govuk-body-l</p>
+        <p class="govuk-body-s">govuk-body-s</p>
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <p class="govuk-body govuk-!-font-size-80">govuk-!-font-size-80</p>
+        <p class="govuk-body govuk-!-font-size-48">govuk-!-font-size-48</p>
+        <p class="govuk-body govuk-!-font-size-36">govuk-!-font-size-36</p>
+        <p class="govuk-body govuk-!-font-size-27">govuk-!-font-size-27</p>
+        <p class="govuk-body govuk-!-font-size-24">govuk-!-font-size-24</p>
+        <p class="govuk-body govuk-!-font-size-19">govuk-!-font-size-19</p>
+        <p class="govuk-body govuk-!-font-size-16">govuk-!-font-size-16</p>
+        <p class="govuk-body govuk-!-font-size-14">govuk-!-font-size-14</p>
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <h1 class="govuk-heading-xl">govuk-heading-xl</h1>
+        <h2 class="govuk-heading-l">govuk-heading-l</h2>
+        <h3 class="govuk-heading-m">govuk-heading-m</h3>
+        <h3 class="govuk-heading-s">govuk-heading-s</h3>
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <span class="govuk-caption-l">govuk-caption-l</span>
+        <h1 class="govuk-heading-l">govuk-heading-l</h1>
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        {{ govukInsetText({
+        text: "It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application."
+        }) }}
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="#">Benefits calculators</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Benefit overpayments</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Benefit fraud</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">More</a>
+          </li>
+        </ul>
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <p class="govuk-body">You can buy:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>apples</li>
+          <li>oranges</li>
+          <li>pears</li>
+        </ul>
+
+        <ol class="govuk-list govuk-list--number">
+          <li>Delivery address.</li>
+          <li>Payment.</li>
+          <li>Confirmation.</li>
+        </ol>
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        {{ govukCheckboxes({
+        name: "waste",
+        fieldset: {
+        legend: {
+        text: "Which types of waste do you transport?",
+        isPageHeading: true,
+        classes: "govuk-fieldset__legend--l"
+        }
+        },
+        hint: {
+        text: "Select all that apply."
+        },
+        items: [
+        {
+        value: "carcasses",
+        text: "Waste from animal carcasses"
+        },
+        {
+        value: "mines",
+        text: "Waste from mines or quarries"
+        },
+        {
+        value: "farm",
+        text: "Farm or agricultural waste"
+        }
+        ]
+        }) }}
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        {{ govukSummaryList({
+        rows: [
+        {
+        key: {
+        text: "Name"
+        },
+        value: {
+        text: "Sarah Philips"
+        },
+        actions: {
+        items: [
+        {
+        href: "#",
+        text: "Change",
+        visuallyHiddenText: "name"
+        }
+        ]
+        }
+        },
+        {
+        key: {
+        text: "Date of birth"
+        },
+        value: {
+        text: "5 January 1978"
+        },
+        actions: {
+        items: [
+        {
+        href: "#",
+        text: "Change",
+        visuallyHiddenText: "date of birth"
+        }
+        ]
+        }
+        },
+        {
+        key: {
+        text: "Address"
+        },
+        value: {
+        html: "72 Guild Street<br>London<br>SE23 6FH"
+        },
+        actions: {
+        items: [
+        {
+        href: "#",
+        text: "Change",
+        visuallyHiddenText: "address"
+        }
+        ]
+        }
+        },
+        {
+        key: {
+        text: "Contact details"
+        },
+        value: {
+        html: '<p class="govuk-body">07700 900457</p><p class="govuk-body">sarah.phillips@example.com</p>'
+        },
+        actions: {
+        items: [
+        {
+        href: "#",
+        text: "Add",
+        visuallyHiddenText: "contact details"
+        },
+        {
+        href: "#",
+        text: "Change",
+        visuallyHiddenText: "contact details"
+        }
+        ]
+        }
+        }
+        ]
+        }) }}
+
+        {{ govukRadios({
+        name: "equalitiesInfo",
+        fieldset: {
+        legend: {
+        text: "Do you want to answer the equality questions?",
+        classes: "govuk-fieldset__legend--m"
+        }
+        },
+        hint: {
+        html: hintHtml
+        },
+        items: [
+        {
+        value: "yes",
+        text: "Yes, answer the equality questions (takes 2 minutes)"
+        },
+        {
+        value: "no",
+        text: "No, skip the equality questions"
+        }
+        ]
+        }) }}
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+        {{ govukTable({
+        caption: "Dates and amounts",
+        captionClasses: "govuk-table__caption--m",
+        firstCellIsHeader: true,
+        head: [
+        {
+        text: "Date"
+        },
+        {
+        text: "Amount"
+        }
+        ],
+        rows: [
+        [
+        {
+        text: "First 6 weeks"
+        },
+        {
+        text: "£109.80 per week"
+        }
+        ],
+        [
+        {
+        text: "Next 33 weeks"
+        },
+        {
+        text: "£109.80 per week"
+        }
+        ],
+        [
+        {
+        text: "Total estimated pay"
+        },
+        {
+        text: "£4,282.20"
+        }
+        ]
+        ]
+        }) }}
+
+
+        {{ govukDetails({
+        summaryText: "Why we ask equality questions",
+        text: "[Consider adding an optional longer explanation of what you’re asking the questions and what you’ll do with the information]."
+        }) }}
+
+        {{ govukTextarea({
+        name: "moreDetail",
+        id: "more-detail",
+        label: {
+        text: "Can you provide more detail?"
+        }
+        }) }}
+
+        {{ govukTextarea({
+        name: "moreDetail",
+        id: "more-detail",
+        label: {
+        text: "Can you provide more detail?",
+        classes: "govuk-label--l",
+        isPageHeading: true
+        },
+        hint: {
+        text: "Do not include personal or financial information, like your National Insurance number or credit card details."
+        },
+        errorMessage: {
+        text: "Enter more detail"
+        }
+        }) }}
+
+        {{ govukInput({
+        label: {
+        text: "What is the name of the event?",
+        classes: "govuk-label--l",
+        isPageHeading: true
+        },
+        hint: {
+        text: "The name you’ll use on promotional material"
+        },
+        id: "event-name",
+        name: "eventName"
+        }) }}
+
+
+        <div class="govuk-button-group">
+          {{ govukButton({
+          text: "Save and continue"
+          }) }}
+
+          {{ govukButton({
+          text: "Save as draft",
+          classes: "govuk-button--secondary"
+          }) }}
+        </div>
+
+      </form>
+
+
+      {% set pastDayHtml %}
+      <h2 class="govuk-heading-l">Past day</h2>
+      {{ govukTable({
+      head: [
+      {
+      text: "Case manager"
+      },
+      {
+      text: "Cases opened"
+      },
+      {
+      text: "Cases closed"
+      }
+      ],
+      rows: [
+      [
+      {
+      text: "David Francis"
+      },
+      {
+      text: "3"
+      },
+      {
+      text: "0"
+      }
+      ],
+      [
+      {
+      text: "Paul Farmer"
+      },
+      {
+      text: "1"
+      },
+      {
+      text: "0"
+      }
+      ],
+      [
+      {
+      text: "Rita Patel"
+      },
+      {
+      text: "2"
+      },
+      {
+      text: "0"
+      }
+      ]
+      ]
+      }) }}
+      {% endset -%}
+
+      {% set pastWeekHtml %}
+      <h2 class="govuk-heading-l">Past week</h2>
+      {{ govukTable({
+      head: [
+      {
+      text: "Case manager"
+      },
+      {
+      text: "Cases opened"
+      },
+      {
+      text: "Cases closed"
+      }
+      ],
+      rows: [
+      [
+      {
+      text: "David Francis"
+      },
+      {
+      text: "24"
+      },
+      {
+      text: "18"
+      }
+      ],
+      [
+      {
+      text: "Paul Farmer"
+      },
+      {
+      text: "16"
+      },
+      {
+      text: "20"
+      }
+      ],
+      [
+      {
+      text: "Rita Patel"
+      },
+      {
+      text: "24"
+      },
+      {
+      text: "27"
+      }
+      ]
+      ]
+      }) }}
+      {% endset -%}
+
+      {% set pastMonthHtml %}
+      <h2 class="govuk-heading-l">Past month</h2>
+      {{ govukTable({
+      head: [
+      {
+      text: "Case manager"
+      },
+      {
+      text: "Cases opened"
+      },
+      {
+      text: "Cases closed"
+      }
+      ],
+      rows: [
+      [
+      {
+      text: "David Francis"
+      },
+      {
+      text: "98"
+      },
+      {
+      text: "95"
+      }
+      ],
+      [
+      {
+      text: "Paul Farmer"
+      },
+      {
+      text: "122"
+      },
+      {
+      text: "131"
+      }
+      ],
+      [
+      {
+      text: "Rita Patel"
+      },
+      {
+      text: "126"
+      },
+      {
+      text: "142"
+      }
+      ]
+      ]
+      }) }}
+      {% endset -%}
+
+      {% set pastYearHtml %}
+      <h2 class="govuk-heading-l">Past year</h2>
+      {{ govukTable({
+      head: [
+      {
+      text: "Case manager"
+      },
+      {
+      text: "Cases opened"
+      },
+      {
+      text: "Cases closed"
+      }
+      ],
+      rows: [
+      [
+      {
+      text: "David Francis"
+      },
+      {
+      text: "1380"
+      },
+      {
+      text: "1472"
+      }
+      ],
+      [
+      {
+      text: "Paul Farmer"
+      },
+      {
+      text: "1129"
+      },
+      {
+      text: "1083"
+      }
+      ],
+      [
+      {
+      text: "Rita Patel"
+      },
+      {
+      text: "1539"
+      },
+      {
+      text: "1265"
+      }
+      ]
+      ]
+      }) }}
+      {% endset -%}
+
+      {{ govukTabs({
+      items: [
+      {
+      label: "Past day",
+      id: "past-day",
+      panel: {
+      html: pastDayHtml
+      }
+      },
+      {
+      label: "Past week",
+      id: "past-week",
+      panel: {
+      html: pastWeekHtml
+      }
+      },
+      {
+      label: "Past month",
+      id: "past-month",
+      panel: {
+      html: pastMonthHtml
+      }
+      },
+      {
+      label: "Past year",
+      id: "past-year",
+      panel: {
+      html: pastYearHtml
+      }
+      }
+      ]
+      }) }}
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col"> Application </th>
+            <th class="govuk-table__header" scope="col"> Status </th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            Joshua Wessel
+          </td>
+          <td class="govuk-table__cell">
+            {{govukTag({
+            text: "Urgent",
+            classes: "govuk-tag--red"
+            })}}
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            Rachel Silver
+          </td>
+          <td class="govuk-table__cell">
+            {{govukTag({
+            text: "New",
+            classes: "govuk-tag--blue"
+            })}}
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            Laura Frith
+          </td>
+          <td class="govuk-table__cell">
+            {{govukTag({
+            text: "New",
+            classes: "govuk-tag--blue"
+            })}}
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            Paul French
+          </td>
+          <td class="govuk-table__cell">
+            {{govukTag({
+            text: "New",
+            classes: "govuk-tag--blue"
+            })}}
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            Jesse Smith
+          </td>
+          <td class="govuk-table__cell">
+            {{govukTag({
+            text: "New",
+            classes: "govuk-tag--blue"
+            })}}
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            Rachael Pepper
+          </td>
+          <td class="govuk-table__cell">
+            {{govukTag({
+            text: "Finished",
+            classes: "govuk-tag--green"
+            })}}
+          </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            Emma Tennant
+          </td>
+          <td class="govuk-table__cell">
+            {{govukTag({
+            text: "Waiting on",
+            classes: "govuk-tag--yellow"
+            })}}
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+      {{ govukAccordion({
+      id: "accordion-with-summary-sections",
+      items: [
+      {
+      heading: {
+      text: "Understanding agile project management"
+      },
+      summary: {
+      text: "Introductions, methods, core features."
+      },
+      content: {
+      html:
+      '<ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">Agile and government services: an introduction</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Agile methods: an introduction</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Core principles of agile</a>
+      </li>
+    </ul>'
+      }
+      },
+      {
+      heading: {
+      text: "Working with agile methods"
+      },
+      summary: {
+      text: "Workspaces, tools and techniques, user stories, planning."
+      },
+      content: {
+      html:
+      '<ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">Creating an agile working environment</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Agile tools and techniques</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Set up a team wall</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Writing user stories</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Planning in agile</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Deciding on priorities</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Developing a roadmap</a>
+      </li>
+    </ul>'
+      }
+      },
+      {
+      heading: {
+      text: "Governing agile services"
+      },
+      summary: {
+      text: "Principles, measuring progress, spending money."
+      },
+      content: {
+      html:
+      '<ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">Governance principles for agile service delivery</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Measuring and reporting progress</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Spend controls: check if you need approval to spend money on a service</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Spend controls: apply for approval to spend money on a service</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Spend controls: the new pipeline process</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Working across organisational boundaries</a>
+      </li>
+    </ul>'
+      }
+      },
+      {
+      heading: {
+      text: "Phases of an agile project"
+      },
+      summary: {
+      text: "Discovery, alpha, beta, live and retirement."
+      },
+      content: {
+      html:
+      '<ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">How the discovery phase works</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">How the alpha phase works</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">How the beta phase works</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">How the live phase works</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Retiring your service</a>
+      </li>
+    </ul>'
+      }
+      }
+      ]
+      }) }}
+
+      {{ govukWarningText({
+      text: "You can be fined up to £5,000 if you do not register.",
+      iconFallbackText: "Warning"
+      }) }}
+
+      {{ govukPanel({
+      titleText: "Application complete",
+      html: "Your reference number<br><strong>HDJ2123F</strong>"
+      }) }}
+
+      {{ govukPagination({
+      previous: {
+      labelText: "Applying for a provisional lorry or bus licence",
+      href: "#"
+      },
+      next: {
+      labelText: "Driver CPC part 1 test: theory",
+      href: "#"
+      }
+      }) }}
+
+
+    </div>
+  </div>
+
+{% endblock %}
