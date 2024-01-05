@@ -1,0 +1,171 @@
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+@import 'node_modules/nhsuk-frontend/packages/core/all';
+
+// Overrides for DHSC CARE branding
+
+$govuk-colours: (
+        "red": #d4351c,
+        "yellow": #ffdd00,
+        "green": #00A188,
+        "blue": #1d70b8,
+        "dark-blue": #003078,
+        "light-blue": #5694ca,
+        "purple": #4c2c92,
+        "black": #0b0c0c,
+        "dark-grey": #505a5f,
+        "mid-grey": #b1b4b6,
+        "light-grey": #f3f2f1,
+        "white": #ffffff,
+        "light-purple": #6f72af,
+        "bright-purple": #912b88,
+        "pink": #d53880,
+        "light-pink": #f499be,
+        "orange": #f47738,
+        "brown": #b58840,
+        "light-green": #85994b,
+        "turquoise": #28a197
+);
+
+$govuk-brand-colour: #00A188;
+$govuk-text-colour: #171D22;
+$govuk-fonts-path: "https://assets.nhs.uk/fonts/";
+$govuk-font-family: 'Frutiger W01', arial, sans-serif !default;
+
+$govuk-canvas-background-colour: #FFFFFF;
+$govuk-body-background-colour: #F2FBFA;
+
+$govuk-secondary-text-colour: #445867;
+
+$govuk-focus-colour: #FFEB3B;
+$govuk-focus-text-colour: #101820;
+
+$govuk-error-colour: #9E1E14;
+$govuk-success-colour: #007F3B;
+
+$govuk-border-colour: #99DED4;
+$govuk-input-border-colour: #707479;
+
+$govuk-link-colour: #00594C;
+$govuk-link-hover-colour: #003E35;
+
+$govuk-global-styles: true;
+
+$govuk-include-default-font-face: false;
+$govuk-font-weight-regular: 400;
+$govuk-font-weight-bold: 600;
+
+$govuk-typography-scale: (
+  80: (
+    null: (
+      font-size: 53px,
+      line-height: 55px
+    ),
+    tablet: (
+      font-size: 80px,
+      line-height: 80px
+    ),
+    print: (
+      font-size: 53pt,
+      line-height: 1.1
+    )
+  ),
+  48: (
+    null: (
+      font-size: 32px,
+      line-height: 35px
+    ),
+    tablet: (
+      font-size: 48px,
+      line-height: 50px
+    ),
+    print: (
+      font-size: 32pt,
+      line-height: 1.15
+    )
+  ),
+  36: (
+    null: (
+      font-size: 24px,
+      line-height: 25px
+    ),
+    tablet: (
+      font-size: 36px,
+      line-height: 40px
+    ),
+    print: (
+      font-size: 24pt,
+      line-height: 1.05
+    )
+  ),
+  27: (
+    null: (
+      font-size: 18px,
+      line-height: 20px
+    ),
+    tablet: (
+      font-size: 27px,
+      line-height: 30px
+    ),
+    print: (
+      font-size: 18pt,
+      line-height: 1.15
+    )
+  ),
+  24: (
+    null: (
+      font-size: 18px,
+      line-height: 20px
+    ),
+    tablet: (
+      font-size: 24px,
+      line-height: 30px
+    ),
+    print: (
+      font-size: 18pt,
+      line-height: 1.15
+    )
+  ),
+  19: (
+    null: (
+      font-size: 16px,
+      line-height: 20px
+    ),
+    tablet: (
+      font-size: 19px,
+      line-height: 25px
+    ),
+    print: (
+      font-size: 14pt,
+      line-height: 1.15
+    )
+  ),
+  16: (
+    null: (
+      font-size: 14px,
+      line-height: 16px
+    ),
+    tablet: (
+      font-size: 16px,
+      line-height: 20px
+    ),
+    print: (
+      font-size: 14pt,
+      line-height: 1.2
+    )
+  ),
+  14: (
+    null: (
+      font-size: 12px,
+      line-height: 15px
+    ),
+    tablet: (
+      font-size: 14px,
+      line-height: 20px
+    ),
+    print: (
+      font-size: 12pt,
+      line-height: 1.2
+    )
+  )
+);
+
