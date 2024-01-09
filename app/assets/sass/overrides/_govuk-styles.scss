@@ -452,3 +452,38 @@ a:hover, .govuk-link:hover {
 .govuk-frontend-supported .govuk-tabs__panel {
   background-color: govuk-colour("white");
 }
+
+// footer
+
+.govuk-footer {
+  padding-bottom: 0;
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-footer {
+    padding-top: 40px;
+  }
+}
+
+.govuk-footer__logo {
+  width: 120px;
+  height: auto;
+}
+
+.govuk-footer__meta {
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.govuk-footer__meta-item {
+  margin: 25px 15px;
+}
+
+.govuk-footer__copyright {
+  background: govuk-colour("dark-grey");
+}
+
+.govuk-footer__copyright-item {
+  color: govuk-colour("white");
+  padding: 32px 0;
+}
