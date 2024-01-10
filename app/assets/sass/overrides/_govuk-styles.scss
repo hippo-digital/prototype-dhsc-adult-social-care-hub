@@ -7,6 +7,9 @@ a:hover, .govuk-link:hover {
   text-decoration-thickness: unset;
 }
 
+.govuk-breadcrumbs__list-item {
+  font-size: 1rem;
+}
 // Header overrides
 
 .govuk-header {

@@ -1,9 +1,6 @@
-{#
-For guidance on how to use layouts see:
-https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
-#}
+{% extends "layouts/main.html" %}
 
-{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+{% set pageName="Home" %}
 
 {% block header %}
 <header class="govuk-header" role="banner" data-module="govuk-header">
@@ -33,8 +30,60 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
     </div>
   </div>
 </header>
+<section class="nhsuk-hero">
+
+  <div class="nhsuk-width-container nhsuk-hero--border">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <div class="nhsuk-hero__wrapper">
+          <h1 class="nhsuk-u-margin-bottom-3">Prototype v1</h1>
+          <p class="nhsuk-body-l nhsuk-u-margin-bottom-0">Care Workforce Pathway</p>
+          <p class="nhsuk-body-l nhsuk-u-margin-bottom-0">Goes into research on the 18 January 2024.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
 {% endblock %}
 
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h2>Adult social care hub incorporating the Care Workforce Pathway</h2>
+
+    <ul class="nhsuk-list spaced">
+      <div class="informative-tab informative-tab-green"><strong>In design</strong></div>
+      <li>
+        <p>Description of the research tasks</p>
+
+        <div class="nhsuk-grid-row">
+          <ul class="nhsuk-list list-unstyled">
+            <li> ➡️ <a href="/v1/">User finds the homepage</a></li>
+          </ul>
+        </div>
+
+        <h3 class="nhsuk-u-margin-top-8">In this prototype:</h3>
+
+        <ol class="nhsuk-summary-list">
+          <li>Description of the design</li>
+          <li>Description of the design</li>
+        </ol>
+
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="nhsuk-grid-column-one-third nhsuk-u-margin-bottom-4">
+    {% include 'includes/links.html' %}
+  </div>
+</div>
+
+{% endblock %}
 
 {% block footer %}
 
