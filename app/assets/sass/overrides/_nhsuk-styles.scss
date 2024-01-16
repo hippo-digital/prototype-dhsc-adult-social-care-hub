@@ -160,6 +160,22 @@ a:visited {
   display: flex;
 }
 
+// contents menu overrides
+
+.nhsuk-navigation--internal {
+  background: transparent;
+  margin-bottom: 2.5rem;
+}
+
+.nhsuk-navigation--internal .active {
+  background: govuk-colour("light-green");;
+}
+
+.nhsuk-navigation--internal .nhsuk-header__navigation-link {
+  padding: 5px 16px;
+}
+
+
 // back link
 
 .nhsuk-back-link__link:visited {
