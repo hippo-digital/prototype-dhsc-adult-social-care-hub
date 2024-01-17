@@ -28,7 +28,7 @@ details.dev-mode summary, details.dev-mode ol {
   position: fixed;
   right: 0;
   bottom: 60px;
-  width: 110px;
+  width: 270px;
   height: 35px;
   background-color: $govuk-focus-colour;
   box-shadow: -7px -7px 12px -7px rgba(0,0,0,0.85);
@@ -52,8 +52,8 @@ details.dev-mode summary, details.dev-mode ol {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('/public/images/icon-ext-link.svg');
-  background-size: 20px;
+  background-image: url('/public/images/swap-icon.svg');
+  background-size: 18px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin-top: 7px;
@@ -62,7 +62,7 @@ details.dev-mode summary, details.dev-mode ol {
 
 .proto-error-icon {
   background-image: url('/public/images/alert.svg');
-  background-size: 20px;
+  background-size: 18px;
 }
 
 .proto-action-text,
@@ -74,4 +74,19 @@ details.dev-mode summary, details.dev-mode ol {
   font-size: 15px;
   font-weight: 400;
   color: black;
+  margin-right: 5px;
+}
+
+.proto-error-text {
+  background-color: $govuk-focus-colour;
+  border: 1px solid #000;
+  padding: 2px 30px;
+  margin-top: 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: #ddd;
+  }
+  &.active {
+    background-color: #fff;
+  }
 }

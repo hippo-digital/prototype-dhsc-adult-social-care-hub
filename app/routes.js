@@ -18,6 +18,19 @@ router.use((req, res, next) => {
 
 // Add your routes here
 
+router.post('/:version/:role/switch', function (req, res) {
+  // trim out the white space we we can count it easier
+  let target = req.session.data['target']
+  var url = req.get('Referrer') .split( '/' );
+  // /v2/supervisor/switch-to-a
+  if (target === 'a'){
+    console.log('url is:' + url)
+    res.redirect('/v1/' + url[4] + '/' + url[5] )
+  } else {
+    res.redirect('/v2/' + url[4] + '/' + url[5] )
+  }
+})
+
 function devModeRoute(req, res, next) {
   if (!req.session.data['devMode']) {
     console.log('no data found')
