@@ -1,7 +1,7 @@
 {% extends "layouts/layout-care-plain.html" %}
 
 {% block pageTitle %}
-  Care Workers: Overview
+New to Care: Overview
 {% endblock %}
 
 {% block beforeContent %}
@@ -16,8 +16,8 @@
       href: "#"
     },
     {
-      text: "Care worker",
-      href: "./"
+      text: "New to care",
+      href: "#"
     }
   ]
   }) }}
@@ -28,7 +28,7 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
-      <h1 class="govuk-heading-l nhsuk-u-margin-bottom-3">Care or support worker</h1>
+      <h1 class="govuk-heading-l nhsuk-u-margin-bottom-3">New to Care</h1>
 
       <nav class="nhsuk-navigation nhsuk-navigation--internal" id="header-navigation" role="navigation" aria-labelledby="contentsmenulabel">
         <h2 id="contentsmenulabel" class="nhsuk-u-visually-hidden">Contents</h2>
@@ -67,17 +67,19 @@
   </div>
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
+<!--    <div class="govuk-grid-column-one-third">-->
 
-      <img style="width: 100%;" src="/public/images/care-worker.jpg" alt="Department of Heath and Social Care">
+<!--      <img style="width: 100%;" src="/public/images/care-worker.jpg" alt="Department of Heath and Social Care">-->
 
-    </div>
+<!--    </div>-->
 
     <div class="govuk-grid-column-two-thirds">
 
       <h3 class="govuk-heading-s">Description of the role</h3>
 
-      <p>This role supports people who draw on care and support to be able to live their lives.  This may involve aspects of personal care, support with everyday life or supporting them to live independently.  This role could be across a variety of settings, delivering care and support in people’s own homes, in a residential setting or through supported independent living.</p>
+      <p>This role supports people who draw on care and support to be able to live their lives. This may involve aspects of personal care, support with everyday life or supporting them to live independently. This role could be across a variety of settings, delivering care and support in people’s own homes, in a residential setting or through supported independent living.</p>
+
+      <p>This role is the starting point for a career in social care with many opportunities to learn and develop your skills and knowledge, but also offers the opportunity to progress if that is what you want to do.</p>
 
     </div>
   </div>
@@ -88,18 +90,15 @@
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
     {% set caseStudyHtml %}
-    <h2 class="govuk-heading-m">Case study - Paul</h2>
+    <h2 class="govuk-heading-m">Role category A persona: Laura</h2>
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-half">
-        <p>Paul recognises the value in the previous training and development he has done during his time as a care worker and begins to think about what further learning and development he wants to complete. During his time as a care worker, he has done his Care Certificate qualification and previously chose to develop his skills and knowledge in dementia care to better support the people living in the care home.</p>
-        <p>Paul has his year one appraisal and speaks to his manager about what his next steps could be as part of his learning and development. His manager recommends the Level 3 Diploma in Adult Care as a way for him to further grow his knowledge and skills and, after agreeing with Paul that he wants to do it, makes arrangements for him to start this qualification.</p>
-        <p>His training provider maps his previous learning that he has done against the Level 3 qualification he wants to undertake so that he doesn’t have to repeat any previous learning. He is given an individual learning plan that he will follow until he completes the qualification. He chooses a number of optional units for himself that he can use within his specific practice and setting.</p>
-        <p>As Paul works through completing the qualification in his current role, he consolidates his learning embedding it into his practice and showing how he is delivering high-quality person-centred care. In Paul’s ongoing role as a care worker, he will maintain continous professional development by undertaking learning and development which he can use to support the people living in the care home.</p>
-        <p>Paul has recently received additional training to carry out a delegated healthcare activity for one of the people he supports. The healthcare activity has been delegated to him by a Registered Nurse from the local community nursing team who remains accountable for the decision to delegate in the person’s best interest, even though it is Paul who is carrying out the activity.  He is carrying out Percutaneous Endoscopic Gastrostomy (PEG) feeds, by following the Care Plan and the training he has been given, ensuring he continues to deliver safe and person-centred care. The delegated healthcare and clinical safety is monitored by the Registered Nurse who retains accountability and responsibility of the activity.</p>
+      <div class="govuk-grid-column-two-thirds">
+        <p>Laura is just starting her career in care and has joined a home care service. Her first task is to complete the company induction that details her role, where she fits and the organisational structure. Laura then undertakes the core and mandatory training necessary for her role and the people she will be supporting. She learns things like how to help people move safely and to assist with mobility issues. As she’ll be preparing food and drinks, she completes her food hygiene certificate. Laura also completes the eLearning knowledge elements of the Care Certificate.</p>
+        <p>After completing this initial learning, Laura has a supervision meeting with her manager to check how she’s progressing. Her manager arranges with Laura to spend a few weeks shadowing one of the team leaders so she can start to apply her new knowledge in practice with support from one of the team leaders. Over time, she starts to feel more confident and has another supervision meeting with her manager. Her manager confirms that she has completed all the minimum learning to practise safely, though there is still more for her to learn as she starts to provide care.</p>
+        <p>Laura is introduced to the people she’ll be supporting, who include a person with dementia and a person with diabetes. Laura’s employer arranges additional learning for her around those specific areas, which she completes. Laura reads the support plan for each of the people she has been told to support so she can get an idea of each of their needs, wants and preferences about how they want their support to be provided along with the kind of support they need. Laura also recognises that she’ll need to find out more from the people themselves when she visits their homes.</p>
+        <p>Laura consolidates her Care Certificate learning through on-the-job assessment and she achieves the new Care Certificate qualification in her current role. While she’s working on her qualification, Laura is assigned a new person to support who has an acquired brain injury. She works in a person-centred way so it’s important to her to understand the specific needs of the person she is supporting. She works with her employer to identify and undertake additional training about acquired brain injuries so she can better understand the kind of support the new individual will need.</p>
       </div>
-      <div class="govuk-grid-column-one-half">
-        <img style="width: 100%;" src="/public/images/care-worker-2.jpg" alt="Department of Heath and Social Care">
-      </div>
+
     </div>
     {% endset -%}
 
@@ -117,24 +116,24 @@
         <table class="govuk-table">
           <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Respect</th>
-            <td class="govuk-table__cell">Treat me, the people around me and where I live with respect. Respect my values and my choices about the life I want to lead, and respect your role to value and uphold my goals</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">See the whole person</th>
-            <td class="govuk-table__cell">Be curious and listen carefully to understand the unique person I am with strengths, abilities and aspirations. Make plans and decisions about me, with me</td>
+            <th scope="row" class="govuk-table__header">Kind, compassionate and empathetic</th>
+            <td class="govuk-table__cell">Be kind, compassionate and empathetic so you can see things from my point of view, with concern for what matters to me, my wellbeing and health</td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Honest, trustworthy and reliable</th>
             <td class="govuk-table__cell">Be honest, trustworthy and reliable so you turn up when you say you will and provide the care and support we have agreed. Be discreet and confidential to build up a trusting relationship between us</td>
           </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Kind, compassionate and empathetic</th>
-            <td class="govuk-table__cell">Be kind, compassionate and empathetic so you can see things from my point of view, with concern for what matters to me, my wellbeing and health</td>
+            <th scope="row" class="govuk-table__header">Respect</th>
+            <td class="govuk-table__cell">Treat me, the people around me and where I live with respect. Respect my values and my choices about the life I want to lead, and respect your role to value and uphold my goals</td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Courageous and principled</th>
             <td class="govuk-table__cell">Show strength, courage and commitment to speak out if something isn’t right or could be better, and to step back when I am exercising my choice and control. Act according to principles of human rights, equity and inclusion as well as my personalised care and support plan amending</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">See the whole person</th>
+            <td class="govuk-table__cell">Be curious and listen carefully to understand the unique person I am with strengths, abilities and aspirations. Make plans and decisions about me, with me</td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Flexible, open and learning</th>
@@ -152,21 +151,21 @@
     {% endset -%}
 
     {% set behavioursHtml %}
-    <h2 class="govuk-heading-m">The behaviours people must show (must do)</h2>
+    <h2 class="govuk-heading-m">Core behaviours</h2>
     <p>Behaviours are the way that values are demonstrated in practice. These are the behaviours required to work as a Care worker. These are the things people must be doing in their job.</p>
     <p>All behaviours should be delivered in the context of person-centred care and co-production.</p>
     </p>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <ol class="govuk-list govuk-list--number govuk-list--spaced">
-          <li>Treat all individuals equitably and with a professional manner in the workplace.</li>
-          <li>Take responsibility for own actions, demonstrating resilience, determination and impartiality when managing difficult situations.</li>
-          <li>Build and maintain positive relationships with others and seek their views when needed.</li>
-          <li>Take an organised approach to time-sensitive tasks, and act in an open and approachable when completing tasks with others.</li>
-          <li>Be open to new digital knowledge and skills which may enhance performance in the care sector.</li>
-          <li>Act in a flexible, creative, innovative and proactive way when problem solving, taking account of best practice.</li>
-          <li>Be adaptable and act in an open and responsive way to feedback.</li>
-          <li>Be caring, compassionate and empathetic towards others, acknowledging the differences between individuals.</li>
+          <li>Act in an ethical and professional manner in the workplace (professionalism).</li>
+          <li>Build and maintain positive relationships with colleagues and adults in a care setting (teamworking).</li>
+          <li>Take an organised and methodical approach to complete tasks in a timely manner (work ethic).</li>
+          <li>Take personal responsibility for developing knowledge and skills and continually seek to improve their performance (continuous improvement).</li>
+          <li>Seek to develop personal resilience and maintain wellbeing (strength equals courage).</li>
+          <li>Strengthen sustainable practices and challenge unsustainable practices (environmental responsibility).</li>
+          <li>Support an open culture where everyone - including colleagues and those with lived experience - is treated with dignity and respect, and fairly, without prejudice, bias or discrimination (human rights).</li>
+          <li>Reflect on ways in which they show compassion to individuals in an adult social care setting (compassion).</li>
         </ol>
       </div>
     </div>
@@ -200,7 +199,7 @@
       ]
     }) }}
 
-      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
+      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
         Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
       </p>
 

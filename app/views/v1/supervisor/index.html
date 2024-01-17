@@ -1,7 +1,7 @@
 {% extends "layouts/layout-care-plain.html" %}
 
 {% block pageTitle %}
-  Care Workers: Overview
+Supervisor or leader: Overview
 {% endblock %}
 
 {% block beforeContent %}
@@ -16,7 +16,7 @@
       href: "#"
     },
     {
-      text: "Care worker",
+      text: "Supervisor or leader",
       href: "./"
     }
   ]
@@ -28,7 +28,7 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
-      <h1 class="govuk-heading-l nhsuk-u-margin-bottom-3">Care or support worker</h1>
+      <h1 class="govuk-heading-l nhsuk-u-margin-bottom-3">Supervisor or leader</h1>
 
       <nav class="nhsuk-navigation nhsuk-navigation--internal" id="header-navigation" role="navigation" aria-labelledby="contentsmenulabel">
         <h2 id="contentsmenulabel" class="nhsuk-u-visually-hidden">Contents</h2>
@@ -67,17 +67,13 @@
   </div>
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
-
-      <img style="width: 100%;" src="/public/images/care-worker.jpg" alt="Department of Heath and Social Care">
-
-    </div>
 
     <div class="govuk-grid-column-two-thirds">
 
       <h3 class="govuk-heading-s">Description of the role</h3>
 
-      <p>This role supports people who draw on care and support to be able to live their lives.  This may involve aspects of personal care, support with everyday life or supporting them to live independently.  This role could be across a variety of settings, delivering care and support in people’s own homes, in a residential setting or through supported independent living.</p>
+      <p>This role supports people who draw on care and support to be able to live their lives.  This may involve aspects of personal care, support with everyday life or supporting them to live independently. This role could be across a variety of settings, delivering care and support in people’s own homes, in a residential setting or through supported independent living.</p>
+      <p>At this level, you might have progressed to become a team leader. You might have some people management responsibilities and be considering your future career options: to develop practice or to go into management.</p>
 
     </div>
   </div>
@@ -88,27 +84,24 @@
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
     {% set caseStudyHtml %}
-    <h2 class="govuk-heading-m">Case study - Paul</h2>
+    <h2 class="govuk-heading-m">Role category C persona: Poonam</h2>
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-half">
-        <p>Paul recognises the value in the previous training and development he has done during his time as a care worker and begins to think about what further learning and development he wants to complete. During his time as a care worker, he has done his Care Certificate qualification and previously chose to develop his skills and knowledge in dementia care to better support the people living in the care home.</p>
-        <p>Paul has his year one appraisal and speaks to his manager about what his next steps could be as part of his learning and development. His manager recommends the Level 3 Diploma in Adult Care as a way for him to further grow his knowledge and skills and, after agreeing with Paul that he wants to do it, makes arrangements for him to start this qualification.</p>
-        <p>His training provider maps his previous learning that he has done against the Level 3 qualification he wants to undertake so that he doesn’t have to repeat any previous learning. He is given an individual learning plan that he will follow until he completes the qualification. He chooses a number of optional units for himself that he can use within his specific practice and setting.</p>
-        <p>As Paul works through completing the qualification in his current role, he consolidates his learning embedding it into his practice and showing how he is delivering high-quality person-centred care. In Paul’s ongoing role as a care worker, he will maintain continous professional development by undertaking learning and development which he can use to support the people living in the care home.</p>
-        <p>Paul has recently received additional training to carry out a delegated healthcare activity for one of the people he supports. The healthcare activity has been delegated to him by a Registered Nurse from the local community nursing team who remains accountable for the decision to delegate in the person’s best interest, even though it is Paul who is carrying out the activity.  He is carrying out Percutaneous Endoscopic Gastrostomy (PEG) feeds, by following the Care Plan and the training he has been given, ensuring he continues to deliver safe and person-centred care. The delegated healthcare and clinical safety is monitored by the Registered Nurse who retains accountability and responsibility of the activity.</p>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <img style="width: 100%;" src="/public/images/care-worker-2.jpg" alt="Department of Heath and Social Care">
+      <div class="govuk-grid-column-two-thirds">
+        <p>Poonam has worked in social care since leaving school, and now is a senior care and support worker within a supported living setting with responsibility for both advanced care and leading and managing a team of care and support workers. She completed her Lead Adult Care Worker apprenticeship 2 years ago, which included a Level 3 Diploma in Care.</p>
+        <p>In her role, she has responsibility for the performance management and leadership of her team, and has to mentor more junior care and support workers and coach her team to provide quality care and support. In her development plan with her manager, she identified the need to develop skills around supervision, coaching and mentoring as well as developing her interest in leadership skills.</p>
+        <p>She is thinking about her future career opportunities now. She has the experience and knowledge to be able to concentrate on a specialist area of care, developing more in-depth knowledge and skills to support people with a range of support needs, or she could choose to develop her management and leadership skills and aim to become a registered manager. Both options provide opportunities to advance her career and to develop her learning and skills further.</p>
+        <p>Poonam will use her annual appraisal as an opportunity to discuss these options with her manager and look at where she might develop. Each option will provide her with a challenge in terms of her development, but Poonam enjoys learning and likes the motivation of supporting not only those who use care services but also her colleagues who are developing in their own roles and seeing them gain more skills.</p>
+        <p>Whichever path Poonam chooses, she will be making a difference to people, supporting them to live their best lives, something that gives her great job satisfaction.</p>
       </div>
     </div>
     {% endset -%}
 
     {% set valuesHtml %}
     <h2 class="govuk-heading-m">
-    <p>Values are the golden thread underpinning behaviours.</p>
+    <p>Values are the foundation underpinning behaviours:</p>
 
     {{ govukInsetText({
-    html: "<a href=\"#\">Read more about the sector values</a>.",
+    html: "<a href=\"#\">You can read more about the values in the overview</a>.",
     classes: "govuk-inset-text--green"
     }) }}
 
@@ -117,24 +110,24 @@
         <table class="govuk-table">
           <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Respect</th>
-            <td class="govuk-table__cell">Treat me, the people around me and where I live with respect. Respect my values and my choices about the life I want to lead, and respect your role to value and uphold my goals</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">See the whole person</th>
-            <td class="govuk-table__cell">Be curious and listen carefully to understand the unique person I am with strengths, abilities and aspirations. Make plans and decisions about me, with me</td>
+            <th scope="row" class="govuk-table__header">Kind, compassionate and empathetic</th>
+            <td class="govuk-table__cell">Be kind, compassionate and empathetic so you can see things from my point of view, with concern for what matters to me, my wellbeing and health</td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Honest, trustworthy and reliable</th>
             <td class="govuk-table__cell">Be honest, trustworthy and reliable so you turn up when you say you will and provide the care and support we have agreed. Be discreet and confidential to build up a trusting relationship between us</td>
           </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Kind, compassionate and empathetic</th>
-            <td class="govuk-table__cell">Be kind, compassionate and empathetic so you can see things from my point of view, with concern for what matters to me, my wellbeing and health</td>
+            <th scope="row" class="govuk-table__header">Respect</th>
+            <td class="govuk-table__cell">Treat me, the people around me and where I live with respect. Respect my values and my choices about the life I want to lead, and respect your role to value and uphold my goals</td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Courageous and principled</th>
             <td class="govuk-table__cell">Show strength, courage and commitment to speak out if something isn’t right or could be better, and to step back when I am exercising my choice and control. Act according to principles of human rights, equity and inclusion as well as my personalised care and support plan amending</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">See the whole person</th>
+            <td class="govuk-table__cell">Be curious and listen carefully to understand the unique person I am with strengths, abilities and aspirations. Make plans and decisions about me, with me</td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Flexible, open and learning</th>
@@ -152,12 +145,13 @@
     {% endset -%}
 
     {% set behavioursHtml %}
-    <h2 class="govuk-heading-m">The behaviours people must show (must do)</h2>
-    <p>Behaviours are the way that values are demonstrated in practice. These are the behaviours required to work as a Care worker. These are the things people must be doing in their job.</p>
-    <p>All behaviours should be delivered in the context of person-centred care and co-production.</p>
-    </p>
-    <div class="govuk-grid-row">
+      <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+
+        <h2 class="govuk-heading-m">The behaviours people must show (must do)</h2>
+        <p>Behaviours are the way that values are demonstrated in practice. This section outlines the behaviours required to work within role category C. These are the things people must be doing in their job.</p>
+        <p>All behaviours should be delivered in the context of person-centred care and co-production.</p>
+        <p>Core behaviours:</p>
         <ol class="govuk-list govuk-list--number govuk-list--spaced">
           <li>Treat all individuals equitably and with a professional manner in the workplace.</li>
           <li>Take responsibility for own actions, demonstrating resilience, determination and impartiality when managing difficult situations.</li>
@@ -200,22 +194,22 @@
       ]
     }) }}
 
-      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
+      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
         Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
       </p>
 
       <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
         <ul class="nhsuk-list nhsuk-pagination__list">
-<!--          <li class="nhsuk-pagination-item&#45;&#45;previous">-->
-<!--            <a class="nhsuk-pagination__link nhsuk-pagination__link&#45;&#45;prev" href="#">-->
-<!--              <span class="nhsuk-pagination__title">Previous</span>-->
-<!--              <span class="nhsuk-u-visually-hidden">:</span>-->
-<!--              <span class="nhsuk-pagination__page">Overview</span>-->
-<!--              <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">-->
-<!--                <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>-->
-<!--              </svg>-->
-<!--            </a>-->
-<!--          </li>-->
+          <!--          <li class="nhsuk-pagination-item&#45;&#45;previous">-->
+          <!--            <a class="nhsuk-pagination__link nhsuk-pagination__link&#45;&#45;prev" href="#">-->
+          <!--              <span class="nhsuk-pagination__title">Previous</span>-->
+          <!--              <span class="nhsuk-u-visually-hidden">:</span>-->
+          <!--              <span class="nhsuk-pagination__page">Overview</span>-->
+          <!--              <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">-->
+          <!--                <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>-->
+          <!--              </svg>-->
+          <!--            </a>-->
+          <!--          </li>-->
           <li class="nhsuk-pagination-item--next">
             <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="requirements">
               <span class="nhsuk-pagination__title">Next</span>
