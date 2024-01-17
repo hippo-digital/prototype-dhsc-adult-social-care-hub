@@ -141,3 +141,15 @@
 </footer>
 
 {% endblock %}
+
+{% block bodyEnd %}
+{% block scripts %}
+{% include "govuk-prototype-kit/includes/scripts.njk" %}
+{% block pageScripts %}{% endblock %}
+{% endblock %}
+
+{% if data['devMode'] === 'true' %}
+{% include "includes/devmode.html" %}
+{% endif %}
+
+{% endblock %}

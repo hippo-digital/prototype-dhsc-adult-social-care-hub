@@ -2,4 +2,9 @@
 @import "overrides/govuk-styles";
 @import "overrides/nhsuk-styles";
 
+// new components
+@import "components/dev-mode";
+@import "components/notify-email";
+@import "components/notify-text";
+
 // Add extra styles here

@@ -1,0 +1,35 @@
+{% if emailLink2 %}
+<div class="proto-action-2">
+  <a href="{{ emailLink2 }}">
+    <div class="proto-action-icon"></div>
+    <div class="proto-action-text">Email sent</div>
+  </a>
+  <br>
+</div>
+{% endif %}
+
+{% if emailLink %}
+<div class="proto-action">
+    <a href="{{ emailLink }}">
+        <div class="proto-action-icon"></div>
+        <div class="proto-action-text">Email sent</div>
+    </a>
+  <br>
+</div>
+{% endif %}
+
+{% if smsLink %}
+  <div class="proto-action">
+    <a href="{{ smsLink }}">
+      <div class="proto-action-icon"></div>
+      <div class="proto-action-text">SMS sent</div>
+    </a>
+    <br>
+  </div>
+{% endif %}
+
+<div class="proto-error">
+    <div class="proto-error-icon"></div>
+    <div class="proto-error-text">A/B Test</div>
+      <div class="proto-error-text">A/B Test</div>
+</div>
