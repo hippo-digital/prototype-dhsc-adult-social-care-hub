@@ -18,18 +18,32 @@ router.use((req, res, next) => {
 
 // Add your routes here
 
-router.post('/:version/:role/switch', function (req, res) {
+router.post('/v1/:test/:role/switch', function (req, res) {
   // trim out the white space we we can count it easier
   let target = req.session.data['target']
   var url = req.get('Referrer') .split( '/' );
-  // /v2/supervisor/switch-to-a
+  // /b/supervisor/switch-to-a
   if (target === 'a'){
     console.log('url is:' + url)
-    res.redirect('/v1/' + url[4] + '/' + url[5] )
+    res.redirect('/v1/a/' + url[5] + '/' + url[6] )
   } else {
-    res.redirect('/v2/' + url[4] + '/' + url[5] )
+    res.redirect('/v1/b/' + url[5] + '/' + url[6] )
   }
 })
+
+router.post('/v2/:test/:role/switch', function (req, res) {
+  // trim out the white space we we can count it easier
+  let target = req.session.data['target']
+  var url = req.get('Referrer') .split( '/' );
+  // /b/supervisor/switch-to-a
+  if (target === 'a'){
+    console.log('url is:' + url)
+    res.redirect('/v2/a/' + url[5] + '/' + url[6] )
+  } else {
+    res.redirect('/v2/b/' + url[5] + '/' + url[6] )
+  }
+})
+
 
 function devModeRoute(req, res, next) {
   if (!req.session.data['devMode']) {

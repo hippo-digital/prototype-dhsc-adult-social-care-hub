@@ -1,0 +1,230 @@
+{% extends "layouts/layout-care-plain.html" %}
+
+{% block pageTitle %}
+Practice leader: Overview
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "../"
+    },
+    {
+      text: "Professional development",
+      href: "#"
+    },
+    {
+      text: "Practice leader",
+      href: "./"
+    }
+  ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l nhsuk-u-margin-bottom-3">Practice leader</h1>
+
+      <nav class="nhsuk-navigation nhsuk-navigation--internal" id="header-navigation" role="navigation" aria-labelledby="contentsmenulabel">
+        <h2 id="contentsmenulabel" class="nhsuk-u-visually-hidden">Contents</h2>
+        <ul class="nhsuk-header__navigation-list">
+          <li class="nhsuk-header__navigation-item">
+            <a class="nhsuk-header__navigation-link active" href="overview">
+              Overview
+            </a>
+          </li>
+          <li class="nhsuk-header__navigation-item">
+            <a class="nhsuk-header__navigation-link" href="requirements">
+              Knowledge and skills you need
+            </a>
+          </li>
+          <li class="nhsuk-header__navigation-item">
+            <a class="nhsuk-header__navigation-link" href="development">
+              Focus on a specialism
+            </a>
+          </li>
+          <li class="nhsuk-header__navigation-item">
+            <a class="nhsuk-header__navigation-link" href="#">
+              Promotion opportunities
+            </a>
+          </li>
+          <li class="nhsuk-header__navigation-item">
+            <a class="nhsuk-header__navigation-link" href="#">
+              Qualifications and courses
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <h2 class="govuk-heading-m">Overview</h2>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h3 class="govuk-heading-s">What a supervisor or leader does</h3>
+
+      <p>This section outlines the kind of responsibilities someone within role category D (practice leader) is likely to undertake as part of their role.</p>
+
+      <p>This role supports people who draw on care and support to be able to live their lives. This may involve aspects of personal care, support with everyday life or supporting them to live independently. This role could be across a variety of settings, delivering care and support in people’s own homes, in a residential setting or through supported independent living.</p>
+
+      <p>At this level, you will have previously developed a specialism within a specific area of practice, and will develop practice leadership skills and knowledge. You will take the lead in supporting others in your setting to develop their own practice, coaching and mentoring them in ways to improve. It will be part of your role to stay at the forefront of practice within your chosen specialism, supporting others to do the same so they can provide the best possible care to the people you support.</p>
+
+    </div>
+  </div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    {% set caseStudyHtml %}
+    <h2 class="govuk-heading-m">A leader: Kelly</h2>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p>Kelly is a team leader in a supported living service for people with a learning disability. She really enjoys working with the people who live in the service, she knows them really well and has very good relationships with them and their families. Kelly has worked in the service for a few years now after starting her career in adult social care working in a residential home with another organisation.</p>
+        <p>During her time with her previous employer, she completed both the Care Certificate and the Level 3 Diploma in Care qualifications along with a number of accredited training courses to help develop her general practice as well as her specific knowledge around supporting people with learning disabilities.</p>
+        <p>After reviewing her previous qualifications and training against the care workforce pathway, her new employer recognised and accepted all of her previous learning - avoiding the need to repeat anything.</p>
+        <p>While discussing her development and future career goals with her line manager, Kelly realises she is passionate about continuing to develop her specialist knowledge and is really good at getting the best out of her team. She discusses a career in management with her line manager but realises that is not for her. Instead, they explore the practice leader role category so Kelly can continue to develop her area of practice and support others to do the same. Kelly would also like to increase her specialist knowledge in sensory impairments and communication as this is a particular area of support for one person she is currently supporting.</p>
+        <p>Kelly and her manager put together a personal development plan. This has been mapped against her previous learning and qualifications and Tier 3 of the Core Capabilities Framework for Supporting People with a Learning Disability. Her manager also supports her to complete a specialist qualification at Level 4 to help develop further her practice leadership skills and knowledge. Following completion of her qualification, Kelly takes on the responsibility of leading practice within the supported living house, supporting her colleagues to develop their own practice, identifying and closing skills gaps, and engaging with the wider social care sector so she can ensure her own practice continues to be at the forefront of what is expected within her specialism.</p>
+      </div>
+    </div>
+    {% endset -%}
+
+    {% set valuesHtml %}
+    <h2 class="govuk-heading-m">
+    <p>The values that are important for everyone working in adult social care.</p>
+
+    {{ govukInsetText({
+    html: "<a href=\"#\">Read more about the sector values</a>.",
+    classes: "govuk-inset-text--green"
+    }) }}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Kind, compassionate and empathetic</th>
+            <td class="govuk-table__cell">Be kind, compassionate and empathetic so you can see things from my point of view, with concern for what matters to me, my wellbeing and health</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Honest, trustworthy and reliable</th>
+            <td class="govuk-table__cell">Be honest, trustworthy and reliable so you turn up when you say you will and provide the care and support we have agreed. Be discreet and confidential to build up a trusting relationship between us</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Respect</th>
+            <td class="govuk-table__cell">Treat me, the people around me and where I live with respect. Respect my values and my choices about the life I want to lead, and respect your role to value and uphold my goals</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">courageous and principled</th>
+            <td class="govuk-table__cell">Be reflective, open and non-judgmental so we can learn and adapt how we work together in the longer term</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">See the whole person</th>
+            <td class="govuk-table__cell">Be curious and listen carefully to understand the unique person I am with strengths, abilities and aspirations. Make plans and decisions about me, with me</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">flexible, open and learning</th>
+            <td class="govuk-table__cell">Take pride in your work and have a friendly, positive and proactive attitude so we can enjoy spending time together</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Proud and positive</th>
+            <td class="govuk-table__cell">Take pride in your work and have a friendly, positive and proactive attitude so we can enjoy spending time together</td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+    {% endset -%}
+
+    {% set behavioursHtml %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <h2 class="govuk-heading-m">Core behaviours</h2>
+          <p>This section outlines the behaviours required to work within role category D. These are the things people must be doing in their job.</p>
+
+          <ol class="govuk-list govuk-list--number govuk-list--spaced">
+            <li>Act in an ethical and professional manner, role modelling evidence-based best practice and values (professionalism).</li>
+            <li>Act positively and collaboratively - developing positive relationships with people you support and colleagues (collaboration and relationships).</li>
+            <li>Act as a leader in co-production and person-centred support (co-production).</li>
+            <li>Advocate for the rights of people you support, ensuring people are provided with opportunities for a good quality of life through positive risk taking (human rights).</li>
+            <li>Provide regular constructive feedback to the staff team to support continuous improvement of practice (performance management).</li>
+            <li>Motivate the team and ensure they have the skills needed to work effectively with the people they support (leadership).</li>
+            <li>Organise staff and resources to deliver support when and how the people being supported need and want it (resource management).</li>
+          </ol>
+        </div>
+      </div>
+    {% endset -%}
+
+    {{ govukTabs({
+      items: [
+        {
+          label: "Case study",
+          id: "past-day",
+          panel: {
+            html: caseStudyHtml
+          }
+        },
+        {
+          label: "Values",
+          id: "past-week",
+          panel: {
+            html: valuesHtml
+          }
+        },
+        {
+          label: "Behaviours",
+          id: "past-month",
+          panel: {
+            html: behavioursHtml
+          }
+        }
+      ]
+    }) }}
+
+      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
+        Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
+      </p>
+
+      <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+        <ul class="nhsuk-list nhsuk-pagination__list">
+          <!--          <li class="nhsuk-pagination-item&#45;&#45;previous">-->
+          <!--            <a class="nhsuk-pagination__link nhsuk-pagination__link&#45;&#45;prev" href="#">-->
+          <!--              <span class="nhsuk-pagination__title">Previous</span>-->
+          <!--              <span class="nhsuk-u-visually-hidden">:</span>-->
+          <!--              <span class="nhsuk-pagination__page">Overview</span>-->
+          <!--              <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">-->
+          <!--                <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>-->
+          <!--              </svg>-->
+          <!--            </a>-->
+          <!--          </li>-->
+          <li class="nhsuk-pagination-item--next">
+            <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="requirements">
+              <span class="nhsuk-pagination__title">Next</span>
+              <span class="nhsuk-u-visually-hidden">:</span>
+              <span class="nhsuk-pagination__page">Requirements of this role</span>
+              <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

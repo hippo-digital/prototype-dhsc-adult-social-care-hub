@@ -1,0 +1,236 @@
+{% extends "layouts/layout-care-plain.html" %}
+
+{% block pageTitle %}
+New to Care: Overview
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "../"
+    },
+    {
+      text: "Professional development",
+      href: "#"
+    },
+    {
+      text: "New to care",
+      href: "#"
+    }
+  ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l nhsuk-u-margin-bottom-3">New to Care</h1>
+
+      <nav class="nhsuk-navigation nhsuk-navigation--internal" id="header-navigation" role="navigation" aria-labelledby="contentsmenulabel">
+        <h2 id="contentsmenulabel" class="nhsuk-u-visually-hidden">Contents</h2>
+        <ul class="nhsuk-header__navigation-list">
+          <li class="nhsuk-header__navigation-item">
+            <a class="nhsuk-header__navigation-link active" href="overview">
+              Overview
+            </a>
+          </li>
+          <li class="nhsuk-header__navigation-item">
+            <a class="nhsuk-header__navigation-link" href="requirements">
+              Knowledge and skills you need
+            </a>
+          </li>
+          <li class="nhsuk-header__navigation-item">
+            <a class="nhsuk-header__navigation-link" href="development">
+              Focus on a specialism
+            </a>
+          </li>
+          <li class="nhsuk-header__navigation-item">
+            <a class="nhsuk-header__navigation-link" href="#">
+              Promotion opportunities
+            </a>
+          </li>
+          <li class="nhsuk-header__navigation-item">
+            <a class="nhsuk-header__navigation-link" href="#">
+              Qualifications and courses
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <h2 class="govuk-heading-m">Overview</h2>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+<!--    <div class="govuk-grid-column-one-third">-->
+
+<!--      <img style="width: 100%;" src="/public/images/care-worker.jpg" alt="Department of Heath and Social Care">-->
+
+<!--    </div>-->
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h3 class="govuk-heading-s">What someone new to adult social care work does</h3>
+
+      <p>This role supports people who draw on care and support to be able to live their lives. This may involve aspects of personal care, support with everyday life or supporting them to live independently. This role could be across a variety of settings, delivering care and support in people’s own homes, in a residential setting or through supported independent living.</p>
+
+      <p>This role is the starting point for a career in social care with many opportunities to learn and develop your skills and knowledge, but also offers the opportunity to progress if that is what you want to do.</p>
+
+    </div>
+  </div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    {% set caseStudyHtml %}
+    <h2 class="govuk-heading-m">A new care worker: Laura</h2>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p>Laura is just starting her career in care and has joined a home care service. Her first task is to complete the company induction that details her role, where she fits and the organisational structure. Laura then undertakes the core and mandatory training necessary for her role and the people she will be supporting. She learns things like how to help people move safely and to assist with mobility issues. As she’ll be preparing food and drinks, she completes her food hygiene certificate. Laura also completes the eLearning knowledge elements of the Care Certificate.</p>
+        <p>After completing this initial learning, Laura has a supervision meeting with her manager to check how she’s progressing. Her manager arranges with Laura to spend a few weeks shadowing one of the team leaders so she can start to apply her new knowledge in practice with support from one of the team leaders. Over time, she starts to feel more confident and has another supervision meeting with her manager. Her manager confirms that she has completed all the minimum learning to practise safely, though there is still more for her to learn as she starts to provide care.</p>
+        <p>Laura is introduced to the people she’ll be supporting, who include a person with dementia and a person with diabetes. Laura’s employer arranges additional learning for her around those specific areas, which she completes. Laura reads the support plan for each of the people she has been told to support so she can get an idea of each of their needs, wants and preferences about how they want their support to be provided along with the kind of support they need. Laura also recognises that she’ll need to find out more from the people themselves when she visits their homes.</p>
+        <p>Laura consolidates her Care Certificate learning through on-the-job assessment and she achieves the new Care Certificate qualification in her current role. While she’s working on her qualification, Laura is assigned a new person to support who has an acquired brain injury. She works in a person-centred way so it’s important to her to understand the specific needs of the person she is supporting. She works with her employer to identify and undertake additional training about acquired brain injuries so she can better understand the kind of support the new individual will need.</p>
+      </div>
+
+    </div>
+    {% endset -%}
+
+    {% set valuesHtml %}
+    <h2 class="govuk-heading-m">
+    <p>The values that are important for everyone working in adult social care.</p>
+
+    {{ govukInsetText({
+    html: "<a href=\"#\">Read more about the sector values</a>.",
+    classes: "govuk-inset-text--green"
+    }) }}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Kind, compassionate and empathetic</th>
+            <td class="govuk-table__cell">Be kind, compassionate and empathetic so you can see things from my point of view, with concern for what matters to me, my wellbeing and health</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Honest, trustworthy and reliable</th>
+            <td class="govuk-table__cell">Be honest, trustworthy and reliable so you turn up when you say you will and provide the care and support we have agreed. Be discreet and confidential to build up a trusting relationship between us</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Respect</th>
+            <td class="govuk-table__cell">Treat me, the people around me and where I live with respect. Respect my values and my choices about the life I want to lead, and respect your role to value and uphold my goals</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Courageous and principled</th>
+            <td class="govuk-table__cell">Show strength, courage and commitment to speak out if something isn’t right or could be better, and to step back when I am exercising my choice and control. Act according to principles of human rights, equity and inclusion as well as my personalised care and support plan amending</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">See the whole person</th>
+            <td class="govuk-table__cell">Be curious and listen carefully to understand the unique person I am with strengths, abilities and aspirations. Make plans and decisions about me, with me</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Flexible, open and learning</th>
+            <td class="govuk-table__cell">Be reflective, open and non-judgmental so we can learn and adapt how we work together in the longer term</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Proud and positive</th>
+            <td class="govuk-table__cell">Take pride in your work and have a friendly, positive and proactive attitude so we can enjoy spending time together</td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+    {% endset -%}
+
+    {% set behavioursHtml %}
+    <h2 class="govuk-heading-m">Core behaviours</h2>
+    <p>Behaviours are the way that values are demonstrated in practice. These are the behaviours required to work as a Care worker. These are the things people must be doing in their job.</p>
+    <p>All behaviours should be delivered in the context of person-centred care and co-production.</p>
+    </p>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <ol class="govuk-list govuk-list--number govuk-list--spaced">
+          <li>Act in an ethical and professional manner in the workplace (professionalism).</li>
+          <li>Build and maintain positive relationships with colleagues and adults in a care setting (teamworking).</li>
+          <li>Take an organised and methodical approach to complete tasks in a timely manner (work ethic).</li>
+          <li>Take personal responsibility for developing knowledge and skills and continually seek to improve their performance (continuous improvement).</li>
+          <li>Seek to develop personal resilience and maintain wellbeing (strength equals courage).</li>
+          <li>Strengthen sustainable practices and challenge unsustainable practices (environmental responsibility).</li>
+          <li>Support an open culture where everyone - including colleagues and those with lived experience - is treated with dignity and respect, and fairly, without prejudice, bias or discrimination (human rights).</li>
+          <li>Reflect on ways in which they show compassion to individuals in an adult social care setting (compassion).</li>
+        </ol>
+      </div>
+    </div>
+
+
+    {% endset -%}
+
+    {{ govukTabs({
+      items: [
+        {
+          label: "Case study",
+          id: "past-day",
+          panel: {
+            html: caseStudyHtml
+          }
+        },
+        {
+          label: "Values",
+          id: "past-week",
+          panel: {
+            html: valuesHtml
+          }
+        },
+        {
+          label: "Behaviours",
+          id: "past-month",
+          panel: {
+            html: behavioursHtml
+          }
+        }
+      ]
+    }) }}
+
+      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
+        Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
+      </p>
+
+      <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+        <ul class="nhsuk-list nhsuk-pagination__list">
+<!--          <li class="nhsuk-pagination-item&#45;&#45;previous">-->
+<!--            <a class="nhsuk-pagination__link nhsuk-pagination__link&#45;&#45;prev" href="#">-->
+<!--              <span class="nhsuk-pagination__title">Previous</span>-->
+<!--              <span class="nhsuk-u-visually-hidden">:</span>-->
+<!--              <span class="nhsuk-pagination__page">Overview</span>-->
+<!--              <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">-->
+<!--                <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>-->
+<!--              </svg>-->
+<!--            </a>-->
+<!--          </li>-->
+          <li class="nhsuk-pagination-item--next">
+            <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="requirements">
+              <span class="nhsuk-pagination__title">Next</span>
+              <span class="nhsuk-u-visually-hidden">:</span>
+              <span class="nhsuk-pagination__page">Requirements of this role</span>
+              <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+  </div>
+</div>
+
+
+
+{% endblock %}
