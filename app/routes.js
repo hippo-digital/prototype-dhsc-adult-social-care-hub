@@ -44,6 +44,28 @@ router.post('/v2/:test/:role/switch', function (req, res) {
   }
 })
 
+class set {
+}
+
+router.get('/v2/a/care-worker/requirements2', function (req, res) {
+  // get the skills for this role
+  const skillsList = req.session.data['roleb']
+  // create an empty array to store a list of the categories
+  let skillCategories = [];
+
+  // loop through the skills object looking for a matches against the returned checked items
+  skillsList.forEach(item => {
+    if (item.category && !skillCategories.includes(item.category)) {
+      skillCategories.push(item.category);
+    }
+  });
+
+  console.log("Categories: " + skillCategories)
+
+  return res.render('v2/a/care-worker/requirements2', {
+    'categories': skillCategories
+  })
+})
 
 function devModeRoute(req, res, next) {
   if (!req.session.data['devMode']) {

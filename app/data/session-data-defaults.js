@@ -1,5 +1,5 @@
 module.exports = {
-  "Role A": [
+  "rolea": [
     {
       "role": "New to care",
       "category": "Corporate induction, including understanding your role and personal development",
@@ -307,7 +307,7 @@ module.exports = {
       "skill": "safeguard children"
     }
   ],
-  "Role B": [
+  "roleb": [
     {
       "role": "Care or support worker",
       "category": "Ways of working",
@@ -657,7 +657,7 @@ module.exports = {
       "skill": "know how to manage your own stress and anxiety"
     }
   ],
-  "Role C": [
+  "rolec": [
     {
       "role": "Supervisor or leader",
       "category": "Lead communication in adult care settings",
@@ -881,7 +881,7 @@ module.exports = {
       "skill": "Complete Oliver McGowan Mandatory Training on Learning Disability and Autism: Tier 1 (if not done so already). Tier 2 can be undertaken in settings providing direct care to individuals with autism or a learning disability."
     }
   ],
-  "Role D": [
+  "roled": [
     {
       "role": "Practice leader",
       "category": "Practice leadership",
