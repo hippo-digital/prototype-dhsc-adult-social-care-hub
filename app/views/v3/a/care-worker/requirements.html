@@ -48,6 +48,7 @@
               Areas of specialism
             </a>
           </li>
+
           <li class="nhsuk-header__navigation-item">
             <a class="nhsuk-header__navigation-link" href="#">
               Promotion opportunities
@@ -61,7 +62,7 @@
         </ul>
       </nav>
 
-      <h2 class="govuk-heading-m">Knowledge and skills you need</h2>
+      <h2 class="govuk-heading-m">Knowledge and skills of this role</h2>
 
     </div>
   </div>
@@ -74,22 +75,65 @@
     </div>
   </div>
 
-  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+<!--  <hr class="govuk-section-break govuk-section-break&#45;&#45;m govuk-section-break&#45;&#45;visible">-->
 
-  <div class="govuk-grid-row">
+  <div class="govuk-grid-row govuk-tabs--right">
     <div class="govuk-grid-column-one-third">
 
-      <ul class="nhsuk-list govuk-list--spaced govuk-!-margin-top-4">
-        {% for i in range(0, categories.length) -%}
-        <li><a href="#">{{ categories[i] }}</a></li>
-        {%- endfor %}
+<!--      <ul class="nhsuk-list govuk-list&#45;&#45;spaced govuk-!-margin-top-4 govuk-tabs__list">-->
+<!--        {% for i in range(0, categories.length) -%}-->
+<!--        <li class="govuk-tabs__list-item govuk-tabs__list-item&#45;&#45;right govuk-tabs__list-item&#45;&#45;selected">-->
+<!--          <a href="#" class="govuk-tabs__tab">{{ categories[i] }}</a>-->
+<!--        </li>-->
+<!--        {%- endfor %}-->
+<!--      </ul>-->
+
+      <ul class="nhsuk-list govuk-list--spaced govuk-tabs__list govuk-tabs__list--right">
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+          <a href="#" class="govuk-tabs__tab">Ways of working</a>
+        </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Reduce the likelihood of abuse</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Mental capacity and restrictive practice</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right govuk-tabs__list-item--selected">
+        <a href="#" class="govuk-tabs__tab">Duty of care</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Effective communication</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Handling information</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Person-centred practice</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Choice and independence</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Health and wellbeing</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Equality, diversity, inclusion and human rights</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Health and safety (general)</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Infection prevention and control</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Health and safety (topics)</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Continuous development</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+        <a href="#" class="govuk-tabs__tab">Personal wellbeing</a>
+      </li>
       </ul>
+
     </div>
 
+
     <div class="govuk-grid-column-two-thirds">
-      <h2 class="govuk-heading-m govuk-!-margin-top-4">Duty of care</h2>
-      <p>Your responsibility to ensure the health and safety of the people you work with.</p>
-   
+      <div class="govuk-tabs__panel govuk-tabs__panel--right">
+      <h2 class="govuk-heading-l">Duty of care</h2>
+        <p class="nhsuk-lede-text">Your responsibility to ensure the health and safety of the people you work with.</p>
+      <p>You have a duty of care towards individuals receiving care and support in your workplace and to other workers.</p>
+      <p>This means promoting well-being and making sure people are kept safe from harm, abuse and injury. </p>
+      <p>As part of your duty of care, you should pass on any concerns about well-being or safety. </p>
+      <p>It’s a legal requirement, and you can’t choose whether to do it.</p>
+      <p> Duty of care is embedded in the codes of conduct and professional practice.</p>
 
       <details class="govuk-details">
         <summary class="govuk-details__summary">
@@ -120,6 +164,7 @@
 
 
     </div>
+  </div>
   </div>
 
 

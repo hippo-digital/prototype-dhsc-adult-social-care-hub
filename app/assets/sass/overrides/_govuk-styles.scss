@@ -490,3 +490,37 @@ a:hover, .govuk-link:hover {
   color: govuk-colour("white");
   padding: 32px 0;
 }
+
+.govuk-tabs--right {
+  display: flex;
+}
+
+.govuk-tabs__list--right {
+  border-bottom: none !important;
+}
+
+
+.govuk-tabs__list-item--right {
+  text-align: left !important;
+  border-left: 5px solid #F2FBFA !important;
+  border-right: 0px solid #F2FBFA !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  margin-left: -5px !important;
+  margin-right: 5px !important;
+  width: 100% !important;
+}
+
+.govuk-tabs__list-item--right.govuk-tabs__list-item--selected {
+  margin-top: 5px;
+  border: 1px solid #99DED4 !important;
+  border-right: 1px solid #FFF !important;
+  margin-left: 0px !important;
+  margin-right: -10px !important;
+}
+
+.govuk-tabs__panel--right {
+  border: 1px solid #99DED4 !important;
+  margin-left: -31px !important;
+  height: 100% !important;
+}
