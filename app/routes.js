@@ -77,7 +77,7 @@ router.get('/v2/a/care-worker/requirements2', function (req, res) {
   })
 })
 
-router.get('/v3/a/care-worker/requirements2', function (req, res) {
+router.get('/v3/a/care-worker/requirements', function (req, res) {
   // get the skills for this role
   const skillsList = req.session.data['roleb']
   // create an empty array to store a list of the categories
@@ -92,7 +92,7 @@ router.get('/v3/a/care-worker/requirements2', function (req, res) {
 
   console.log("Categories: " + skillCategories)
 
-  return res.render('v3/a/care-worker/requirements2', {
+  return res.render('v3/a/care-worker/requirements', {
     'categories': skillCategories
   })
 })

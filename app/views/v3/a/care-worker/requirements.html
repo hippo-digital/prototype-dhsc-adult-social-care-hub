@@ -67,274 +67,67 @@
   </div>
 
   <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p>As a care or support worker in adult social care you need to have the right knowledge and skills to do your job.</p>
+      <p>Knowledge refers to what you need to understand to be able to do a job. Skills show you can act on this knowledge in the work you do.</p>
+
+    </div>
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+
+      <ul class="nhsuk-list govuk-list--spaced govuk-!-margin-top-4">
+        {% for i in range(0, categories.length) -%}
+        <li><a href="#">{{ categories[i] }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
 
     <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-m govuk-!-margin-top-4">Duty of care</h2>
+      <p>You have a duty of care towards individuals receiving care and support in your workplace and to other workers.</p>
+      <p>This means promoting well-being and making sure people are kept safe from harm, abuse and injury. </p>
+      <p>As part of your duty of care, you should pass on any concerns about well-being or safety. </p>
+      <p>It’s a legal requirement, and you can’t choose whether to do it.</p>
+      <p> Duty of care is embedded in the codes of conduct and professional practice.</p>
 
-      <p>This section outlines the knowledge and skills someone working in role category B should know and the things they should be able to do in their job.</p>
-      <p>Knowledge refers to what someone needs to understand to undertake the responsibilities of the role. Skills are the ability to apply that knowledge in practice.</p>
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Detailed knowledge and skills breakdown
+            </span>
+        </summary>
+        <div class="govuk-details__text">
+          <ul class="nhsuk-list  nhsuk-list--tick">
+
+            {% for j in range(0, data.roleb.length) -%}
+
+            {% if data.roleb[j].category === categories[3] %}
+
+            <li><svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
+              <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+            </svg>{{ data.roleb[j].skill }}</li>
+
+            {% endif %}
+
+            {%- endfor %}
+
+          </ul>
+        </div>
+      </details>
+
+      <h3 class="govuk-heading-s">Training opportunities</h3>
 
 
     </div>
   </div>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
-    {% set overviewHtml %}
 
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-heading-m">Minimum knowledge and skills in role category B</h2>
-
-        {{ govukInsetText({
-        html: "<p>Baseline knowledge and skills brought through from <a href=\"../new-to-care/requirements\">role category A (new to care)</a>.</p>",
-        classes: "govuk-inset-text--green"
-        }) }}
-
-        <ol class="govuk-list govuk-list--number">
-
-          <li>
-            <h2 class="govuk-heading-m">Ways of working</h2>
-            <p><strong>You should:</strong>
-            <ul class="nhsuk-list  nhsuk-list--tick">
-              <li><svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
-                <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
-              </svg>understand agreed ways of working</li>
-              <li><svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
-                <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
-              </svg>work in ways that are agreed with the employer</li>
-              <li><svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
-                <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
-              </svg>understand working relationships in care settings</li>
-              <li><svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
-                <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
-              </svg>work in partnership with others</li>
-            </ul>
-          </li>
-
-          <li>
-            <h2 class="govuk-heading-m">Reduce the likelihood of abuse</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>understand the national and local context of safeguarding and protection from abuse and neglect</li>
-              <li>know how to recognise signs of abuse and neglect</li>
-              <li>understand ways to reduce the likelihood of abuse or neglect occurring</li>
-              <li>know how to respond to suspected or disclosed abuse and neglect</li>
-              <li>know how to recognise and report unsafe practices</li>
-              <li>understand the principles of online safety</li>
-            </ul>
-          </li>
-
-          <li>
-            <h2 class="govuk-heading-m">Mental capacity and restrictive practice</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>understand the principles of mental capacity</li>
-              <li>understand the application of the principles of mental capacity and consent</li>
-              <li>understand restrictive practices</li>
-              <li>understand what is meant by the term Deprivation of Liberty Safeguards</li>
-            </ul>
-          </li>
-
-          <li>
-            <h2 class="govuk-heading-m">Duty of care</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>understand how duty of care contributes to safe practice</li>
-              <li>know how to address conflicts or dilemmas that may arise between an individual’s rights and the duty of care</li>
-              <li>know how to respond to concerns and complaints</li>
-              <li>know how to recognise and respond to adverse events, incidents, errors and near misses</li>
-            </ul>
-          </li>
-
-          <li>
-            <h2 class="govuk-heading-m">Effective communication</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>understand why effective communication is important in the work setting</li>
-              <li>understand the variety in people’s communication needs and preferences</li>
-              <li>be able to communicate effectively with others</li>
-              <li>meet the communication and language needs, wishes and preferences of individuals</li>
-              <li>understand the role of independent advocacy services in supporting individuals to communicate their wishes, needs and preferences</li>
-              <li>understand confidentiality in care settings</li>
-            </ul>
-          </li>
-
-          <li>
-            <h2 class="govuk-heading-m">Handling information</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>understand requirements for handling information in care settings</li>
-              <li>implement good practice in handling information</li>
-            </ul>
-          </li>
-
-          <li>
-          <h2 class="govuk-heading-m">Person-centred practice</h2>
-          <p><strong>You should:</strong>
-          <ul class="govuk-list govuk-list--bullet">
-            <li>work in a person-centred way</li>
-          <li>understand the application of person-centred practices in care settings</li>
-          <li>understand the importance of individuals’ relationships</li>
-          </ul>
-            </li>
-
-            <li>
-              <h2 class="govuk-heading-m">Choice and independence</h2>
-              <p><strong>You should:</strong>
-              <ul class="govuk-list govuk-list--bullet">
-                <li>promote individuals’ rights to make choices</li>
-              <li>promote individuals’ independence</li>
-              <li>understand the role of risk assessments in promoting a person-centred approach, choice and independence</li>
-            </ul>
-
-                </li>
-
-
-            <li>
-                  <h2 class="govuk-heading-m">Health and wellbeing</h2>
-                  <p><strong>You should:</strong>
-                  <ul class="govuk-list govuk-list--bullet">
-                    <li>understand the importance of individuals’ wellbeing</li>
-              <li>know how to monitor individuals’ health</li>
-              <li>be able to assess and respond to changes in an individual’s health and wellbeing</li>
-              <li>promote individuals’ health and wellbeing</li>
-            </ul>
-                    </li>
-
-            <li>
-                      <h2 class="govuk-heading-m">Equality, diversity, inclusion and human rights</h2>
-                      <p><strong>You should:</strong>
-                      <ul class="govuk-list govuk-list--bullet">
-                        <li>understand influences on working practices to promote equality, diversity, inclusion and human rights</li>
-              <li>understand the importance of equality, diversity, inclusion and human rights within your work setting</li>
-              <li>know how to promote equality, diversity, inclusion and human rights</li>
-              <li>work in an inclusive way</li>
-            </ul>
-                        </li>
-
-            <li>
-                          <h2 class="govuk-heading-m">Health and safety (general)</h2>
-                          <p><strong>You should:</strong>
-                          <ul class="govuk-list govuk-list--bullet">
-                            <li>understand your own responsibilities and the responsibilities of others relating to health and safety</li>
-              <li>understand procedures for responding to accidents and sudden illness</li>
-              <li>carry out your own responsibilities for health and safety</li>
-            </ul>
-                            </li>
-
-            <li>
-                              <h2 class="govuk-heading-m">Infection prevention and control</h2>
-                              <p><strong>You should:</strong>
-                              <ul class="govuk-list govuk-list--bullet">
-                                <li>understand how to prevent and control the spread of infection</li>
-              <li>prevent and control the spread of infection</li>
-            </ul>
-                                </li>
-
-            <li>
-                                  <h2 class="govuk-heading-m">Health and safety (topics)</h2>
-                                  <p><strong>You should:</strong>
-                                  <ul class="govuk-list govuk-list--bullet">
-                                    <li>move and handle equipment and other objects safely</li>
-              <li>handle hazardous substances and materials safely</li>
-              <li>promote fire safety in the work setting</li>
-              <li>implement security measures in the work setting</li>
-            </ul>
-                                    </li>
-
-
-            <li>
-                                      <h2 class="govuk-heading-m">Continuous development</h2>
-                                      <p><strong>You should:</strong>
-                                      <ul class="govuk-list govuk-list--bullet">
-                                        <li>know what is required to be competent in your own role</li>
-              <li>demonstrate commitment to own development</li>
-              <li>understand the value of reflective practice</li>
-              <li>use reflective practice to improve ways of working</li>
-              <li>develop leadership behaviours</li>
-            </ul>
-                                        </li>
-
-            <li>
-              <h2 class="govuk-heading-m">Personal wellbeing</h2>
-                                          <p><strong>You should:</strong>
-              <ul class="govuk-list govuk-list--bullet">
-                                            <li>understand your own wellbeing</li>
-              <li>understand the importance of maintaining and improving your own wellbeing</li>
-              <li>know how to maintain and improve your own wellbeing</li>
-              <li>know how to manage your own stress and anxiety</li>
-            </ul>
-                                            </li>
-            <li>
-              <h2 class="govuk-heading-m">Oliver McGowan training</h2>
-              <ul class="govuk-list govuk-list--bullet">
-              <li>Complete Oliver McGowan Mandatory Training on Learning Disability and Autism: Tier 1 (if not done so already). Tier 2 can be undertaken in settings providing direct care to individuals with autism or a learning disability.</li>
-              </ul>
-            </li>
-
-
-
-        </ol>
-
-      </div>
-    </div>
-    {% endset -%}
-
-    {% set progressionHtml %}
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-          <h2 class="govuk-heading-m">Progression</h2>
-          <p>Moving your practice to a Level 3 standard, potentially through a diploma or apprenticeship route - see the ‘Knowledge and skills breakdown for role category B’ section below for more detail. You can also complete setting-specific areas of practice through the optional units in the Level 3 Diploma in Adult Care or an apprenticeship.</p>
-
-          <h2 class="govuk-heading-m">Diversity of practice: setting-specific training</h2>
-          <p>As part of this role category, you may also need to complete setting-specific training, such as completing dementia training when working in a dementia care setting.</p>
-          <p>We expect organisations to define their own setting-specific training based on the needs of the people drawing on care and support. Some recommendations for learning can be found in the section on ‘Specific areas of practice (can do) and suggested learning opportunities or resources’ below.</p>
-        </div>
-      </div>
-    {% endset -%}
-
-    {% set digitalHtml %}
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-heading-m">Digital skills</h2>
-        <p>As part of your knowledge and skill development, you can also to work to level 1 (digital skills for all) of the
-          <a href="https://beta.digitisingsocialcare.co.uk/digital-skills">Adult Social Care Digital Skills Framework</a>.</p>
-
-        <p>Within this role category, we would expect you to show all level 1 competencies.</p>
-      </div>
-    </div>
-
-
-    {% endset -%}
-
-    {{ govukTabs({
-      items: [
-        {
-          label: "Skills breakdown",
-          id: "past-day",
-          panel: {
-            html: overviewHtml
-          }
-        },
-        {
-          label: "Progression",
-          id: "progression",
-          panel: {
-            html: progressionHtml
-          }
-        },
-        {
-          label: "Digital Skills",
-          id: "past-month",
-          panel: {
-            html: digitalHtml
-          }
-        }
-      ]
-    }) }}
+      <div class="govuk-grid-column-full">
 
       <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
         Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
