@@ -311,6 +311,7 @@ a:visited {
 .nhsuk-card--topic .nhsuk-card__content--primary .nhsuk-icon {
   top: unset;
   bottom: 25px;
+  pointer-events: none;
 }
 
 .nhsuk-card--topic:hover {
