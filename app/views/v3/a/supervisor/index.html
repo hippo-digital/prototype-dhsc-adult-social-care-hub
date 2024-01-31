@@ -48,11 +48,11 @@ Supervisor or leader: Overview
               Areas of specialism
             </a>
           </li>
-          <li class="nhsuk-header__navigation-item">
-            <a class="nhsuk-header__navigation-link" href="#">
-              Promotion opportunities
-            </a>
-          </li>
+<!--          <li class="nhsuk-header__navigation-item">-->
+<!--            <a class="nhsuk-header__navigation-link" href="#">-->
+<!--              Promotion opportunities-->
+<!--            </a>-->
+<!--          </li>-->
           <li class="nhsuk-header__navigation-item">
             <a class="nhsuk-header__navigation-link" href="#">
               Qualifications and courses
@@ -90,14 +90,33 @@ Supervisor or leader: Overview
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
     {% set caseStudyHtml %}
-    <h2 class="govuk-heading-m">Role category C persona: Poonam</h2>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <p>Poonam has worked in social care since leaving school, and now is a senior care and support worker within a supported living setting with responsibility for both advanced care and leading and managing a team of care and support workers. She completed her Lead Adult Care Worker apprenticeship 2 years ago, which included a Level 3 Diploma in Care.</p>
-        <p>In her role, she has responsibility for the performance management and leadership of her team, and has to mentor more junior care and support workers and coach her team to provide quality care and support. In her development plan with her manager, she identified the need to develop skills around supervision, coaching and mentoring as well as developing her interest in leadership skills.</p>
-        <p>She is thinking about her future career opportunities now. She has the experience and knowledge to be able to concentrate on a specialist area of care, developing more in-depth knowledge and skills to support people with a range of support needs, or she could choose to develop her management and leadership skills and aim to become a registered manager. Both options provide opportunities to advance her career and to develop her learning and skills further.</p>
-        <p>Poonam will use her annual appraisal as an opportunity to discuss these options with her manager and look at where she might develop. Each option will provide her with a challenge in terms of her development, but Poonam enjoys learning and likes the motivation of supporting not only those who use care services but also her colleagues who are developing in their own roles and seeing them gain more skills.</p>
-        <p>Whichever path Poonam chooses, she will be making a difference to people, supporting them to live their best lives, something that gives her great job satisfaction.</p>
+        <h2 class="govuk-heading-m">What else you can do</h2>
+        <p>Other options for someone doing a care or support worker job role are to:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href=\"development">specialise in an area of practice</a> like autism or dementia</li>
+          <li>do more as a care or support worker by doing <a href=\"">learning and training</a></li>
+          <li>do a more senior role</li>
+        </ul>
+
+        <h2 class="govuk-heading-m">Other job roles to consider</h2>
+        <p>Other job roles you might consider are:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Supervisor or leader</li>
+          <li>Practice leader</li>
+          <li>Deputy manager</li>
+        </ul>
+
+        <div class="nhsuk-action-link govuk-!-margin-top-8">
+          <a class="nhsuk-action-link__link" href="#">
+            <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+            </svg>
+            <span class="nhsuk-action-link__text">Search for supervisor or leader jobs</span>
+          </a>
+        </div>
       </div>
     </div>
     {% endset -%}
@@ -177,7 +196,7 @@ Supervisor or leader: Overview
     {{ govukTabs({
       items: [
         {
-          label: "Case study",
+          label: "Career progression",
           id: "past-day",
           panel: {
             html: caseStudyHtml
@@ -200,6 +219,20 @@ Supervisor or leader: Overview
       ]
     }) }}
 
+      <h2 class="govuk-heading-m">Case study - Poonam</h2>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <p>Poonam has worked in social care since leaving school, and now is a senior care and support worker within a supported living setting with responsibility for both advanced care and leading and managing a team of care and support workers. She completed her Lead Adult Care Worker apprenticeship 2 years ago, which included a Level 3 Diploma in Care.</p>
+          <p>In her role, she has responsibility for the performance management and leadership of her team, and has to mentor more junior care and support workers and coach her team to provide quality care and support. In her development plan with her manager, she identified the need to develop skills around supervision, coaching and mentoring as well as developing her interest in leadership skills.</p>
+          <p>She is thinking about her future career opportunities now. She has the experience and knowledge to be able to concentrate on a specialist area of care, developing more in-depth knowledge and skills to support people with a range of support needs, or she could choose to develop her management and leadership skills and aim to become a registered manager. Both options provide opportunities to advance her career and to develop her learning and skills further.</p>
+          <p>Poonam will use her annual appraisal as an opportunity to discuss these options with her manager and look at where she might develop. Each option will provide her with a challenge in terms of her development, but Poonam enjoys learning and likes the motivation of supporting not only those who use care services but also her colleagues who are developing in their own roles and seeing them gain more skills.</p>
+          <p>Whichever path Poonam chooses, she will be making a difference to people, supporting them to live their best lives, something that gives her great job satisfaction.</p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+<!--          <img style="width: 100%;" src="/public/images/care-worker-2.jpg" alt="Department of Heath and Social Care">-->
+        </div>
+      </div>
+
       <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
         Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
       </p>
@@ -220,7 +253,7 @@ Supervisor or leader: Overview
             <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="requirements">
               <span class="nhsuk-pagination__title">Next</span>
               <span class="nhsuk-u-visually-hidden">:</span>
-              <span class="nhsuk-pagination__page">Requirements of this role</span>
+              <span class="nhsuk-pagination__page">Knowledge and skills</span>
               <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                 <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
               </svg>

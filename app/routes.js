@@ -110,6 +110,26 @@ router.get('/v3/a/care-worker/requirements', function (req, res) {
   })
 })
 
+router.get('/v3/a/supervisor/requirements', function (req, res) {
+  // get the skills for this role
+  const skillsList = req.session.data['rolec']
+  // create an empty array to store a list of the categories
+  let skillCategories = [];
+
+  // loop through the skills object looking for a matches against the returned checked items
+  skillsList.forEach(item => {
+    if (item.category && !skillCategories.includes(item.category)) {
+      skillCategories.push(item.category);
+    }
+  });
+
+  console.log("Categories: " + skillCategories)
+
+  return res.render('v3/a/supervisor/requirements', {
+    'categories': skillCategories
+  })
+})
+
 function devModeRoute(req, res, next) {
   if (!req.session.data['devMode']) {
     console.log('no data found')
