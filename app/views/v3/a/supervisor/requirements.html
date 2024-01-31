@@ -76,166 +76,100 @@ Supervisor or leader: Overview
     </div>
   </div>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
 
-    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+<div class="govuk-grid-row govuk-tabs--right">
+  <div class="govuk-grid-column-one-third">
 
-    {% set overviewHtml %}
+<!--          <ul class="nhsuk-list govuk-list&#45;&#45;spaced govuk-!-margin-top-4 govuk-tabs__list">-->
+<!--            {% for i in range(0, categories.length) -%}-->
+<!--            <li class="govuk-tabs__list-item govuk-tabs__list-item&#45;&#45;right govuk-tabs__list-item&#45;&#45;selected">-->
+<!--              <a href="#" class="govuk-tabs__tab">{{ categories[i] }}</a>-->
+<!--            </li>-->
+<!--            {%- endfor %}-->
+<!--          </ul>-->
 
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-heading-m">Knowledge and skills for a supervisor or leader</h2>
+    <ul class="nhsuk-list govuk-list--spaced govuk-!-margin-top-4 govuk-tabs__list">
+      <li class="govuk-tabs__list-item govuk-tabs__list-item--right govuk-tabs__list-item--selected">
+        <a href="#" class="govuk-tabs__tab">Lead communication in adult care settings</a>
+      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+      <a href="#" class="govuk-tabs__tab">Understand how to mentor others</a>
+    </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+      <a href="#" class="govuk-tabs__tab">Understand how to coach others</a>
+    </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+      <a href="#" class="govuk-tabs__tab">Lead in supervision in adult care</a>
+    </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+      <a href="#" class="govuk-tabs__tab">Lead in learning and development in adult care</a>
+    </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+      <a href="#" class="govuk-tabs__tab">Lead inclusive practice in adult care settings</a>
+    </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+      <a href="#" class="govuk-tabs__tab">Lead personal development and wellbeing in adult social care settings</a>
+    </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
+      <a href="#" class="govuk-tabs__tab">Oliver McGowan training</a>
+    </li>
+    </ul>
+  </div>
 
-        <ol class="govuk-list govuk-list--number">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-tabs__panel govuk-tabs__panel--right nhsuk-u-padding-left-5">
+      <h2 class="govuk-heading-l">Lead communication in adult care settings</h2>
+      <p class="nhsuk-lede-text">Your responsibility to ensure the health and safety of the people you work with.</p>
+      <p>This means promoting well-being and making sure people are kept safe from harm, abuse and injury. </p>
+      <p>As part of your duty of care, you should pass on any concerns about well-being or safety. </p>
+      <p>It’s a legal requirement, and you can’t choose whether to do it.</p>
 
-          <li>
-            <h2 class="govuk-heading-s">Lead communication in adult care settings</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>understand communication needs and the factors affecting them</li>
-              <li>understand how to support the use of assistive technology to enhance communication</li>
-              <li>be able to interact with individuals</li>
-              <li>understand the importance of confidentiality in interactions with individuals</li>
-              <li>understand how to manage conflict in the workplace through effective communication</li>
-            </ul>
-          </li>
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Detailed knowledge and skills breakdown
+            </span>
+        </summary>
+        <div class="govuk-details__text">
+          <ul class="nhsuk-list  nhsuk-list--tick">
 
-          <li>
-            <h2 class="govuk-heading-s">Understand how to mentor others</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>understand the role that a senior care or support worker or team leader has in relation to mentoring others</li>
-              <li>understand the purpose of mentoring in adult care and the differences it has from coaching</li>
-              <li>be able to develop a mentoring relationship with the mentee</li>
-              <li>work in partnership with the mentee to set targets and review progress towards those targets</li>
-              <li>work in partnership with the mentee to review progress towards targets and when completed, set new ones</li>
-              <li>mentor others in the delivery of adult social care</li>
-            </ul>
-          </li>
+            {% for j in range(0, data.roleb.length) -%}
 
-          <li>
-            <h2 class="govuk-heading-s">Understand how to coach others</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>understand the role that a senior care or support worker or team leader has in relation to coaching others</li>
-              <li>understand the purpose of coaching in adult care and the differences it has from mentoring</li>
-              <li>be able to develop a coaching relationship with the person receiving coaching</li>
-              <li>work in partnership with the person being coached to set targets and review progress towards those targets</li>
-              <li>work in partnership with the person being coached to review progress towards targets and, when completed, set new ones</li>
-              <li>coach others in the delivery of adult social care</li>
-            </ul>
-          </li>
+            {% if data.roleb[j].category === categories[3] %}
 
-          <li>
-            <h2 class="govuk-heading-s">Lead in supervision in adult care</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>understand the purpose of professional supervision in adult care settings</li>
-              <li>understand the process and practice of supervision, and how it can be used to support individuals</li>
-              <li>understand signs that may raise concern and how to support the health and wellbeing of team members within the scope of your role as a senior care or support worker or team leader</li>
-              <li>be able to provide regular professional supervision</li>
-            </ul>
-          </li>
+            <li><svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
+              <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+            </svg>{{ data.roleb[j].skill }}</li>
 
-          <li>
-            <h2 class="govuk-heading-s">Lead in learning and development in adult care</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>recognise the importance of learning and development within adult care</li>
-              <li>understand and apply the principles of learning and development in adult care</li>
-              <li>understand how to assess the learning and development that your team might need</li>
-              <li>understand how to plan and implement a programme of learning and development</li>
-              <li>understand how to evaluate the learning and development completed</li>
-              <li>understand the value in reflective practice and how it can support learning and development</li>
-              <li>lead others in using reflective practice to support their learning and development</li>
-            </ul>
-          </li>
+            {% endif %}
 
-          <li>
-            <h2 class="govuk-heading-s">Lead inclusive practice in adult care settings</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>understand equality, diversity and inclusion</li>
-              <li>understand how inclusive practice supports equality and diversity</li>
-              <li>understand how to promote equality, diversity and inclusion</li>
-              <li>be able to work in a way that supports equality and diversity</li>
-            </ul>
-          </li>
+            {%- endfor %}
 
-          <li>
-            <h2 class="govuk-heading-s">Lead personal development and wellbeing in adult social care settings</h2>
-            <p><strong>You should:</strong>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>be able to apply basic counselling skills to support your team</li>
-              <li>be able to apply mental health first aid</li>
-              <li>be able to train the trainer (by completing Train the Trainer learning)</li>
-              <li>be able to assess learning (by completing assessor training)</li>
-            </ul>
-          </li>
-
-          <li>
-            <h2 class="govuk-heading-m">Oliver McGowan training</h2>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>Complete Oliver McGowan Mandatory Training on Learning Disability and Autism: Tier 1 (if not done so already). Tier 2 can be undertaken in settings providing direct care to individuals with autism or a learning disability.</li>
-            </ul>
-          </li>
-
-        </ol>
-
-      </div>
-    </div>
-    {% endset -%}
-
-    {% set progressionHtml %}
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-          <h2 class="govuk-heading-m">Progression</h2>
-          <p>Progressing to develop additional knowledge and skills at this level - see the ‘Knowledge and skills breakdown for role category C’ section below for more detail.</p>
-          <p>ou can also progress further to develop a specific area of practice (develop a practice specialism).</p>
+          </ul>
         </div>
-      </div>
-    {% endset -%}
+      </details>
 
-    {% set digitalHtml %}
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-heading-m">Digital skills</h2>
-        <p>As part of your knowledge and skill development, you can also to work to level 1 (digital skills for all) of the
-          <a href="https://beta.digitisingsocialcare.co.uk/digital-skills">Adult Social Care Digital Skills Framework</a>.</p>
+      <h3 class="govuk-heading-m govuk-!-margin-top-8 govuk-!-margin-bottom-6">Training opportunities</h3>
 
-        <p>Within this role category, we would expect you to show all level 1 competencies. Some level 2 competencies (digital skills to go further) could also be utilised within this role category.</p>
-      </div>
+      <ul class="govuk-grid-row nhsuk-card-group">
+
+        <li class="govuk-grid-column-full nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+            <div class="nhsuk-card__content nhsuk-card__content--secondary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-s">
+                <a class="nhsuk-card__link" href="personal-name">Supporting Activity Provision in Social Care</a>
+              </h2>
+              <ul class="govuk-list">
+                <li><span class="govuk-body govuk-!-font-weight-bold">Provider:</span> OCN London</li>
+                <li>
+                  <span class="govuk-body govuk-!-font-weight-bold">Duration:</span>
+                  <span id="start-date">80 hours</span>
+                </li>
+                <li><span class="govuk-body govuk-!-font-weight-bold">Location:</span> Online</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+
     </div>
-
-
-    {% endset -%}
-
-    {{ govukTabs({
-      items: [
-        {
-          label: "Skills breakdown",
-          id: "past-day",
-          panel: {
-            html: overviewHtml
-          }
-        },
-        {
-          label: "Progression",
-          id: "progression",
-          panel: {
-            html: progressionHtml
-          }
-        },
-        {
-          label: "Digital Skills",
-          id: "past-month",
-          panel: {
-            html: digitalHtml
-          }
-        }
-      ]
-    }) }}
+  </div>
+</div>
 
     <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
       Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
@@ -247,7 +181,7 @@ Supervisor or leader: Overview
           <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="">
             <span class="nhsuk-pagination__title">Previous</span>
             <span class="nhsuk-u-visually-hidden">:</span>
-            <span class="nhsuk-pagination__page">Overview</span>
+            <span class="nhsuk-pagination__page">About this role</span>
             <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
               <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>
             </svg>
