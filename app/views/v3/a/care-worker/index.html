@@ -91,37 +91,55 @@
 
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-    {% set caseStudyHtml %}
+    {% set progressionHtml %}
 
     <h2 class="govuk-heading-m">What else you can do </h2>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
-    <p>Other options for someone doing a care or support worker job role are to:</p>
-    <ul class="govuk-list govuk-list--bullet">
-      <li><a href=\"development">specialise in an area of practice</a> like autism or dementia</li>
-      <li>do more as a care or support worker by doing <a href=\"">learning and training</a></li>
-      <li>do a more senior role</li>
-      </ul>
+        <p>Other options for someone doing a care or support worker job role are to:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href=\"development">specialise in an area of practice</a> like autism or dementia</li>
+          <li>do more as a care or support worker by doing <a href=\"">learning and training</a></li>
+          <li>do a more senior role</li>
+        </ul>
 
-    <h2 class="govuk-heading-m">Other job roles to consider</h2>
-    <p>Other job roles you might consider are:</p>
-    <ul class="govuk-list govuk-list--bullet">
-      <li>Supervisor or leader</li>
-      <li>Practice leader</li>
-      <li>Deputy manager</li>
-    </ul>
+        <h2 class="govuk-heading-m">Other job roles to consider</h2>
+        <p>Other job roles you might consider are:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Supervisor or leader</li>
+          <li>Practice leader</li>
+          <li>Deputy manager</li>
+        </ul>
 
-    <div class="nhsuk-action-link">
-      <a class="nhsuk-action-link__link" href="#">
-        <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
-          <path d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-        </svg>
-        <span class="nhsuk-action-link__text">Search for care worker jobs</span>
-      </a>
+        <div class="nhsuk-action-link">
+          <a class="nhsuk-action-link__link" href="#">
+            <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+            </svg>
+            <span class="nhsuk-action-link__text">Search for care worker jobs</span>
+          </a>
+        </div>
+      </div>
     </div>
+    {% endset -%}
+
+    {% set caseStudyHtml %}
+
+    <h2 class="govuk-heading-m">Case study - Paul</h2>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p>Paul recognises the value in the previous training and development he has done during his time as a care worker and begins to think about what further learning and development he wants to complete. During his time as a care worker, he has done his Care Certificate qualification and previously chose to develop his skills and knowledge in dementia care to better support the people living in the care home.</p>
+        <p>Paul has his year one appraisal and speaks to his manager about what his next steps could be as part of his learning and development. His manager recommends the Level 3 Diploma in Adult Care as a way for him to further grow his knowledge and skills and, after agreeing with Paul that he wants to do it, makes arrangements for him to start this qualification.</p>
+        <p>His training provider maps his previous learning that he has done against the Level 3 qualification he wants to undertake so that he doesn’t have to repeat any previous learning. He is given an individual learning plan that he will follow until he completes the qualification. He chooses a number of optional units for himself that he can use within his specific practice and setting.</p>
+        <p>As Paul works through completing the qualification in his current role, he consolidates his learning embedding it into his practice and showing how he is delivering high-quality person-centred care. In Paul’s ongoing role as a care worker, he will maintain continous professional development by undertaking learning and development which he can use to support the people living in the care home.</p>
+        <p>Paul has recently received additional training to carry out a delegated healthcare activity for one of the people he supports. The healthcare activity has been delegated to him by a Registered Nurse from the local community nursing team who remains accountable for the decision to delegate in the person’s best interest, even though it is Paul who is carrying out the activity.  He is carrying out Percutaneous Endoscopic Gastrostomy (PEG) feeds, by following the Care Plan and the training he has been given, ensuring he continues to deliver safe and person-centred care. The delegated healthcare and clinical safety is monitored by the Registered Nurse who retains accountability and responsibility of the activity.</p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <img style="width: 100%;" src="/public/images/care-worker-2.jpg" alt="Department of Heath and Social Care">
+      </div>
     </div>
-    </div>
+
     {% endset -%}
 
     {% set valuesHtml %}
@@ -199,7 +217,7 @@
           label: "Career progression",
           id: "past-day",
           panel: {
-            html: caseStudyHtml
+            html: progressionHtml
           }
         },
         {
@@ -215,23 +233,16 @@
           panel: {
             html: behavioursHtml
           }
+        },
+        {
+          label: "Case Study",
+          id: "past-year",
+          panel: {
+            html: caseStudyHtml
+          }
         }
       ]
     }) }}
-
-      <h2 class="govuk-heading-m">Case study - Paul</h2>
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-          <p>Paul recognises the value in the previous training and development he has done during his time as a care worker and begins to think about what further learning and development he wants to complete. During his time as a care worker, he has done his Care Certificate qualification and previously chose to develop his skills and knowledge in dementia care to better support the people living in the care home.</p>
-          <p>Paul has his year one appraisal and speaks to his manager about what his next steps could be as part of his learning and development. His manager recommends the Level 3 Diploma in Adult Care as a way for him to further grow his knowledge and skills and, after agreeing with Paul that he wants to do it, makes arrangements for him to start this qualification.</p>
-          <p>His training provider maps his previous learning that he has done against the Level 3 qualification he wants to undertake so that he doesn’t have to repeat any previous learning. He is given an individual learning plan that he will follow until he completes the qualification. He chooses a number of optional units for himself that he can use within his specific practice and setting.</p>
-          <p>As Paul works through completing the qualification in his current role, he consolidates his learning embedding it into his practice and showing how he is delivering high-quality person-centred care. In Paul’s ongoing role as a care worker, he will maintain continous professional development by undertaking learning and development which he can use to support the people living in the care home.</p>
-          <p>Paul has recently received additional training to carry out a delegated healthcare activity for one of the people he supports. The healthcare activity has been delegated to him by a Registered Nurse from the local community nursing team who remains accountable for the decision to delegate in the person’s best interest, even though it is Paul who is carrying out the activity.  He is carrying out Percutaneous Endoscopic Gastrostomy (PEG) feeds, by following the Care Plan and the training he has been given, ensuring he continues to deliver safe and person-centred care. The delegated healthcare and clinical safety is monitored by the Registered Nurse who retains accountability and responsibility of the activity.</p>
-        </div>
-        <div class="govuk-grid-column-one-third">
-          <img style="width: 100%;" src="/public/images/care-worker-2.jpg" alt="Department of Heath and Social Care">
-        </div>
-      </div>
 
       <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
         Page last updated: 15 March 2024. <br><a href="#">Notify me when this page changes</a>
