@@ -28,7 +28,7 @@ New to Care: Overview
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
-      <span class="govuk-caption-xl">Role category C</span>
+      <span class="govuk-caption-xl">Role category A</span>
       <h1 class="govuk-heading-xl nhsuk-u-margin-bottom-3">Junior care role</h1>
 
       <nav class="x-govuk-secondary-navigation nhsuk-u-margin-bottom-6" aria-label="Secondary menu">
@@ -74,18 +74,6 @@ New to Care: Overview
 
       <p>People working in adult social care help people who draw on care to be able to live their lives. This role is the starting point for a career in adult social care.</p>
 
-      <h3 class="govuk-heading-s">How to get started in your role</h3>
-      <p>Every person working in adult social care must do an induction. You should also have the <a href=\"development">values</a> and <a href=\"development">behaviours</a> needed to work in adult social care.</p>
-      <p>There are many opportunities to learn and develop your skills and knowledge by working and doing learning.</p> 
-      
-      <h3 class="govuk-heading-s">The options to develop your career in adult social care</h3>
-      <p>You can think about how to:
-      <ul class="govuk-list govuk-list--bullet">
-      <li>progress to a more senior role like a care or support worker</li>
-      <li>specialise in an area of practice such as dementia or autism</li>
-      <li>go into management like a care manager or a supervisor or leader</li>
-      </ul>
-
     </div>
   </div>
 
@@ -93,6 +81,27 @@ New to Care: Overview
   <div class="govuk-grid-column-full">
 
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    {% set progressionHtml %}
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h3 class="govuk-heading-s">How to get started in your role</h3>
+        <p>Every person working in adult social care must do an induction. You should also have the <a href="#">values</a> and <a href="#">behaviours</a> needed to work in adult social care.</p>
+        <p>There are many opportunities to learn and develop your skills and knowledge by working and doing learning.</p>
+
+        <h3 class="govuk-heading-s">The options to develop your career in adult social care</h3>
+        <p>You can think about how to:
+        <ul class="govuk-list govuk-list--bullet">
+          <li>progress to a more senior role like a care or support worker</li>
+          <li>specialise in an area of practice such as dementia or autism</li>
+          <li>go into management like a care manager or a supervisor or leader</li>
+        </ul>
+      </div>
+
+    </div>
+    {% endset -%}
 
     {% set caseStudyHtml %}
     <h2 class="govuk-heading-m">Role category A persona: Laura</h2>
@@ -181,10 +190,10 @@ New to Care: Overview
     {{ govukTabs({
       items: [
         {
-          label: "Case study",
+          label: "Career progression",
           id: "past-day",
           panel: {
-            html: caseStudyHtml
+            html: progressionHtml
           }
         },
         {
@@ -199,6 +208,13 @@ New to Care: Overview
           id: "past-month",
           panel: {
             html: behavioursHtml
+          }
+        },
+        {
+          label: "Case study",
+          id: "past-year",
+          panel: {
+            html: caseStudyHtml
           }
         }
       ]
