@@ -82,6 +82,37 @@ Practice leader: Overview
 
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
+    {% set progressionHtml %}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m">What else you can do</h2>
+        <p>Other options for someone doing a supervisor or leader job role are to:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href=\"development">specialise in an area of practice</a> like autism or dementia</li>
+          <li>do more as a supervisor or leader by doing <a href=\"">learning and training</a></li>
+          <li>do a more senior role</li>
+        </ul>
+
+        <h2 class="govuk-heading-m">Other job roles to consider</h2>
+        <p>Other job roles you might consider are:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Practice leader</li>
+          <li>Deputy manager</li>
+        </ul>
+
+        <div class="nhsuk-action-link govuk-!-margin-top-8">
+          <a class="nhsuk-action-link__link" href="#">
+            <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+            </svg>
+            <span class="nhsuk-action-link__text">Search for supervisor or leader jobs</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endset -%}
+
     {% set caseStudyHtml %}
     <h2 class="govuk-heading-m">Role category D persona: Kelly</h2>
     <div class="govuk-grid-row">
@@ -163,13 +194,13 @@ Practice leader: Overview
       </div>
     {% endset -%}
 
-    {{ govukTabs({
+      {{ govukTabs({
       items: [
         {
-          label: "Case study",
+          label: "Career progression",
           id: "past-day",
           panel: {
-            html: caseStudyHtml
+            html: progressionHtml
           }
         },
         {
@@ -185,9 +216,16 @@ Practice leader: Overview
           panel: {
             html: behavioursHtml
           }
+        },
+        {
+          label: "Case study",
+          id: "past-year",
+          panel: {
+            html: caseStudyHtml
+          }
         }
       ]
-    }) }}
+      }) }}
 
       <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-0">
         Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
