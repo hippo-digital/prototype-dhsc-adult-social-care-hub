@@ -57,6 +57,14 @@ router.post('/v3/:test/:role/switch', function (req, res) {
   }
 })
 
+router.post('/v3/:test/:role/switchbrand', function (req, res) {
+  // trim out the white space we we can count it easier
+  let brand = req.session.data['brand']
+  var url = req.get('Referrer') .split( '/' );
+  // /b/supervisor/switch-to-a
+  res.redirect('/v3/' + url[4] + '/' + url[5] + '/' + url[6] )
+})
+
 router.post('/v3/:test/switch', function (req, res) {
   // trim out the white space we we can count it easier
   let target = req.session.data['target']
@@ -64,9 +72,9 @@ router.post('/v3/:test/switch', function (req, res) {
   // /b/supervisor/switch-to-a
   if (target === 'a'){
     console.log('url is:' + url)
-    res.redirect('/v3/a/' + url[5] )
+    res.redirect('/v3/a/')
   } else {
-    res.redirect('/v3/b/' + url[5] )
+    res.redirect('/v3/b/')
   }
 })
 
