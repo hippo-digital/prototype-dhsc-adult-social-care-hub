@@ -7,6 +7,21 @@
 Professional development
 {% endblock %}
 
+{% block beforeContent %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "../"
+    },
+    {
+      text: "Professional development",
+      href: "#"
+    }
+  ]
+}) }}
+{% endblock %}
+
 {% block content %}
 
   <div class="govuk-grid-row">
