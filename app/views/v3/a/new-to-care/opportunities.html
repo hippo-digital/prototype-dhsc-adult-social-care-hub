@@ -1,7 +1,10 @@
-{% extends "layouts/layout-care-plain.html" %}
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '2' %}
+
+{% extends "layouts/layout-care-brand-" + brand + ".html" %}
 
 {% block pageTitle %}
-Junior care role: Promotion opportunities
+Entry-level roles: Promotion opportunities
 {% endblock %}
 
 {% block beforeContent %}

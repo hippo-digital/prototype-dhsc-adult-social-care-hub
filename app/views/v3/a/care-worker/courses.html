@@ -1,7 +1,10 @@
-{% extends "layouts/layout-care-plain.html" %}
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '2' %}
+
+{% extends "layouts/layout-care-brand-" + brand + ".html" %}
 
 {% block pageTitle %}
-  Care Workers: Overview
+  Care Workers: Qualifications and courses
 {% endblock %}
 
 {% block beforeContent %}
