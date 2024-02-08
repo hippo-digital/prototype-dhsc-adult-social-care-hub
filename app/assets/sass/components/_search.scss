@@ -1,0 +1,39 @@
+.search-card__container {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.search-card {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  column-gap: 20px;
+  align-content: flex-start;
+}
+
+.search-card__name {
+  flex-basis: 28rem;
+  align-self: flex-start;
+}
+
+.search-card__address {
+  flex-grow: 3;
+  align-self: flex-start;
+}
+
+.search-card__status {
+  align-self: flex-start;
+  text-align: right;
+}
+
+.search-bar {
+  background-color: rgba(govuk-colour("light-green"), 0.5);
+  border-radius: 4px;
+  padding: 1.4rem;
+}
+
+.govuk-checkboxes__label {
+  font-size: 18px;
+}
