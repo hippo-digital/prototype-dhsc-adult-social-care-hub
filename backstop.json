@@ -1,0 +1,98 @@
+{
+  "id": "asc",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1000,
+      "height": 730
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "careers",
+      "url": "http://localhost:3000/v4/a/careers"
+    },
+    {
+      "label": "newtocare-about",
+      "url": "http://localhost:3000/v4/a/new-to-care"
+    },
+    {
+      "label": "newtocare-skills",
+      "url": "http://localhost:3000/v4/a/new-to-care/requirements"
+    },
+    {
+      "label": "newtocare-development",
+      "url": "http://localhost:3000/v4/a/new-to-care/development"
+    },
+    {
+      "label": "newtocare-courses",
+      "url": "http://localhost:3000/v4/a/new-to-care/courses"
+    },
+    {
+      "label": "careworker-about",
+      "url": "http://localhost:3000/v4/a/care-worker"
+    },
+    {
+      "label": "careworker-skills",
+      "url": "http://localhost:3000/v4/a/care-worker/requirements"
+    },
+    {
+      "label": "careworker-development",
+      "url": "http://localhost:3000/v4/a/care-worker/development"
+    },
+    {
+      "label": "careworker-courses",
+      "url": "http://localhost:3000/v4/a/care-worker/courses"
+    },
+    {
+      "label": "supervisor-about",
+      "url": "http://localhost:3000/v4/a/supervisor"
+    },
+    {
+      "label": "supervisor-skills",
+      "url": "http://localhost:3000/v4/a/supervisor/requirements"
+    },
+    {
+      "label": "supervisor-development",
+      "url": "http://localhost:3000/v4/a/supervisor/development"
+    },
+    {
+      "label": "supervisor-courses",
+      "url": "http://localhost:3000/v4/a/supervisor/courses"
+    },
+    {
+      "label": "leader-about",
+      "url": "http://localhost:3000/v4/a/leader"
+    },
+    {
+      "label": "leader-skills",
+      "url": "http://localhost:3000/v4/a/leader/requirements"
+    },
+    {
+      "label": "leader-development",
+      "url": "http://localhost:3000/v4/a/leader/development"
+    },
+    {
+      "label": "leader-courses",
+      "url": "http://localhost:3000/v4/a/leader/courses"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

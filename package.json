@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "govuk-prototype-kit dev",
     "serve": "govuk-prototype-kit serve",
-    "start": "govuk-prototype-kit start"
+    "start": "govuk-prototype-kit start",
+    "screenshot": "backstop reference"
   },
   "dependencies": {
     "@govuk-prototype-kit/common-templates": "2.0.1",
@@ -10,5 +11,8 @@
     "govuk-frontend": "5.1.0",
     "govuk-prototype-kit": "13.16.0",
     "nhsuk-frontend": "^8.0.2"
+  },
+  "devDependencies": {
+    "backstopjs": "^6.3.6"
   }
 }
