@@ -16,7 +16,7 @@
     },
     {
       text: "Professional development",
-      href: "#"
+      href: "../careers"
     },
     {
       text: "Care or support workers",
@@ -52,7 +52,7 @@
             </a>
           </li>
           <li class="x-govuk-secondary-navigation__list-item ">
-            <a class="x-govuk-secondary-navigation__link" href="#">
+            <a class="x-govuk-secondary-navigation__link" href="courses">
               Qualifications and courses
             </a>
           </li>
@@ -76,156 +76,132 @@
     </div>
   </div>
 
-<!--  <hr class="govuk-section-break govuk-section-break&#45;&#45;m govuk-section-break&#45;&#45;visible">-->
+<div data-module="govuk-tabs">
 
   <div class="govuk-grid-row govuk-tabs--right">
     <div class="govuk-grid-column-one-third">
 
-<!--      <ul class="nhsuk-list govuk-list&#45;&#45;spaced govuk-!-margin-top-4 govuk-tabs__list">-->
-<!--        {% for i in range(0, categories.length) -%}-->
-<!--        <li class="govuk-tabs__list-item govuk-tabs__list-item&#45;&#45;right govuk-tabs__list-item&#45;&#45;selected">-->
-<!--          <a href="#" class="govuk-tabs__tab">{{ categories[i] }}</a>-->
-<!--        </li>-->
-<!--        {%- endfor %}-->
-<!--      </ul>-->
+      {# render left side tabs #}
 
-      <ul class="nhsuk-list govuk-list--spaced govuk-tabs__list govuk-tabs__list--right">
-        <li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-          <a href="#" class="govuk-tabs__tab">Ways of working</a>
-        </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Reduce the likelihood of abuse</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Mental capacity and restrictive practice</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right govuk-tabs__list-item--selected">
-        <a href="#" class="govuk-tabs__tab">Duty of care</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Effective communication</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Handling information</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Person-centred practice</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Choice and independence</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Health and wellbeing</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Equality, diversity, inclusion and human rights</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Health and safety (general)</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Infection prevention and control</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Health and safety (topics)</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Continuous development</a>
-      </li><li class="govuk-tabs__list-item govuk-tabs__list-item--right ">
-        <a href="#" class="govuk-tabs__tab">Personal wellbeing</a>
-      </li>
-      </ul>
-
+      <ol class="nhsuk-list nhsuk-list--number govuk-list--spaced govuk-tabs__list govuk-tabs__list--right">
+        {% for i in range(0, categories.length) -%}
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--right govuk-tabs__list-item--selected" role="presentation">
+          <a href="#skill{{ i+1 }}" class="govuk-tabs__tab" id="tab_skill{{ i+1 }}" role="tab" aria-controls="skill{{ i+1 }}" aria-selected="true" tabindex="-1">{{ categories[i] }}</a>
+        </li>
+        {%- endfor %}
+      </ol>
     </div>
 
-
     <div class="govuk-grid-column-two-thirds">
-      <div class="govuk-tabs__panel govuk-tabs__panel--right">
-      <h2 class="govuk-heading-l">Duty of care</h2>
-        <p class="nhsuk-lede-text">Your responsibility to ensure the health and safety of the people you work with.</p>
-      <p>This means promoting well-being and making sure people are kept safe from harm, abuse and injury. </p>
-      <p>As part of your duty of care, you should pass on any concerns about well-being or safety. </p>
-      <p>It’s a legal requirement, and you can’t choose whether to do it.</p>
 
-      <details class="govuk-details">
-        <summary class="govuk-details__summary">
-            <span class="govuk-details__summary-text">
-              What you should know about duty of care
-            </span>
-        </summary>
-        <div class="govuk-details__text">
+      {# render right side content #}
 
-          <h3 class="govuk-heading-s">You should:</h3>
-          <ul class="nhsuk-list  nhsuk-list--tick">
+      {% for i in range(0, categories.length) -%}
 
-            {% for j in range(0, data.roleb.length) -%}
+      <div class="govuk-tabs__panel govuk-tabs__panel--right nhsuk-u-padding-left-5" role="tabpanel" aria-labelledby="tab_skill{{i+1}}" id="skill{{i+1}}">
+        <h2 class="govuk-heading-l">{{ categories[i] }}</h2>
 
-            {% if data.roleb[j].category === categories[3] %}
+        {% for n in range(0, data.skillsCats.length) -%}
+          {% if data.skillsCats[n].category === categories[i] and data.skillsCats[n].role === 'roleb' %}
+            {{ data.skillsCats[n].description|safe }}
+          {% endif %}
+        {%- endfor %}
 
-            <li><svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
-              <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
-            </svg>{{ data.roleb[j].skill }}</li>
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Skills breakdown
+          </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <h3 class="govuk-heading-s">You should:</h3>
 
-            {% endif %}
+            <ul class="nhsuk-list  nhsuk-list--tick">
 
-            {%- endfor %}
+              {% for j in range(0, data.skillsCats.length) -%}
+                {% if data.skillsCats[j].category === categories[i] and data.skillsCats[j].role === 'roleb' %}
+                  {% for m in range(0, data.skillsCats[j].skills.length) -%}
 
-          </ul>
-        </div>
-      </details>
+                  <li><svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
+                    <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+                  </svg>{{ data.skillsCats[j].skills[m].skill }}</li>
 
-      <h3 class="govuk-heading-m govuk-!-margin-top-8 govuk-!-margin-bottom-6">Training you can do</h3>
+                  {%- endfor %}
+                {% endif %}
+              {%- endfor %}
+            </ul>
+          </div>
+        </details>
+
+        {# check if there are any skills #}
+        {# loop the ones for this role and skills categories #}
+        {% set count = [] %}
+        {% for k in range(0, data.training.length) -%}
+        {% if data.training[k].skillsCat === categories[i] %}
+        {% set count = (count.push(k), count) %}
+        {% endif %}
+        {%- endfor %}
+
+        {% if count >= 1 %}
+        <h3 class="govuk-heading-m govuk-!-margin-top-8 govuk-!-margin-bottom-6">Training opportunities ({{ count.length }})</h3>
 
         <ul class="govuk-grid-row nhsuk-card-group">
-
+          {% for l in range(0, count.length) -%}
           <li class="govuk-grid-column-full nhsuk-card-group__item">
             <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
               <div class="nhsuk-card__content nhsuk-card__content--secondary">
                 <h2 class="nhsuk-card__heading nhsuk-heading-s">
-                  <a class="nhsuk-card__link" href="personal-name">Supporting Activity Provision in Social Care</a>
+                  <a class="nhsuk-card__link" href="{{ data['training'][count[l]].link or '#' }}" target="_blank">{{ data['training'][count[l]].title }}</a>
                 </h2>
                 <ul class="govuk-list">
-                  <li><span class="govuk-body govuk-!-font-weight-bold">Provider:</span> OCN London</li>
+                  <li><span class="govuk-body govuk-!-font-weight-bold">Provider:</span> {{ data['training'][count[l]].awardingOrganisation }}</li>
                   <li>
                     <span class="govuk-body govuk-!-font-weight-bold">Duration:</span>
-                    <span id="start-date">80 hours</span>
+                    <span id="start-date"> {{ data['training'][count[l]].totalLearningTime }}</span>
                   </li>
-                  <li><span class="govuk-body govuk-!-font-weight-bold">Location:</span> Online</li>
+                  <li><span class="govuk-body govuk-!-font-weight-bold">Location:</span> {{ data['training'][count[l]].type }}</li>
                 </ul>
               </div>
             </div>
           </li>
-
+          {%- endfor %}
         </ul>
+        {% endif %}
 
+      </div>
+      {%- endfor %}
 
     </div>
   </div>
-  </div>
-
-
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
-
-      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
-        Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
-      </p>
-
-      <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
-        <ul class="nhsuk-list nhsuk-pagination__list">
-          <li class="nhsuk-pagination-item--previous">
-            <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="">
-              <span class="nhsuk-pagination__title">Previous</span>
-              <span class="nhsuk-u-visually-hidden">:</span>
-              <span class="nhsuk-pagination__page">Overview</span>
-              <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
-                <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>
-              </svg>
-            </a>
-          </li>
-          <li class="nhsuk-pagination-item--next">
-            <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="development">
-              <span class="nhsuk-pagination__title">Next</span>
-              <span class="nhsuk-u-visually-hidden">:</span>
-              <span class="nhsuk-pagination__page">Areas for development</span>
-              <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
-                <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-  </div>
 </div>
 
+<p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
+  Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
+</p>
 
+<nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+  <ul class="nhsuk-list nhsuk-pagination__list">
+    <li class="nhsuk-pagination-item--previous">
+      <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="./">
+        <span class="nhsuk-pagination__title">Previous</span>
+        <span class="nhsuk-u-visually-hidden">:</span>
+        <span class="nhsuk-pagination__page">About these job roles</span>
+        <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+          <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>
+        </svg>
+      </a>
+    </li>
+    <li class="nhsuk-pagination-item--next">
+      <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="development">
+        <span class="nhsuk-pagination__title">Next</span>
+        <span class="nhsuk-u-visually-hidden">:</span>
+        <span class="nhsuk-pagination__page">Areas of specialism</span>
+        <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+          <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
 
 {% endblock %}
