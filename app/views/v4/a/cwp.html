@@ -1,0 +1,153 @@
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '2' %}
+
+{% extends "layouts/layout-care-brand-" + brand + ".html" %}
+
+{% block pageTitle %}
+Professional development
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "../"
+    },
+    {
+      text: "Professional development",
+      href: "careers"
+    },
+    {
+      text: "The Care Workforce Pathway"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">The Care Workforce Pathway</h1>
+
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h2 class="govuk-heading-m">The role categories:</h2>
+
+    <ul class="govuk-grid-row nhsuk-card-group">
+
+      <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <span class="govuk-caption-l">Role category A</span>
+            <h2 class="nhsuk-card__heading nhsuk-heading-l" style="margin-top: 0.5rem;">
+              <a class="nhsuk-card__link" href="new-to-care/">Entry-level roles</a>
+            </h2>
+            <p class="nhsuk-card__description">People working in adult social care help people who draw on care to be able to live their lives. These roles are the starting point for a career in adult social care.</p>
+            <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+              <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+              <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                <path d="M15.438 13l-3.771 3.771" />
+                <path data-name="Path" d="M11.667 9.229L15.438 13" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+
+      <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+<!--          <img style="width: 100%;" src="/public/images/care-worker.jpg" alt="Department of Heath and Social Care">-->
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <span class="govuk-caption-l">Role category B</span>
+            <h2 class="nhsuk-card__heading nhsuk-heading-l" style="margin-top: 0.5rem;">
+              <a class="nhsuk-card__link" href="care-worker/">Care or support workers</a>
+            </h2>
+                          <p class="nhsuk-card__description">A care or support worker directly helps people who draw on care to be able to live their lives. This can be help with personal care, finances, or anything that helps a person live their life.</p>
+            <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+              <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+              <g data-name="Group 1" fill="none" stroke="#CCEFE9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                <path d="M15.438 13l-3.771 3.771" />
+                <path data-name="Path" d="M11.667 9.229L15.438 13" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+
+      <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+          <!--            <img class="nhsuk-card__img" src="https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg" alt="">-->
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <span class="govuk-caption-l">Role category C</span>
+            <h2 class="nhsuk-card__heading nhsuk-heading-l" style="margin-top: 0.5rem;">
+              <a class="nhsuk-card__link" href="supervisor/">Supervisors or leaders</a>
+            </h2>
+                          <p class="nhsuk-card__description">A supervisor or leader is a team leader or manages a team of care workers. This can be a care or support worker or someone from another sector who is now working in adult social care.</p>
+            <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+              <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+              <g data-name="Group 1" fill="none" stroke="#CCEFE9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                <path d="M15.438 13l-3.771 3.771" />
+                <path data-name="Path" d="M11.667 9.229L15.438 13" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+
+      <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+          <!--            <img class="nhsuk-card__img" src="https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg" alt="">-->
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <span class="govuk-caption-l">Role category D</span>
+            <h2 class="nhsuk-card__heading nhsuk-heading-l" style="margin-top: 0.5rem;">
+              <a class="nhsuk-card__link" href="leader/">Practice leaders</a>
+            </h2>
+                          <p class="nhsuk-card__description">A practice leader has experience in a specialism like autism or dementia and leads how to deliver specialist care. They are an expert in their chosen specialism.</p>
+            <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+              <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+              <g data-name="Group 1" fill="none" stroke="#FAE3CC" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                <path d="M15.438 13l-3.771 3.771" />
+                <path data-name="Path" d="M11.667 9.229L15.438 13" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h2 class="govuk-heading-l">How it works</h2>
+
+    <ul class="govuk-grid-row nhsuk-card-group">
+
+      <li class="govuk-grid-column-three-quarters nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic ">
+          <img class="nhsuk-card__img" src="/public/images/cwp.svg" style="width: 100%; padding: 2rem; padding-bottom: 0;" alt="">
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <h3>Phase 1</h3>
+            <p>This first phase of the pathway focuses on direct care and support roles at 4 levels with each level relating to a role category. Roles within each category may have different job titles but the roles will have a high degree of similarity across the sector.</p>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</div>
+
+
+
+{% endblock %}
