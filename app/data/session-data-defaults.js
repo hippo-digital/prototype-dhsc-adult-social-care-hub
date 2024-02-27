@@ -316,11 +316,11 @@ module.exports = {
     {
       "category": "Reduce the likelihood of abuse",
       "role": "roleb",
-      "description": "<p class=\"nhsuk-lede-text\">Know what you should do to protect the people you are working with.",
+      "description": "<p class=\"nhsuk-lede-text\">Know what you should do to protect the people you are working with.</p>",
       "skills": [
         {
           "append": "You should",
-          "skill": "understand the national and local context of safeguarding and protection from abuse and neglect</p>"
+          "skill": "understand the national and local context of safeguarding and protection from abuse and neglect"
         },
         {
           "append": "You should",
