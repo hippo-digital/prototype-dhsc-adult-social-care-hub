@@ -15,6 +15,10 @@
       "url": "http://localhost:3000/v4/a/careers"
     },
     {
+      "label": "careers",
+      "url": "http://localhost:3000/v4/a/cwp"
+    },
+    {
       "label": "newtocare-about",
       "url": "http://localhost:3000/v4/a/new-to-care"
     },
