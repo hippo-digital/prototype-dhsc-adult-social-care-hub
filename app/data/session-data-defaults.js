@@ -115,7 +115,7 @@ module.exports = {
     {
       "category": "Duty of care",
       "role": "rolea",
-      "description": "",
+      "description": "Your responsibility to ensure the health and safety of the people you work with.",
       "skills": [
         {
           "append": "You should",
@@ -262,7 +262,7 @@ module.exports = {
     {
       "category": "Reduce the likelihood of abuse",
       "role": "rolea",
-      "description": "",
+      "description": "<p class=\"nhsuk-lede-text\">Know what you should do to protect the people you are working with.</p>",
       "skills": [
         {
           "append": "You should",
@@ -293,7 +293,7 @@ module.exports = {
     {
       "category": "Ways of working",
       "role": "roleb",
-      "description": "",
+      "description": "<p class=\"nhsuk-lede-text\">Who you should work with and how you should do your work.</p>",
       "skills": [
         {
           "append": "You should",
@@ -316,11 +316,11 @@ module.exports = {
     {
       "category": "Reduce the likelihood of abuse",
       "role": "roleb",
-      "description": "",
+      "description": "<p class=\"nhsuk-lede-text\">Know what you should do to protect the people you are working with.",
       "skills": [
         {
           "append": "You should",
-          "skill": "understand the national and local context of safeguarding and protection from abuse and neglect"
+          "skill": "understand the national and local context of safeguarding and protection from abuse and neglect</p>"
         },
         {
           "append": "You should",
@@ -347,7 +347,7 @@ module.exports = {
     {
       "category": "Mental capacity and restrictive practice",
       "role": "roleb",
-      "description": "",
+      "description": "<p class=\"nhsuk-lede-text\">What to do to help and protect people who are not able to make their own decisions about their care.</p>" 
       "skills": [
         {
           "append": "You should",
