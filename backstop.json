@@ -15,12 +15,24 @@
       "url": "http://localhost:3000/v4/a/careers"
     },
     {
-      "label": "careers",
+      "label": "cwp",
       "url": "http://localhost:3000/v4/a/cwp"
     },
     {
       "label": "newtocare-about",
       "url": "http://localhost:3000/v4/a/new-to-care"
+    },
+    {
+      "label": "newtocare-values",
+      "url": "http://localhost:3000/v4/a/new-to-care/#past-week"
+    },
+    {
+      "label": "newtocare-behaviors",
+      "url": "http://localhost:3000/v4/a/new-to-care/#past-month"
+    },
+    {
+      "label": "newtocare-casestudy",
+      "url": "http://localhost:3000/v4/a/new-to-care/#past-year"
     },
     {
       "label": "newtocare-skills",
@@ -31,12 +43,28 @@
       "url": "http://localhost:3000/v4/a/new-to-care/development"
     },
     {
+      "label": "newtocare-development-other",
+      "url": "http://localhost:3000/v4/a/new-to-care/development#past-week"
+    },
+    {
       "label": "newtocare-courses",
       "url": "http://localhost:3000/v4/a/new-to-care/courses"
     },
     {
       "label": "careworker-about",
       "url": "http://localhost:3000/v4/a/care-worker"
+    },
+    {
+      "label": "careworker-values",
+      "url": "http://localhost:3000/v4/a/care-worker/#past-week"
+    },
+    {
+      "label": "careworker-behaviors",
+      "url": "http://localhost:3000/v4/a/care-worker/#past-month"
+    },
+    {
+      "label": "careworker-casestudy",
+      "url": "http://localhost:3000/v4/a/care-worker/#past-year"
     },
     {
       "label": "careworker-skills",
@@ -47,12 +75,28 @@
       "url": "http://localhost:3000/v4/a/care-worker/development"
     },
     {
+      "label": "careworker-development-other",
+      "url": "http://localhost:3000/v4/a/care-worker/development#past-week"
+    },
+    {
       "label": "careworker-courses",
       "url": "http://localhost:3000/v4/a/care-worker/courses"
     },
     {
       "label": "supervisor-about",
       "url": "http://localhost:3000/v4/a/supervisor"
+    },
+    {
+      "label": "supervisor-values",
+      "url": "http://localhost:3000/v4/a/supervisor/#past-week"
+    },
+    {
+      "label": "supervisor-behaviors",
+      "url": "http://localhost:3000/v4/a/supervisor/#past-month"
+    },
+    {
+      "label": "supervisor-casestudy",
+      "url": "http://localhost:3000/v4/a/supervisor/#past-year"
     },
     {
       "label": "supervisor-skills",
@@ -63,6 +107,10 @@
       "url": "http://localhost:3000/v4/a/supervisor/development"
     },
     {
+      "label": "supervisor-development-other",
+      "url": "http://localhost:3000/v4/a/supervisor/development#past-week"
+    },
+    {
       "label": "supervisor-courses",
       "url": "http://localhost:3000/v4/a/supervisor/courses"
     },
@@ -71,12 +119,28 @@
       "url": "http://localhost:3000/v4/a/leader"
     },
     {
+      "label": "leader-values",
+      "url": "http://localhost:3000/v4/a/leader/#past-week"
+    },
+    {
+      "label": "leader-behaviors",
+      "url": "http://localhost:3000/v4/a/leader/#past-month"
+    },
+    {
+      "label": "leader-casestudy",
+      "url": "http://localhost:3000/v4/a/leader/#past-year"
+    },
+    {
       "label": "leader-skills",
       "url": "http://localhost:3000/v4/a/leader/requirements"
     },
     {
       "label": "leader-development",
       "url": "http://localhost:3000/v4/a/leader/development"
+    },
+    {
+      "label": "leader-development-other",
+      "url": "http://localhost:3000/v4/a/leader/development#past-week"
     },
     {
       "label": "leader-courses",
