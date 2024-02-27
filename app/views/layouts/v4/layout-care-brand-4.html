@@ -233,7 +233,7 @@
           </a>
         </li>
         <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link" href="/v4/a/careers">
+          <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--selected" href="/v4/a/careers" >
             Professional development
           </a>
         </li>
@@ -342,6 +342,7 @@
 {% block bodyEnd %}
 {% block scripts %}
 {% include "govuk-prototype-kit/includes/scripts.njk" %}
+<script src="/public/javascripts/nhsuk.min.js"></script>
 {% block pageScripts %}{% endblock %}
 {% endblock %}
 

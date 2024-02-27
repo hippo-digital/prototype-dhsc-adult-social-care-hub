@@ -128,6 +128,10 @@ a:visited {
   color: #212b32;
 }
 
+.nhsuk-header__navigation-link--selected {
+background-color: govuk-colour("pale-green") !important;
+}
+
 .nhsuk-header__drop-down, .nhsuk-header__navigation-list {
   list-style: none;
   margin: 0;
