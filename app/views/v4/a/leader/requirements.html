@@ -1,7 +1,7 @@
 {% set serviceName = 'Working in adult social care' %}
-{% set brand = data['brand'] or '2' %}
+{% set brand = data['brand'] or '4' %}
 
-{% extends "layouts/layout-care-brand-" + brand + ".html" %}
+{% extends "layouts/v4/layout-care-brand-" + brand + ".html" %}
 
 {% block pageTitle %}
 Practice leader: Knowledge and skills
@@ -12,15 +12,18 @@ Practice leader: Knowledge and skills
   items: [
     {
       text: "Home",
-      href: "../"
+      href: "../careers"
     },
     {
       text: "Professional development",
       href: "../careers"
     },
     {
-      text: "Practice leaders",
-      href: "./"
+      text: "Career pathways",
+      href: "../cwp"
+    },
+    {
+      text: "Practice leaders"
     }
   ]
   }) }}

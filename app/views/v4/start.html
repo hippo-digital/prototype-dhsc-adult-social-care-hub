@@ -2,7 +2,7 @@
 {% set brand = data['brand'] or '4' %}
 {% set pageName="Home" %}
 
-{% extends "layouts/layout-care-brand-" + brand + ".html" %}
+{% extends "layouts/v4/layout-care-brand-" + brand + ".html" %}
 
 {% block pageTitle %}
 Professional development
@@ -68,8 +68,8 @@ Professional development
 
         <div class="nhsuk-grid-row">
           <ul class="nhsuk-list list-unstyled">
-            <li> ➡️ <a href="/v4/a/?target=a&brand=1">User is presented with a list of the role categories</a></li>
-            <li> ➡️ <a href="/v4/a/?target=a&brand=1&devMode=true">With brand switcher</a></li>
+            <li> ➡️ <a href="/v4/a/careers?target=a&brand=4">User is presented with a list of the role categories</a></li>
+            <li> ➡️ <a href="/v4/a/careers?target=a&brand=4&devMode=true">With brand switcher</a></li>
           </ul>
 
         </div>

@@ -1,7 +1,7 @@
 {% set serviceName = 'Working in adult social care' %}
-{% set brand = data['brand'] or '2' %}
+{% set brand = data['brand'] or '4' %}
 
-{% extends "layouts/layout-care-brand-" + brand + ".html" %}
+{% extends "layouts/v4/layout-care-brand-" + brand + ".html" %}
 
 {% block pageTitle %}
 Entry-level roles: Qualifications and courses
@@ -11,16 +11,19 @@ Entry-level roles: Qualifications and courses
   {{ govukBreadcrumbs({
   items: [
     {
-      text: "Home",
-      href: "../"
+    text: "Home",
+      href: "../careers"
     },
     {
       text: "Professional development",
       href: "../careers"
     },
     {
-      text: "Entry-level roles",
-      href: "#"
+      text: "Career pathways",
+      href: "../cwp"
+    },
+    {
+      text: "Entry-level roles"
     }
   ]
   }) }}

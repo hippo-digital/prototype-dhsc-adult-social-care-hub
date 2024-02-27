@@ -1,7 +1,7 @@
 {% set serviceName = 'Working in adult social care' %}
-{% set brand = data['brand'] or '2' %}
+{% set brand = data['brand'] or '4' %}
 
-{% extends "layouts/layout-care-brand-" + brand + ".html" %}
+{% extends "layouts/v4/layout-care-brand-" + brand + ".html" %}
 
 {% block pageTitle %}
 Professional development
@@ -12,7 +12,7 @@ Professional development
   items: [
     {
       text: "Home",
-      href: "../"
+      href: "careers"
     },
     {
       text: "Professional development",

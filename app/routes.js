@@ -162,7 +162,14 @@ router.post('/v4/:test/switch', function (req, res) {
   // trim out the white space we we can count it easier
   let target = req.session.data['target']
   var url = req.get('Referrer') .split( '/' );
-  res.redirect('/v4/a/')
+  res.redirect('/v4/a/careers')
+})
+
+router.post('/v4/:test/switchbrand', function (req, res) {
+  // trim out the white space we we can count it easier
+  let target = req.session.data['target']
+  var url = req.get('Referrer') .split( '/' );
+  res.redirect('/v4/a/careers')
 })
 
 router.get('/v4/a/new-to-care/requirements', function (req, res) {
