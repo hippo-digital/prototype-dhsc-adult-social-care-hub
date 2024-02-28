@@ -145,7 +145,7 @@ Supervisor or leader: Knowledge and skills
       {# loop the ones for this role and skills categories #}
       {% set count = [] %}
       {% for k in range(0, data.training.length) -%}
-        {% if categories[i] in data.training[k].skillsCat %}
+        {% if categories[i] in data.training[k].skillsCat and 'rolec' in data.training[k].roleCat %}
       {% set count = (count.push(k), count) %}
         {% endif %}
       {%- endfor %}

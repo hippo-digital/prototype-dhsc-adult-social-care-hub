@@ -3,23 +3,27 @@ module.exports = {
   "roleCats": [
     {
       "code": "rolea",
+      "category":"Role category A",
       "name": "Entry-level roles",
       "description": "People working in adult social care help people who draw on care to be able to live their lives. These roles are the starting point for a career in adult social care."
     },
     {
       "code": "roleb",
+      "category":"Role category B",
       "name": "Care or support workers",
-      "description": "Care or support workers help people who draw on care to be able to live their lives."
+      "description": "A care or support worker directly helps people who draw on care to be able to live their lives. This can be help with personal care, finances, or anything that helps a person live their life."
     },
     {
       "code": "rolec",
+      "category":"Role category C",
       "name": "Supervisors or leaders",
-      "description": "At this level, you might have already"
+      "description": "A supervisor or leader is a team leader or manages a team of care workers. This can be a care or support worker or someone from another sector who is now working in adult social care."
     },
     {
       "code": "roled",
+      "category":"Role category D",
       "name": "Practice leaders",
-      "description": "A practice leader has experience in a specialism like autism or dementia. They may take responsibility or lead the way an organisation delivers specialist care. They usually do not manage anyone but focus on being an expert for their chosen specialism."
+      "description": "A practice leader has experience in a specialism like autism or dementia and leads how to deliver specialist care. They are an expert in their chosen specialism."
     }
   ],
   "skillsCats": [
@@ -352,270 +356,258 @@ module.exports = {
         {
           "append": "You should",
           "skill": "access information, advice and support about equality, diversity, inclusion and human rights"
+        }
+      ]
+    },
+    {
+      "category": "Being safe and secure online",
+      "role": "rolea",
+      "description": "",
+      "skills": [
+        {
+          "append": "You should",
+          "skill": "understand the importance of data and cyber security, and your personal responsibility for handling data safely"
+        },
+        {
+          "append": "You should",
+          "skill": "understand the requirements of, and apply the principles of, data security and protection legislation"
+        },
+        {
+          "append": "You should",
+          "skill": "know that there are different types of data security threats (both physical and digital) and how to avoid them"
+        },
+        {
+          "append": "You should",
+          "skill": "know who to speak to in your organisation if you are concerned there may have been a data breach or risk to data security"
+        },
+        {
+          "append": "You should",
+          "skill": "know how to identify signs of online abuse and safeguard others who may be at risk of cybercrime or other harmful online activity"
+        }
+      ]
+    },
+    {
+      "category": "Use technology to support person-centred care",
+      "role": "rolea",
+      "description": "",
+      "skills": [
+        {
+          "append": "You should",
+          "skill": "understand how technology can support person-centred care"
+        },
+        {
+          "append": "You should",
+          "skill": "use technology to work in a person-centred way"
+        },
+        {
+          "append": "You should",
+          "skill": "help people to learn about technologies that may benefit them"
+        },
+        {
+          "append": "You should",
+          "skill": "help people to access their personal information and contribute to their digital social care record (DSCR)"
+        },
+        {
+          "append": "You should",
+          "skill": "use technology to help people to build and maintain relationships, and participate in their community"
+        }
+      ]
+    },
+    {
+      "category": "Introduction to health, safety and wellbeing",
+      "role": "rolea",
+      "description": "",
+      "skills": [
+        {
+          "append": "You should",
+          "skill": "understand your own responsibilities, and the responsibilities of others, relating to health and safety in the work setting"
+        },
+        {
+          "append": "You should",
+          "skill": "understand risk assessment"
+        },
+        {
+          "append": "You should",
+          "skill": "move and assist safely"
+        },
+        {
+          "append": "You should",
+          "skill": "understand procedures for responding to accidents and sudden illness, and providing basic life support"
+        },
+        {
+          "append": "You should",
+          "skill": "understand medication and healthcare tasks"
+        },
+        {
+          "append": "You should",
+          "skill": "handle hazardous substances"
+        },
+        {
+          "append": "You should",
+          "skill": "work safely and securely"
+        }
+      ]
+    },
+    {
+      "category": "Understanding medication management and good practice",
+      "role": "rolea",
+      "description": "",
+      "skills": [
+        {
+          "append": "You should",
+          "skill": "understand policy and procedures relevant to administration of medication"
+        },
+        {
+          "append": "You should",
+          "skill": "know about common types of medication and their use"
+        },
+        {
+          "append": "You should",
+          "skill": "understand procedures and techniques for the administration of medication"
+        },
+        {
+          "append": "You should",
+          "skill": "prepare for the administration of medication"
+        },
+        {
+          "append": "You should",
+          "skill": "administer and monitor medication safely"
+        }
+      ]
+    },
+    {
+      "category": "Additional training",
+      "role": "rolea",
+      "description": "",
+      "skills": [
+        {
+          "append": "Additional training as required, such as:",
+          "skill": "how to administer specific medicines such as patches, creams, inhalers, eye drops and liquids"
+        },
+        {
+          "append": "Additional training as required, such as:",
+          "skill": "specialist training for specific medications"
+        }
+      ]
+    },
+    {
+      "category": "Understanding the importance of resilience and coping skills when delivering care and support",
+      "role": "rolea",
+      "description": "",
+      "skills": [
+        {
+          "append": "Understand how to manage:",
+          "skill": "your own mental health and personal wellbeing"
+        },
+        {
+          "append": "Understand how to manage:",
+          "skill": "stress"
+        }
+      ]
+    },
+    {
+      "category": "Food hygiene for people who serve food and drink",
+      "role": "rolea",
+      "description": "",
+      "skills": [
+        {
+          "append": "You should",
+          "skill": "understand the principles of food safety"
+        },
+        {
+          "append": "You should",
+          "skill": "understand the importance of food safety measures when providing food and drink for individuals"
+        },
+        {
+          "append": "You should",
+          "skill": "be able to maintain hygiene when handling food and drink."
+        },
+        {
+          "append": "You should",
+          "skill": "be able to meet safety requirements when preparing and serving food and drink for individuals"
+        },
+        {
+          "append": "You should",
+          "skill": "be able to meet safety requirements when clearing away food and drink"
+        },
+        {
+          "append": "You should",
+          "skill": "be able to store food and drink safely"
+        },
+        {
+          "append": "You should",
+          "skill": "know how to access additional advice or support about food safety"
+        },
+        {
+          "append": "You should",
+          "skill": "be able to cook and serve a hot meal using fresh ingredients (where this is a requirement for the individual and/or setting)"
+        }
+      ]
+    },
+    {
+      "category": "Understanding the importance of supporting others to maintain good oral health",
+      "role": "rolea",
+      "description": "",
+      "skills": [
+        {
+          "append": "You should",
+          "skill": "understand the importance of oral health and the potential effect on their general health, wellbeing and dignity"
+        },
+        {
+          "append": "You should",
+          "skill": "understand the potential impact of untreated dental pain or mouth infection on the behaviour, and general health and wellbeing of people who cannot articulate their pain or distress or ask for help (this includes, for example, residents with dementia or communication difficulties)"
+        },
+        {
+          "append": "You should",
+          "skill": "know how and when to reassess oral health"
+        },
+        {
+          "append": "You should",
+          "skill": "know how to deliver daily mouth care"
+        },
+        {
+          "append": "You should",
+          "skill": "know how and when to report any oral health concerns, and how to respond to a person's changing needs and circumstances"
+        },
+        {
+          "append": "You should",
+          "skill": "understand the importance of denture marking and how to arrange this for people, with their permission"
+        }
+      ]
+    },
+    {
+      "category": "Awareness of positive behaviour support",
+      "role": "rolea",
+      "description": "",
+      "skills": [
+        {
+          "append": "You should",
+          "skill": "understand what positive behaviour support is."
         },
       ]
     },
-    //
-    //
-    //
-    //       {
-    //         "role": "rolea",
-    //         "category": "Being safe and secure online",
-    //         "append": "You should",
-    //         "skill": "understand the importance of data and cyber security, and your personal responsibility for handling data safely"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Being safe and secure online",
-    //         "append": "You should",
-    //         "skill": "understand the requirements of, and apply the principles of, data security and protection legislation"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Being safe and secure online",
-    //         "append": "You should",
-    //         "skill": "know that there are different types of data security threats (both physical and digital) and how to avoid them"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Being safe and secure online",
-    //         "append": "You should",
-    //         "skill": "know who to speak to in your organisation if you are concerned there may have been a data breach or risk to data security"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Being safe and secure online",
-    //         "append": "You should",
-    //         "skill": "know how to identify signs of online abuse and safeguard others who may be at risk of cybercrime or other harmful online activity"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Use technology to support person-centred care",
-    //         "append": "You should",
-    //         "skill": "understand how technology can support person-centred care"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Use technology to support person-centred care",
-    //         "append": "You should",
-    //         "skill": "use technology to work in a person-centred way"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Use technology to support person-centred care",
-    //         "append": "You should",
-    //         "skill": "help people to learn about technologies that may benefit them"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Use technology to support person-centred care",
-    //         "append": "You should",
-    //         "skill": "help people to access their personal information and contribute to their digital social care record (DSCR)"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Use technology to support person-centred care",
-    //         "append": "You should",
-    //         "skill": "use technology to help people to build and maintain relationships, and participate in their community"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Introduction to health, safety and wellbeing",
-    //         "append": "You should",
-    //         "skill": "understand your own responsibilities, and the responsibilities of others, relating to health and safety in the work setting"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Introduction to health, safety and wellbeing",
-    //         "append": "You should",
-    //         "skill": "understand risk assessment"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Introduction to health, safety and wellbeing",
-    //         "append": "You should",
-    //         "skill": "move and assist safely"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Introduction to health, safety and wellbeing",
-    //         "append": "You should",
-    //         "skill": "understand procedures for responding to accidents and sudden illness, and providing basic life support"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Introduction to health, safety and wellbeing",
-    //         "append": "You should",
-    //         "skill": "understand medication and healthcare tasks"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Introduction to health, safety and wellbeing",
-    //         "append": "You should",
-    //         "skill": "handle hazardous substances"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Introduction to health, safety and wellbeing",
-    //         "append": "You should",
-    //         "skill": "work safely and securely"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding medication management and good practice",
-    //         "append": "You should",
-    //         "skill": "understand policy and procedures relevant to administration of medication"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding medication management and good practice",
-    //         "append": "You should",
-    //         "skill": "know about common types of medication and their use"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding medication management and good practice",
-    //         "append": "You should",
-    //         "skill": "understand procedures and techniques for the administration of medication"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding medication management and good practice",
-    //         "append": "You should",
-    //         "skill": "prepare for the administration of medication"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding medication management and good practice",
-    //         "append": "You should",
-    //         "skill": "administer and monitor medication safely"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Additional training",
-    //         "append": "Additional training as required, such as:",
-    //         "skill": "how to administer specific medicines such as patches, creams, inhalers, eye drops and liquids"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Additional training",
-    //         "append": "Additional training as required, such as:",
-    //         "skill": "specialist training for specific medications"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding the importance of resilience and coping skills when delivering care and support",
-    //         "append": "Understand how to manage:",
-    //         "skill": "your own mental health and personal wellbeing"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding the importance of resilience and coping skills when delivering care and support",
-    //         "append": "Understand how to manage:",
-    //         "skill": "stress"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Food hygiene for people who serve food and drink",
-    //         "append": "You should",
-    //         "skill": "understand the principles of food safety"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Food hygiene for people who serve food and drink",
-    //         "append": "You should",
-    //         "skill": "understand the importance of food safety measures when providing food and drink for individuals"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Food hygiene for people who serve food and drink",
-    //         "append": "You should",
-    //         "skill": "be able to maintain hygiene when handling food and drink."
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Food hygiene for people who serve food and drink",
-    //         "append": "You should",
-    //         "skill": "be able to meet safety requirements when preparing and serving food and drink for individuals"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Food hygiene for people who serve food and drink",
-    //         "append": "You should",
-    //         "skill": "be able to meet safety requirements when clearing away food and drink"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Food hygiene for people who serve food and drink",
-    //         "append": "You should",
-    //         "skill": "be able to store food and drink safely"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Food hygiene for people who serve food and drink",
-    //         "append": "You should",
-    //         "skill": "know how to access additional advice or support about food safety"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Food hygiene for people who serve food and drink",
-    //         "append": "You should",
-    //         "skill": "be able to cook and serve a hot meal using fresh ingredients (where this is a requirement for the individual and/or setting)"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding the importance of supporting others to maintain good oral health",
-    //         "append": "You should",
-    //         "skill": "understand the importance of oral health and the potential effect on their general health, wellbeing and dignity"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding the importance of supporting others to maintain good oral health",
-    //         "append": "You should",
-    //         "skill": "understand the potential impact of untreated dental pain or mouth infection on the behaviour, and general health and wellbeing of people who cannot articulate their pain or distress or ask for help (this includes, for example, residents with dementia or communication difficulties)"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding the importance of supporting others to maintain good oral health",
-    //         "append": "You should",
-    //         "skill": "know how and when to reassess oral health"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding the importance of supporting others to maintain good oral health",
-    //         "append": "You should",
-    //         "skill": "know how to deliver daily mouth care"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding the importance of supporting others to maintain good oral health",
-    //         "append": "You should",
-    //         "skill": "know how and when to report any oral health concerns, and how to respond to a person's changing needs and circumstances"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding the importance of supporting others to maintain good oral health",
-    //         "append": "You should",
-    //         "skill": "understand the importance of denture marking and how to arrange this for people, with their permission"
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Awareness of positive behaviour support",
-    //         "append": "You should",
-    //         "skill": "understand what positive behaviour support is."
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Understanding the benefits of reflective practice in providing care and support",
-    //         "skill": "You should understand how reflecting on a situation has improved your own knowledge, skills and understanding."
-    //       },
-    //       {
-    //         "role": "rolea",
-    //         "category": "Oliver McGowan training",
-    //         "skill": "Complete Oliver McGowan Mandatory Training on Learning Disability and Autism: Tier 1 (if not done so already). Tier 2 can be undertaken in settings providing direct care to individuals with Autism or a Learning Disability."
-    //       }
-    //     ]
-    // },
+    {
+      "category": "Understanding the benefits of reflective practice in providing care and support",
+      "role": "rolea",
+      "description": "",
+      "skills": [
+        {
+          "append": "You should",
+          "skill": "understand how reflecting on a situation has improved your own knowledge, skills and understanding."
+        },
+      ]
+    },
+    {
+      "category": "Oliver McGowan training",
+      "role": "rolea",
+      "description": "",
+      "skills": [
+        {
+          "append": "",
+          "skill": "Complete Oliver McGowan Mandatory Training on Learning Disability and Autism: Tier 1 (if not done so already). Tier 2 can be undertaken in settings providing direct care to individuals with Autism or a Learning Disability."
+        }
+      ]
+    },
     {
       "category": "Ways of working",
       "role": "roleb",
