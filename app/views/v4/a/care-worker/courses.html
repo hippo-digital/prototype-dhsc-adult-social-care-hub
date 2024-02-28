@@ -208,7 +208,7 @@
 
     {% for item in data['training'] %}
 
-    {% if item.roleCat == 'roleb' %}
+    {% if 'roleb' in item.roleCat %}
 
     {% if 'Course' in data['type'] %}
     {% if item.type == 'Course' %}
@@ -229,7 +229,7 @@
       {# loop through all the courses  #}
       {% for i in range(0, data['training'].length) -%}
 
-      {% if data['training'][i].roleCat === "roleb" %}
+      {% if "roleb" in data['training'][i].roleCat %}
 
       {% if 'Course' in data['type'] %}
       {% if data['training'][i].type == 'Course' %}

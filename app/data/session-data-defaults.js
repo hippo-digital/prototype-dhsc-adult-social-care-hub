@@ -1642,7 +1642,7 @@ module.exports = {
   {
     "groupTitle": "Introductory modules for managers",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in supervision in adult care, Lead in supervision in the context of your practice specialism",
     "reimbursable": "",
     "audience": "These development modules are for aspiring, new and experienced leaders and managers",
@@ -1661,7 +1661,7 @@ module.exports = {
   {
     "groupTitle": "Introductory modules for managers",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Understand how to mentor others, Understand how to coach others, Lead in learning and development in adult care, Lead in learning and development in your practice specialism, Mentor others in your practice specialism, Coach others in your practice specialism",
     "reimbursable": "",
     "audience": "These development modules are for aspiring, new and experienced leaders and managers",
@@ -1699,7 +1699,7 @@ module.exports = {
   {
     "groupTitle": "Introductory modules for managers",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead communication in adult care settings",
     "reimbursable": "yes",
     "audience": "These development modules are for aspiring, new and experienced leaders and managers",
@@ -1756,7 +1756,7 @@ module.exports = {
   {
     "groupTitle": "Introductory modules for managers",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "Lead in advocacy in adult care settings",
     "reimbursable": "",
     "audience": "These development modules are for aspiring, new and experienced leaders and managers",
@@ -1813,7 +1813,7 @@ module.exports = {
   {
     "groupTitle": "Introductory modules for managers",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "Support innovation and change in adult social care",
     "reimbursable": "",
     "audience": "These development modules are for aspiring, new and experienced leaders and managers",
@@ -1832,7 +1832,7 @@ module.exports = {
   {
     "groupTitle": "Introductory modules for managers",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead personal development and wellbeing in adult social care settings, Lead personal development and wellbeing in adult social care settings",
     "reimbursable": "",
     "audience": "These development modules are for aspiring, new and experienced leaders and managers",
@@ -1851,7 +1851,7 @@ module.exports = {
   {
     "groupTitle": "Digital learning for managers",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "These development modules are for aspiring, new and experienced leaders and managers",
@@ -1927,13 +1927,13 @@ module.exports = {
   {
     "groupTitle": "Creating an inclusive organisation digital learning modules",
     "groupDescription": "",
-    "roleCat": "rolea, roleb, rolec, roled",
+    "roleCat": "[rolea, roleb, rolec, roled]",
     "skillsCat": "Ensuring equality, diversity and inclusion are part of your practice, Equality, diversity, inclusion and human rights, Lead inclusive practice in adult care settings, Lead inclusive practice in adult care settings",
     "reimbursable": "",
     "audience": "These development modules are primarily for frontline workers from diverse ethnic backgrounds but may be of interest to anyone at any level who is interested in equality, diversity and inclusion.",
     "code": "DLEDI",
     "reimbursementAmount": "50",
-    "title": "Module 1 â Equality, diversity and inclusion",
+    "title": "Module 1 Equality, diversity and inclusion",
     "totalLearningTime": "4 hours",
     "fundingModel": "full",
     "type": "e-Learning Module",
@@ -1946,13 +1946,13 @@ module.exports = {
   {
     "groupTitle": "Creating an inclusive organisation digital learning modules",
     "groupDescription": "",
-    "roleCat": "roleb, roled",
+    "roleCat": "[roleb, roled]",
     "skillsCat": "Continuous development, Practice leadership",
     "reimbursable": "",
     "audience": "These development modules are primarily for frontline workers from diverse ethnic backgrounds but may be of interest to anyone at any level who is interested in equality, diversity and inclusion.",
     "code": "DLLDCP",
     "reimbursementAmount": "50",
-    "title": "Module 2 â Leadership development and career progression",
+    "title": "Module 2 Leadership development and career progression",
     "totalLearningTime": "4 hours",
     "fundingModel": "full",
     "type": "e-Learning Module",
@@ -2022,7 +2022,7 @@ module.exports = {
   {
     "groupTitle": "Learning programmes",
     "groupDescription": "",
-    "roleCat": "rolec",
+    "roleCat": "[rolec]",
     "skillsCat": "Lead communication in adult care settings, Understand how to mentor others, Understand how to coach others, Lead in supervision in adult care, ",
     "reimbursable": "",
     "audience": "",
@@ -2155,7 +2155,7 @@ module.exports = {
   {
     "groupTitle": "Mental Health First Aid",
     "groupDescription": "",
-    "roleCat": "rolec,roled",
+    "roleCat": "[rolec,roled]",
     "skillsCat": "Lead personal development and wellbeing in adult social care settings, Lead personal development and wellbeing in adult social care settings",
     "reimbursable": "",
     "audience": "",
@@ -2174,7 +2174,7 @@ module.exports = {
   {
     "groupTitle": "Positive Behavioural Support",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Awareness of positive behaviour support?",
     "reimbursable": "",
     "audience": "",
@@ -2307,7 +2307,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Understanding how to assist and move people safely",
     "reimbursable": "",
     "audience": "",
@@ -2326,7 +2326,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2345,7 +2345,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2364,7 +2364,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2383,7 +2383,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2402,7 +2402,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2421,7 +2421,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2440,7 +2440,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2459,7 +2459,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2478,7 +2478,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2497,7 +2497,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2516,7 +2516,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2535,7 +2535,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2554,7 +2554,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2573,7 +2573,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec, roled",
+    "roleCat": "[rolec, roled]",
     "skillsCat": "Lead in learning and development in adult care, Lead in learning and development in your practice specialism",
     "reimbursable": "",
     "audience": "",
@@ -2763,7 +2763,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -2782,7 +2782,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -2801,7 +2801,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -2820,7 +2820,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -3808,7 +3808,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -3827,7 +3827,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -3846,7 +3846,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -3865,7 +3865,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -3884,7 +3884,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -3903,7 +3903,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -3922,7 +3922,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -3941,7 +3941,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -3960,7 +3960,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -3979,7 +3979,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -3998,7 +3998,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -4017,7 +4017,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -4036,7 +4036,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Corporate induction, including understanding your role and personal development, Demonstrating effective interpersonal skills, Fire safety (health and safety), Understanding and demonstrating good infection prevention and control measures, Understanding how to assist and move people safely, Understanding how to work in a person-centred way, Understanding duty of care and duty of candour, Using and managing data, and data security, Reduce the likelihood of abuse",
     "reimbursable": "",
     "audience": "",
@@ -4055,7 +4055,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4074,7 +4074,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4093,7 +4093,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4112,7 +4112,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4131,7 +4131,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4150,7 +4150,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4169,7 +4169,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4188,7 +4188,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4207,7 +4207,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4226,7 +4226,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4245,7 +4245,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4264,7 +4264,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4283,7 +4283,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4302,7 +4302,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4321,7 +4321,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4340,7 +4340,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4359,7 +4359,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4378,7 +4378,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4397,7 +4397,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4416,7 +4416,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4435,7 +4435,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4454,7 +4454,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4473,7 +4473,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4492,7 +4492,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4511,7 +4511,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roleb",
+    "roleCat": "[roleb]",
     "skillsCat": "Ways of working, Reduce the likelihood of abuse, Mental capacity and restrictive practice, Duty of care, Effective communication, Handling information, Person-centred practice, Choice and independence, Health and wellbeing, Equality diversity inclusion and human rights, Health and safety (general), Infection prevention and control, Health and safety (topics), Continuous development, Personal wellbeing, ",
     "reimbursable": "",
     "audience": "",
@@ -4530,7 +4530,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4549,7 +4549,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4568,7 +4568,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4587,7 +4587,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4606,7 +4606,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4625,7 +4625,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4644,7 +4644,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4663,7 +4663,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4682,7 +4682,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4701,7 +4701,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4720,7 +4720,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "roled",
+    "roleCat": "[roled]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4739,7 +4739,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec",
+    "roleCat": "[rolec]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -4758,7 +4758,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolec",
+    "roleCat": "[rolec]",
     "skillsCat": "",
     "reimbursable": "",
     "audience": "",
@@ -5271,7 +5271,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Understanding medication management and good practice, Additional training",
     "reimbursable": "",
     "audience": "",
@@ -5290,7 +5290,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Understanding medication management and good practice, Additional training",
     "reimbursable": "",
     "audience": "",
@@ -5309,7 +5309,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Understanding medication management and good practice, Additional training",
     "reimbursable": "",
     "audience": "",
@@ -5328,7 +5328,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Understanding medication management and good practice, Additional training",
     "reimbursable": "",
     "audience": "",
@@ -5347,7 +5347,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Understanding medication management and good practice, Additional training",
     "reimbursable": "",
     "audience": "",
@@ -5366,7 +5366,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Understanding medication management and good practice, Additional training",
     "reimbursable": "",
     "audience": "",
@@ -5385,7 +5385,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Understanding medication management and good practice, Additional training",
     "reimbursable": "",
     "audience": "",
@@ -5404,7 +5404,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Understanding medication management and good practice, Additional training",
     "reimbursable": "",
     "audience": "",
@@ -5689,7 +5689,7 @@ module.exports = {
   {
     "groupTitle": "Qualifications",
     "groupDescription": "",
-    "roleCat": "rolea",
+    "roleCat": "[rolea]",
     "skillsCat": "Understanding the importance of supporting others to maintain good oral health??",
     "reimbursable": "",
     "audience": "",

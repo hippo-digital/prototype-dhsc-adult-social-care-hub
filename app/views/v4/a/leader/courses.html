@@ -208,7 +208,7 @@ Practice leader: Qualifications and courses
 
     {% for item in data['training'] %}
 
-    {% if item.roleCat == 'roled' %}
+    {% if 'roled' in item.roleCat %}
 
     {% if 'Course' in data['type'] %}
     {% if item.type == 'Course' %}
@@ -229,7 +229,7 @@ Practice leader: Qualifications and courses
       {# loop through all the courses  #}
       {% for i in range(0, data['training'].length) -%}
 
-      {% if data['training'][i].roleCat === "roled" %}
+      {% if "roled" in data['training'][i].roleCat %}
 
       {% if 'Course' in data['type'] %}
       {% if data['training'][i].type == 'Course' %}

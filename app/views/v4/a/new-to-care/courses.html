@@ -207,7 +207,7 @@ Entry-level roles: Qualifications and courses
 
     {% for item in data['training'] %}
 
-    {% if item.roleCat == 'rolea' %}
+    {% if 'rolea' in item.roleCat %}
 
     {% if 'Course' in data['type'] %}
     {% if item.type == 'Course' %}
@@ -228,7 +228,7 @@ Entry-level roles: Qualifications and courses
       {# loop through all the courses  #}
       {% for i in range(0, data['training'].length) -%}
 
-      {% if data['training'][i].roleCat === "rolea" %}
+      {% if "rolea" in data['training'][i].roleCat %}
 
       {% if 'Course' in data['type'] %}
       {% if data['training'][i].type == 'Course' %}
