@@ -142,12 +142,12 @@ Entry-level roles: Knowledge and skills
         {# loop the ones for this role and skills categories #}
         {% set count = [] %}
         {% for k in range(0, data.training.length) -%}
-        {% if data.training[k].skillsCat === categories[i] %}
+        {% if categories[i] in data.training[k].skillsCat %}
         {% set count = (count.push(k), count) %}
         {% endif %}
         {%- endfor %}
 
-        {% if count >= 1 %}
+        {% if count.length >= 1 %}
         <h3 class="govuk-heading-m govuk-!-margin-top-8 govuk-!-margin-bottom-6">Training opportunities ({{ count.length }})</h3>
 
         <ul class="govuk-grid-row nhsuk-card-group">
