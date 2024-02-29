@@ -220,7 +220,7 @@ module.exports = {
     {
       "category": "Understanding duty of care and duty of candour",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Knowing your responsibility to the people you care for and what procedures you must follow when things go wrong with care and treatment.</p>",
       "skills": [
         {
           "append": "You should",
