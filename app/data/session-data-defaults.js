@@ -30,7 +30,7 @@ module.exports = {
     {
       "category": "Corporate induction, including understanding your role and personal development",
       "role": "rolea",
-      "description": "A session employers run for their new team members. This may cover the organisation or setting you are about to start work in, your role, and how you should work.",
+      "description": "<p>A session employers run for their new team members. This may cover the organisation or setting you are about to start work in, your role, and how you should work.</p>",
       "skills": [
         {
           "append": "You should",
