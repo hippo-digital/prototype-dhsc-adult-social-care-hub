@@ -61,7 +61,7 @@ module.exports = {
     {
       "category": "Demonstrating effective interpersonal skills",
       "role": "rolea",
-      "description": "",
+      "description": "<p>How you talk to people and respecting the way they prefer to be communicated with.</p>",
       "skills": [
         {
           "append": "You should",
@@ -88,7 +88,7 @@ module.exports = {
     {
       "category": "Maintaining someone’s dignity while providing care and support",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Treating people who draw on care with dignity and respect.</p>",
       "skills": [
         {
           "append": "You should",
