@@ -158,7 +158,7 @@ module.exports = {
     {
       "category": "Understanding how to assist and move people safely",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Knowing all the things involved in moving a person safely including things like equipment and legal guidelines.</p>",
       "skills": [
         {
           "append": "You should",
@@ -189,7 +189,7 @@ module.exports = {
     {
       "category": "Understanding how to work in a person-centred way",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Keeping the people who draw on care at the centre of everything you do.</p>",
       "skills": [
         {
           "append": "You should",
