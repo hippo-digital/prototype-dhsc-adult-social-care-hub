@@ -247,7 +247,7 @@ module.exports = {
     {
       "category": "Using and managing data, and data security",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Keeping information and how you handle it safe and secure.</p>",
       "skills": [
         {
           "append": "You should",
@@ -297,7 +297,7 @@ module.exports = {
     {
       "category": "Understand the importance of supporting others to maintain good fluid and nutrition intake",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Taking care of those who draw on care through what they eat and drink.</p>",
       "skills": [
         {
           "append": "You should",
@@ -312,7 +312,7 @@ module.exports = {
     {
       "category": "Awareness of mental health, dementia, autism and learning disabilities (linked to Tier 1 of competence frameworks below)",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Knowing information about these different needs and how to support people that have them.</p>",
       "skills": [
         {
           "append": "You should",
