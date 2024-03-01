@@ -343,7 +343,7 @@ module.exports = {
     {
       "category": "Ensuring equality, diversity and inclusion are part of your practice",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Including everyone and knowing how to respect and adapt their unique needs.</p>",
       "skills": [
         {
           "append": "You should",
@@ -362,7 +362,7 @@ module.exports = {
     {
       "category": "Being safe and secure online",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Knowing what to do to make sure you stay safe online.</p>",
       "skills": [
         {
           "append": "You should",
@@ -389,7 +389,7 @@ module.exports = {
     {
       "category": "Use technology to support person-centred care",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Support those who draw on care by using technology to help them live better lives.</p>",
       "skills": [
         {
           "append": "You should",
@@ -416,7 +416,7 @@ module.exports = {
     {
       "category": "Introduction to health, safety and wellbeing",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Knowing what to do to keep those you support safe and healthy.</p>",
       "skills": [
         {
           "append": "You should",
@@ -451,7 +451,7 @@ module.exports = {
     {
       "category": "Understanding medication management and good practice",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Knowing about medication and what to do to administer it safely.</p>",
       "skills": [
         {
           "append": "You should",
