@@ -493,7 +493,7 @@ module.exports = {
     {
       "category": "Understanding the importance of resilience and coping skills when delivering care and support",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Handling challenging situations while you support those who draw on care.</p>",
       "skills": [
         {
           "append": "Understand how to manage:",
@@ -508,7 +508,7 @@ module.exports = {
     {
       "category": "Food hygiene for people who serve food and drink",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Staying safe with food and drink as part of supporting those who draw on care.</p>",
       "skills": [
         {
           "append": "You should",
@@ -547,7 +547,7 @@ module.exports = {
     {
       "category": "Understanding the importance of supporting others to maintain good oral health",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Helping those who draw on care to have good oral health.</p>",
       "skills": [
         {
           "append": "You should",
@@ -589,7 +589,7 @@ module.exports = {
     {
       "category": "Understanding the benefits of reflective practice in providing care and support",
       "role": "rolea",
-      "description": "",
+      "description": "<p>Knowing how reflecting on situations and how you work can help you provide better care.</p>",
       "skills": [
         {
           "append": "You should",
