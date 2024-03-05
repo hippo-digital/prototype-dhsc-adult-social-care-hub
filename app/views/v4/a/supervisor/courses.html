@@ -203,85 +203,106 @@ Supervisor or leader: Qualifications and courses
 
   <div class="govuk-grid-column-two-thirds">
 
-    {% set count = 0 %}
-
-    {% for item in data['training'] %}
-
-      {% if 'rolec' in item.roleCat %}
-
-        {% if 'Course' in data['type'] %}
-          {% if item.type == 'Course' %}
-            {% set count = count + 1 %}
-          {% endif %}
-        {% else %}
-            {% set count = count + 1 %}
-        {% endif %}
-
-      {% endif %}
-
+    {% set unique_title = [] %}
+    {% for item in training %}
+    {% if unique_title.indexOf(item.title) === -1 %}
+    {% set _ = unique_title.push(item.title) %}
+    {% endif %}
     {% endfor %}
 
-
-    <h2 class="govuk-heading-l">Results ({{ count }})</h2> {{ data['type'] }}
+    <h2 class="govuk-heading-l">Results ({{ unique_title.length }})</h2> {{ data['type'] }}
 
     <div class="search-card__container">
-      {# loop through all the courses  #}
-      {% for i in range(0, data['training'].length) -%}
 
-        {% if "rolec" in data['training'][i].roleCat %}
+      {% set unique_titles = [] %}
+      {% for course in training %}
+      {% if unique_titles.indexOf(course.title) === -1 %}
+      {% set _ = unique_titles.push(course.title) %}
 
-        {% if 'Course' in data['type'] %}
-          {% if data['training'][i].type == 'Course' %}
+      <div class="search-card" style="background-color: #fff;padding: 1rem;margin-bottom: 1rem; border: 1px solid #99DED4;">
 
-          <div class="search-card">
+        <div class="search-card__name">
 
-            <div class="search-card__name">
-              <h4 class="govuk-heading-m govuk-!-margin-bottom-1">
-                <a href="{{ data['training'][i].link }}" target="_blank">{{ data['training'][i].title }}</a></h4>
-              <p class="govuk-!-font-size-16 govuk-!-margin-bottom-4 govuk-!-margin-top-4">{{ data['training'][i].description }}</p>
+          <h4 class="govuk-heading-m govuk-!-margin-bottom-1">
+            {{ course.title }}
+          </h4>
+
+          <p class="govuk-!-font-size-16 govuk-!-margin-bottom-4 govuk-!-margin-top-4">{{ course.audience }}</p>
+
+          {# first set this as a variable and then we can override if there are multiple providers #}
+
+          {% set providers %}
+          <ul class="govuk-list govuk-list--spaced">
+            <li class="govuk-!-padding-left-0">
+              <strong>Provider:</strong> {{ course.awardingOrganisation }}<br>
+              <strong>Code:</strong> {{ course.code }}<br>
+              {% if course.link !== '' %}
+              <strong>External Link:</strong> <a href="{{ course.link }}" target="_blank">{{ course.title }}</a>
+              {% endif %}
+            </li>
+          </ul>
+          {% endset %}
+
+          {# check if there is more than 1 provider #}
+
+          {% set provider_count = 0 %}
+          {% for item in training %}
+          {% if item.title == course.title %}
+          {# multiple detected #}
+          {% set provider_count = provider_count +1 %}
+          {% endif %}
+          {% endfor %}
+
+          {% if provider_count > 1 %}
+
+          {% set providers %}
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              {{ provider_count }} providers available
+            </span>
+            </summary>
+            <div class="govuk-details__text">
+              <ul class="govuk-list govuk-list--spaced govuk-list--bullet">
+                {% for item in training %}
+                {% if item.title == course.title %}
+                <li class="govuk-!-padding-left-0">
+                  <strong>Provider:</strong> {{ item.awardingOrganisation }}<br>
+                  <strong>Code:</strong> {{ item.code }}<br>
+                  <strong>Duration:</strong> {{ item.duration }}<br>
+                  {% if item.link !== '' %}
+                  <strong>External Link:</strong> <a href="{{ item.link }}" target="_blank">{{ item.title }}</a>
+                  {% endif %}
+                </li>
+                {% endif %}
+                {% endfor %}
+              </ul>
             </div>
-
-            <div class="search-card__status govuk-!-margin-top-2">
-              {{ 'Reimbursable' | tag | safe }}<br>
-              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-3" >Type: {{ data['training'][i].type }}</p>
-              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Provider: {{ data['training'][i].awardingOrganisation }}</p>
-              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Code: {{ data['training'][i].code }}</p>
-              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Total learning time:<br>{{ data['training'][i].totalLearningTime }}</p>
-            </div>
-
-          </div>
+          </details>
+          {% endset %}
 
           {% endif %}
 
-        {% else %}
+          {{ providers | safe }}
 
-          <div class="search-card">
+        </div>
 
-            <div class="search-card__name">
-              <h4 class="govuk-heading-m govuk-!-margin-bottom-1">
-                <a href="{{ data['training'][i].link }}" target="_blank">{{ data['training'][i].title }}</a></h4>
-              <p class="govuk-!-font-size-16 govuk-!-margin-bottom-4 govuk-!-margin-top-4">{{ data['training'][i].description }}</p>
-            </div>
+        <div class="search-card__status govuk-!-margin-top-2">
+          {{ 'Reimbursable' | tag | safe }}<br>
+          <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-3" >Type: {{ course.type }}</p>
+          <!--          <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Code: {{ course.code }}</p>-->
+          {% if provider_count == 1 %}
+          <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Total learning time:<br>{{ course.totalLearningTime }}</p>
+          {% endif %}
+        </div>
 
-            <div class="search-card__status govuk-!-margin-top-2">
-              {{ 'Reimbursable' | tag | safe }}<br>
-              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-3" >Type: {{ data['training'][i].type }}</p>
-              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Provider: {{ data['training'][i].awardingOrganisation }}</p>
-              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Code: {{ data['training'][i].code }}</p>
-              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Total learning time:<br>{{ data['training'][i].totalLearningTime }}</p>
-            </div>
+      </div>
 
-          </div>
+      {% endif %}
+      {% endfor %}
 
-        {% endif %}
-
-        {% endif %}
-      {%- endfor %}
     </div>
-
   </div>
-
-
 </div>
 
 <div class="govuk-grid-row">

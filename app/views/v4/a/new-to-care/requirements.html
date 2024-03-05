@@ -138,40 +138,113 @@ Entry-level roles: Knowledge and skills
           </div>
         </details>
 
-        {# check if there are any skills #}
-        {# loop the ones for this role and skills categories #}
-        {% set count = [] %}
-        {% for k in range(0, data.training.length) -%}
-        {% if categories[i] in data.training[k].skillsCat and 'rolea' in data.training[k].roleCat %}
-        {% set count = (count.push(k), count) %}
+        {% set unique_title = [] %}
+        {% for item in training %}
+        {% if categories[i] in item.skillsCat %}
+        {% if unique_title.indexOf(item.title) === -1 %}
+        {% set _ = unique_title.push(item.title) %}
         {% endif %}
-        {%- endfor %}
+        {% endif %}
+        {% endfor %}
 
-        {% if count.length >= 1 %}
-        <h3 class="govuk-heading-m govuk-!-margin-top-8 govuk-!-margin-bottom-6">Training opportunities ({{ count.length }})</h3>
+        {% if unique_title.length == 0 %}
+        <h3 class="govuk-heading-m govuk-!-margin-top-8 govuk-!-margin-bottom-6">No training opportunities available for this knowledge and skill category</h3>
+        {% else%}
+        <h3 class="govuk-heading-m govuk-!-margin-top-8 govuk-!-margin-bottom-6">Training opportunities ({{ unique_title.length }})</h3>
+        {% endif %}
 
-        <ul class="govuk-grid-row nhsuk-card-group">
-          {% for l in range(0, count.length) -%}
-          <li class="govuk-grid-column-full nhsuk-card-group__item">
-            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
-              <div class="nhsuk-card__content nhsuk-card__content--secondary">
-                <h2 class="nhsuk-card__heading nhsuk-heading-s">
-                  <a class="nhsuk-card__link" href="{{ data['training'][count[l]].link or '#' }}" target="_blank">{{ data['training'][count[l]].title }}</a>
-                </h2>
-                <ul class="govuk-list">
-                  <li><span class="govuk-body govuk-!-font-weight-bold">Provider:</span> {{ data['training'][count[l]].awardingOrganisation }}</li>
-                  <li>
-                    <span class="govuk-body govuk-!-font-weight-bold">Duration:</span>
-                    <span id="start-date"> {{ data['training'][count[l]].totalLearningTime }}</span>
-                  </li>
-                  <li><span class="govuk-body govuk-!-font-weight-bold">Location:</span> {{ data['training'][count[l]].type }}</li>
-                </ul>
-              </div>
+        <div class="search-card__container">
+
+          {% set unique_titles = [] %}
+          {% for course in training %}
+          {% if categories[i] in course.skillsCat %}
+          {% if unique_titles.indexOf(course.title) === -1 %}
+          {% set _ = unique_titles.push(course.title) %}
+
+          <div class="search-card" style="background-color: #fff;padding: 1rem;margin-bottom: 1rem; border: 1px solid #99DED4;">
+
+            <div class="search-card__name">
+
+              <h4 class="govuk-heading-m govuk-!-margin-bottom-1">
+                {{ course.title }}
+              </h4>
+
+              <p class="govuk-!-font-size-16 govuk-!-margin-bottom-4 govuk-!-margin-top-4">{{ course.audience }}</p>
+
+              {# first set this as a variable and then we can override if there are multiple providers #}
+
+              {% set providers %}
+              <ul class="govuk-list govuk-list--spaced">
+                <li class="govuk-!-padding-left-0">
+                  <strong>Provider:</strong> {{ course.awardingOrganisation }}<br>
+                  <strong>Code:</strong> {{ course.code }}<br>
+                  {% if course.link !== '' %}
+                  <strong>External Link:</strong> <a href="{{ course.link }}" target="_blank">{{ course.title }}</a>
+                  {% endif %}
+                </li>
+              </ul>
+              {% endset %}
+
+              {# check if there is more than 1 provider #}
+
+              {% set provider_count = 0 %}
+              {% for item in training %}
+              {% if item.title == course.title %}
+              {# multiple detected #}
+              {% set provider_count = provider_count +1 %}
+              {% endif %}
+              {% endfor %}
+
+              {% if provider_count > 1 %}
+
+              {% set providers %}
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              {{ provider_count }} providers available
+            </span>
+                </summary>
+                <div class="govuk-details__text">
+                  <ul class="govuk-list govuk-list--spaced govuk-list--bullet">
+                    {% for item in training %}
+                    {% if item.title == course.title %}
+                    <li class="govuk-!-padding-left-0">
+                      <strong>Provider:</strong> {{ item.awardingOrganisation }}<br>
+                      <strong>Code:</strong> {{ item.code }}<br>
+                      <strong>Duration:</strong> {{ item.duration }}<br>
+                      {% if item.link !== '' %}
+                      <strong>External Link:</strong> <a href="{{ item.link }}" target="_blank">{{ item.title }}</a>
+                      {% endif %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+              </details>
+              {% endset %}
+
+              {% endif %}
+
+              {{ providers | safe }}
+
             </div>
-          </li>
-          {%- endfor %}
-        </ul>
-        {% endif %}
+
+            <div class="search-card__status govuk-!-margin-top-2">
+              {{ 'Reimbursable' | tag | safe }}<br>
+              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-3" >Type: {{ course.type }}</p>
+              <!--          <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Code: {{ course.code }}</p>-->
+              {% if provider_count == 1 %}
+              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Total learning time:<br>{{ course.totalLearningTime }}</p>
+              {% endif %}
+            </div>
+
+          </div>
+
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+
+        </div>
 
       </div>
       {%- endfor %}
