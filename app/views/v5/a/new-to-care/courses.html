@@ -1,0 +1,331 @@
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '5' %}
+
+{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+
+{% block pageTitle %}
+Entry-level roles: Qualifications and courses
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+  items: [
+    {
+    text: "Home",
+      href: "../careers"
+    },
+    {
+      text: "Professional development",
+      href: "../careers"
+    },
+    {
+      text: "Career pathways",
+      href: "../cwp"
+    },
+    {
+      text: "Entry-level roles"
+    }
+  ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <span class="govuk-caption-xl">Role category A</span>
+      <h1 class="govuk-heading-xl nhsuk-u-margin-bottom-3">Entry-level roles</h1>
+
+      <nav class="x-govuk-secondary-navigation nhsuk-u-margin-bottom-6" aria-label="Secondary menu">
+        <ul class="x-govuk-secondary-navigation__list">
+          <li class="x-govuk-secondary-navigation__list-item ">
+            <a class="x-govuk-secondary-navigation__link" href="./" aria-current="page">
+              About these job roles
+            </a>
+          </li>
+          <li class="x-govuk-secondary-navigation__list-item ">
+            <a class="x-govuk-secondary-navigation__link" href="requirements">
+              Knowledge and skills
+            </a>
+          </li>
+          <li class="x-govuk-secondary-navigation__list-item ">
+            <a class="x-govuk-secondary-navigation__link" href="development">
+              Areas of specialism
+            </a>
+          </li>
+          <li class="x-govuk-secondary-navigation__list-item x-govuk-secondary-navigation__list-item--current">
+            <a class="x-govuk-secondary-navigation__link" href="courses">
+              Qualifications and courses
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h2 class="govuk-heading-m">Qualifications and courses for supervisors and leaders</h2>
+
+    <p class="nhsuk-u-reading-width">These recommended courses and training are quality assured to Department of Health and Social Care standards. </p>
+    <p class="govuk-!-margin-bottom-8 nhsuk-u-reading-width">The quality assurance (QA) framework describes the checking and approval process.</p>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-third">
+
+    <div class="search-bar">
+
+      <h3 class="govuk-heading-m">Filters</h3>
+
+      <form action="{{ thisPage }}" method="POST" role="form">
+
+        <div class="govuk-form-group">
+
+          <fieldset class="govuk-fieldset">
+
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              TFRS Reimbursable
+            </legend>
+
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+
+              <div class="govuk-checkboxes__item">
+                <input onchange="this.form.submit()" class="govuk-checkboxes__input" id="reimbursable" name="reimbursable" type="checkbox" value="reimbursable">
+                <label class="govuk-label govuk-checkboxes__label" for="reimbursable">
+                  Reimbursable
+                </label>
+              </div>
+
+            </div>
+
+          </fieldset>
+
+        </div>
+
+        <div class="govuk-form-group">
+
+          <fieldset class="govuk-fieldset">
+
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              Type
+            </legend>
+
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="type1" name="type" type="checkbox" value="type1">
+                <label class="govuk-label govuk-checkboxes__label" for="type1">
+                  e-Learning Module (16)
+                </label>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input onchange="this.form.submit()" class="govuk-checkboxes__input" id="type2" name="type" type="checkbox" value="Course" {% if 'Course' in data['type'] %} checked{% endif %} >
+                <label class="govuk-label govuk-checkboxes__label" for="type2">
+                  Course (3)
+                </label>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="type3" name="type" type="checkbox" value="type3">
+                <label class="govuk-label govuk-checkboxes__label" for="type3">
+                  Level 2 Certificate
+                </label>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="type4" name="type" type="checkbox" value="type4">
+                <label class="govuk-label govuk-checkboxes__label" for="type4">
+                  Level 2 Award
+                </label>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="type5" name="type" type="checkbox" value="type5">
+                <label class="govuk-label govuk-checkboxes__label" for="type5">
+                  Level 2 Diploma
+                </label>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="type6" name="type" type="checkbox" value="type6">
+                <label class="govuk-label govuk-checkboxes__label" for="type6">
+                  Level 3 Certificate
+                </label>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="type7" name="type" type="checkbox" value="type7">
+                <label class="govuk-label govuk-checkboxes__label" for="type7">
+                  Level 3 Award
+                </label>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="type8" name="type" type="checkbox" value="type8">
+                <label class="govuk-label govuk-checkboxes__label" for="type8">
+                  Level 3 Diploma
+                </label>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="type9" name="type" type="checkbox" value="type9">
+                <label class="govuk-label govuk-checkboxes__label" for="type9">
+                  Level 4 Award
+                </label>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="type10" name="type" type="checkbox" value="type10">
+                <label class="govuk-label govuk-checkboxes__label" for="type10">
+                  Autism Level 2 Certificate
+                </label>
+              </div>
+
+            </div>
+
+          </fieldset>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <div class="govuk-grid-column-two-thirds">
+
+    {% set unique_title = [] %}
+    {% for item in training %}
+    {% if unique_title.indexOf(item.title) === -1 %}
+    {% set _ = unique_title.push(item.title) %}
+    {% endif %}
+    {% endfor %}
+
+    <h2 class="govuk-heading-l">Results ({{ unique_title.length }})</h2> {{ data['type'] }}
+
+    <div class="search-card__container">
+
+      {% set unique_titles = [] %}
+      {% for course in training %}
+      {% if unique_titles.indexOf(course.title) === -1 %}
+      {% set _ = unique_titles.push(course.title) %}
+
+      <div class="search-card" style="background-color: #fff;padding: 1rem;margin-bottom: 1rem; border: 1px solid #99DED4;">
+
+        <div class="search-card__name">
+
+          <h4 class="govuk-heading-m govuk-!-margin-bottom-1">
+            {{ course.title }}
+          </h4>
+
+          <p class="govuk-!-font-size-16 govuk-!-margin-bottom-4 govuk-!-margin-top-4">{{ course.audience }}</p>
+
+          {# first set this as a variable and then we can override if there are multiple providers #}
+
+          {% set providers %}
+          <ul class="govuk-list govuk-list--spaced">
+            <li class="govuk-!-padding-left-0">
+              <strong>Provider:</strong> {{ course.awardingOrganisation }}<br>
+              <strong>Code:</strong> {{ course.code }}<br>
+              {% if course.link !== '' %}
+              <strong>External Link:</strong> <a href="{{ course.link }}" target="_blank">{{ course.title }}</a>
+              {% endif %}
+            </li>
+          </ul>
+          {% endset %}
+
+          {# check if there is more than 1 provider #}
+
+          {% set provider_count = 0 %}
+          {% for item in training %}
+          {% if item.title == course.title %}
+          {# multiple detected #}
+          {% set provider_count = provider_count +1 %}
+          {% endif %}
+          {% endfor %}
+
+          {% if provider_count > 1 %}
+
+          {% set providers %}
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              {{ provider_count }} providers available
+            </span>
+            </summary>
+            <div class="govuk-details__text">
+              <ul class="govuk-list govuk-list--spaced govuk-list--bullet">
+                {% for item in training %}
+                {% if item.title == course.title %}
+                <li class="govuk-!-padding-left-0">
+                  <strong>Provider:</strong> {{ item.awardingOrganisation }}<br>
+                  <strong>Code:</strong> {{ item.code }}<br>
+                  <strong>Duration:</strong> {{ item.duration }}<br>
+                  {% if item.link !== '' %}
+                  <strong>External Link:</strong> <a href="{{ item.link }}" target="_blank">{{ item.title }}</a>
+                  {% endif %}
+                </li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          </details>
+          {% endset %}
+
+          {% endif %}
+
+          {{ providers | safe }}
+
+        </div>
+
+        <div class="search-card__status govuk-!-margin-top-2">
+          {{ 'Reimbursable' | tag | safe }}<br>
+          <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-3" >Type: {{ course.type }}</p>
+          <!--          <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Code: {{ course.code }}</p>-->
+          {% if provider_count == 1 %}
+          <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Total learning time:<br>{{ course.totalLearningTime }}</p>
+          {% endif %}
+        </div>
+
+      </div>
+
+      {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+      <ul class="nhsuk-list nhsuk-pagination__list">
+        <li class="nhsuk-pagination-item--previous">
+          <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="development">
+            <span class="nhsuk-pagination__title">Previous</span>
+            <span class="nhsuk-u-visually-hidden">:</span>
+            <span class="nhsuk-pagination__page">Areas of specialism</span>
+            <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+              <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</div>
+
+{% endblock %}

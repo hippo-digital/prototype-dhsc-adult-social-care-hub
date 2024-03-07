@@ -1,0 +1,114 @@
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '5' %}
+
+{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+
+{% block pageTitle %}
+Professional development
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "careers"
+    },
+    {
+      text: "Professional development"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l">Professional development</h1>
+
+      <ul class="govuk-grid-row nhsuk-card-group">
+        <li class="govuk-grid-column-full nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+            <img style="width: 100%; padding: 2rem; padding-bottom: 0;" src="/public/images/cwp-small.svg" alt="Department of Heath and Social Care">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="cwp">Career pathways</a>
+              </h2>
+              <p class="nhsuk-card__description">The career pathways in adult social care are designed to help people in England to understand their career options. It also creates a consistent guide for the adult social care sector. This information is not relevant for social work.</p>
+
+              <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="govuk-grid-row nhsuk-card-group">
+
+<!--        <li class="govuk-grid-column-one-third nhsuk-card-group__item">-->
+<!--          <div class="nhsuk-card nhsuk-card&#45;&#45;topic nhsuk-card&#45;&#45;clickable">-->
+<!--            <div class="nhsuk-card__content nhsuk-card__content&#45;&#45;primary">-->
+<!--              <h2 class="nhsuk-card__heading nhsuk-heading-m">-->
+<!--                <a class="nhsuk-card__link" href="#">Jobs in adult social care</a>-->
+<!--              </h2>-->
+<!--              <p class="nhsuk-card__description">Search for adult social care jobs in your local area.</p>-->
+<!--              <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">-->
+<!--                <circle cx="13.333" cy="13.333" r="13.333" fill="" />-->
+<!--                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">-->
+<!--                  <path d="M15.438 13l-3.771 3.771" />-->
+<!--                  <path data-name="Path" d="M11.667 9.229L15.438 13" />-->
+<!--                </g>-->
+<!--              </svg>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+
+        <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="#">Courses and training</a>
+              </h2>
+              <p class="nhsuk-card__description">Search for courses and training across the UK quality assured to DHSC standards.</p>
+              <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+
+        <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="#">Skills Record</a>
+              </h2>
+              <p class="nhsuk-card__description">The Skills Record keeps all your training and practical experience in one place.</p>
+              <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,219 @@
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '5' %}
+
+{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+
+{% block pageTitle %}
+Professional development
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "careers"
+    },
+    {
+      text: "Professional development",
+      href: "careers"
+    },
+    {
+      text: "Career pathways"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">Career pathways in adult social care</h1>
+
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h2 class="govuk-heading-m">The role categories:</h2>
+
+    <ul class="govuk-grid-row nhsuk-card-group">
+
+      <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <span class="govuk-caption-l">Role category A</span>
+            <h2 class="nhsuk-card__heading nhsuk-heading-l" style="margin-top: 0.5rem;">
+              <a class="nhsuk-card__link" href="new-to-care/">Entry-level roles</a>
+            </h2>
+            <p class="nhsuk-card__description">People working in adult social care help people who draw on care to be able to live their lives. These roles are the starting point for a career in adult social care.</p>
+            <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+              <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+              <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                <path d="M15.438 13l-3.771 3.771" />
+                <path data-name="Path" d="M11.667 9.229L15.438 13" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+
+      <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+<!--          <img style="width: 100%;" src="/public/images/care-worker.jpg" alt="Department of Heath and Social Care">-->
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <span class="govuk-caption-l">Role category B</span>
+            <h2 class="nhsuk-card__heading nhsuk-heading-l" style="margin-top: 0.5rem;">
+              <a class="nhsuk-card__link" href="care-worker/">Care or support workers</a>
+            </h2>
+                          <p class="nhsuk-card__description">A care or support worker directly helps people who draw on care to be able to live their lives. This can be help with personal care, finances, or anything that helps a person live their life.</p>
+            <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+              <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+              <g data-name="Group 1" fill="none" stroke="#CCEFE9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                <path d="M15.438 13l-3.771 3.771" />
+                <path data-name="Path" d="M11.667 9.229L15.438 13" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+
+      <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+          <!--            <img class="nhsuk-card__img" src="https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg" alt="">-->
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <span class="govuk-caption-l">Role category C</span>
+            <h2 class="nhsuk-card__heading nhsuk-heading-l" style="margin-top: 0.5rem;">
+              <a class="nhsuk-card__link" href="supervisor/">Supervisors or leaders</a>
+            </h2>
+                          <p class="nhsuk-card__description">A supervisor or leader is a team leader or manages a team of care workers. This can be a care or support worker or someone from another sector who is now working in adult social care.</p>
+            <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+              <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+              <g data-name="Group 1" fill="none" stroke="#CCEFE9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                <path d="M15.438 13l-3.771 3.771" />
+                <path data-name="Path" d="M11.667 9.229L15.438 13" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+
+      <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+          <!--            <img class="nhsuk-card__img" src="https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg" alt="">-->
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <span class="govuk-caption-l">Role category D</span>
+            <h2 class="nhsuk-card__heading nhsuk-heading-l" style="margin-top: 0.5rem;">
+              <a class="nhsuk-card__link" href="leader/">Practice leaders</a>
+            </h2>
+                          <p class="nhsuk-card__description">A practice leader has experience in a specialism like autism or dementia and leads how to deliver specialist care. They are an expert in their chosen specialism.</p>
+            <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+              <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+              <g data-name="Group 1" fill="none" stroke="#FAE3CC" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                <path d="M15.438 13l-3.771 3.771" />
+                <path data-name="Path" d="M11.667 9.229L15.438 13" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h2 class="govuk-heading-l">How it works</h2>
+
+    <p>The career pathways are designed to help people understand career options in adult social care in England. This information is not relevant for social work. It helps you see where you are in your career and directly links to recommended courses and training.</p>
+
+    <p>It contains information about the different job role categories in adult social care. This includes:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>what you need to start a job role</li>
+      <li>what each job role should do</li>
+      <li>the different options to develop a career in each job role</li>
+      <li>what training is relevant for each job role</li>
+    </ul>
+
+    <p>It also links workers to courses and training.</p>
+    
+    <h2 class="govuk-heading-l">Job roles in adult social care</h2>
+
+    <p>The career pathways includes all the job role categories in adult social care.</p>
+
+    <p>These are the 4 job role categories currently included in the pathway:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Entry-level roles (category A)</li>
+      <li>Care or support workers (category B)</li>
+      <li>Supervisors or leaders (category C)</li>
+      <li>Practice leaders (category D)</li>
+    </ul>
+
+    <p>Each of the job role categories includes:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>what you need to start a job role</li>
+      <li>what experience or skills are needed to do that job role</li>
+      <li>what experience or skills to aim for to develop in that job role</li>
+      <li>career options for that job role and how to get there</li>
+      <li>courses and training you can do for that job role, to specialise, or develop your career</li>
+    </ul>
+
+  <p>Each job role category name may be different to the variety of job role titles that organisations are using. The names of the categories are a guide to make it clear what job role we are referring to in adult social care. </p>
+  
+  <h2 class="govuk-heading-l">Manage your career with the Skills Record</h2>
+
+  <p>The Skills Record keeps all your training and practical experience in one place. You need to create an account to do this. </p>
+  <p>You can see any courses, training or practical experience you have done to develop your career in adult social care. You will be able to share this with your current or any future employers.  </p>
+  
+  <p>This includes:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>everything you have done to progress your career in adult social care</li>
+      <li>what training you have already done and when you may need to update it</li>
+      <li>the type of training you have done so that you don't repeat training if you move to a new organisation</li>
+      <li>letting you know where you are in your career</li>
+    </ul>
+  
+  <p>Managers can also endorse skills and practical experience.</p>
+  <p>Training providers can add what training you have done directly into the Skills Record.</p>
+
+  <h2 class="govuk-heading-l">Do training recommended and funded by the government</h2>
+
+<p>You can find recommended training providers, courses and training across the UK with a variety of learning options such as online or in person. </p>
+<p>Training providers and their courses and training are quality assured to DHSC standards. </p>
+<p>If you start working in adult social care your employer can pay for your training or courses and then apply for a refund. </p>
+</div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <ul class="govuk-grid-row nhsuk-card-group">
+
+      <li class="govuk-grid-column-three-quarters nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic ">
+          <img class="nhsuk-card__img" src="/public/images/cwp.svg" style="width: 100%; padding: 2rem; padding-bottom: 0;" alt="">
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <h3>Phase 1</h3>
+            <p>This first phase of the pathway focuses on direct care and support roles at 4 levels with each level relating to a role category. Roles within each category may have different job titles but the roles will have a high degree of similarity across the sector.</p>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

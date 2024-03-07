@@ -360,6 +360,227 @@ router.get('/v4/a/leader/courses', function (req, res) {
   })
 })
 
+
+// V5 ROUTES
+
+router.post('/v5/:test/:role/switch', function (req, res) {
+  // trim out the white space we we can count it easier
+  let target = req.session.data['target']
+  var url = req.get('Referrer') .split( '/' );
+  // /b/supervisor/switch-to-a
+  res.redirect('/v5/a/' + url[5] + '/' + url[6] )
+})
+
+router.post('/v5/:test/:role/switchbrand', function (req, res) {
+  // trim out the white space we we can count it easier
+  let brand = req.session.data['brand']
+  var url = req.get('Referrer') .split( '/' );
+  // /b/supervisor/switch-to-a
+  res.redirect('/v5/' + url[4] + '/' + url[5] + '/' + url[6] )
+})
+
+router.post('/v5/:test/switch', function (req, res) {
+  // trim out the white space we we can count it easier
+  let target = req.session.data['target']
+  var url = req.get('Referrer') .split( '/' );
+  res.redirect('/v5/a/careers')
+})
+
+router.post('/v5/:test/switchbrand', function (req, res) {
+  // trim out the white space we we can count it easier
+  let target = req.session.data['target']
+  var url = req.get('Referrer') .split( '/' );
+  res.redirect('/v5/a/careers')
+})
+
+router.get('/v5/a/new-to-care/requirements', function (req, res) {
+  // get the skills for this role
+  const skillsList = req.session.data['skillsCats']
+  const training = req.session.data['training']
+
+  // create an empty array to store a list of the categories
+  let skillCategories = [];
+  let trainingList = [];
+
+  // loop through the skills object looking for a matches against the returned checked items
+  skillsList.forEach(item => {
+    if (item.role === 'rolea') {
+      skillCategories.push(item.category);
+    }
+  });
+  // loop through the skills object looking for a matches against the returned checked items
+  training.forEach(item => {
+    if (item.roleCat.includes('rolea')) {
+      trainingList.push(item);
+    }
+  });
+
+  return res.render('v5/a/new-to-care/requirements', {
+    'categories': skillCategories,
+    'training': trainingList
+  })
+})
+
+router.get('/v5/a/new-to-care/courses', function (req, res) {
+  // get the skills for this role
+  const training = req.session.data['training']
+  // create an empty array to store a list of the categories
+  let trainingList = [];
+
+  // loop through the skills object looking for a matches against the returned checked items
+  training.forEach(item => {
+    if (item.roleCat.includes('rolea')) {
+      trainingList.push(item);
+    }
+  });
+
+  console.log(trainingList)
+  return res.render('v5/a/new-to-care/courses', {
+    'training': trainingList
+  })
+})
+
+router.get('/v5/a/care-worker/requirements', function (req, res) {
+  // get the skills for this role
+  const skillsList = req.session.data['skillsCats']
+  const training = req.session.data['training']
+
+  // create an empty array to store a list of the categories
+  let skillCategories = [];
+  let trainingList = [];
+
+  // loop through the skills object looking for a matches against the returned checked items
+  skillsList.forEach(item => {
+    if (item.role === 'roleb') {
+      skillCategories.push(item.category);
+    }
+  });
+  // loop through the skills object looking for a matches against the returned checked items
+  training.forEach(item => {
+    if (item.roleCat.includes('roleb')) {
+      trainingList.push(item);
+    }
+  });
+
+  return res.render('v5/a/care-worker/requirements', {
+    'categories': skillCategories,
+    'training': trainingList
+  })
+})
+
+router.get('/v5/a/care-worker/courses', function (req, res) {
+  // get the skills for this role
+  const training = req.session.data['training']
+  // create an empty array to store a list of the categories
+  let trainingList = [];
+
+  // loop through the skills object looking for a matches against the returned checked items
+  training.forEach(item => {
+    if (item.roleCat.includes('roleb')) {
+      trainingList.push(item);
+    }
+  });
+
+  console.log(trainingList)
+  return res.render('v5/a/care-worker/courses', {
+    'training': trainingList
+  })
+})
+
+router.get('/v5/a/supervisor/requirements', function (req, res) {
+  // get the skills for this role
+  const skillsList = req.session.data['skillsCats']
+  const training = req.session.data['training']
+
+  // create an empty array to store a list of the categories
+  let skillCategories = [];
+  let trainingList = [];
+
+  // loop through the skills object looking for a matches against the returned checked items
+  skillsList.forEach(item => {
+    if (item.role === 'rolec') {
+      skillCategories.push(item.category);
+    }
+  });
+  // loop through the skills object looking for a matches against the returned checked items
+  training.forEach(item => {
+    if (item.roleCat.includes('rolec')) {
+      trainingList.push(item);
+    }
+  });
+
+  return res.render('v5/a/supervisor/requirements', {
+    'categories': skillCategories,
+    'training': trainingList
+  })
+})
+
+router.get('/v5/a/supervisor/courses', function (req, res) {
+  // get the skills for this role
+  const training = req.session.data['training']
+  // create an empty array to store a list of the categories
+  let trainingList = [];
+
+  // loop through the skills object looking for a matches against the returned checked items
+  training.forEach(item => {
+    if (item.roleCat.includes('rolec')) {
+      trainingList.push(item);
+    }
+  });
+
+  console.log(trainingList)
+  return res.render('v5/a/supervisor/courses', {
+    'training': trainingList
+  })
+})
+
+router.get('/v5/a/leader/requirements', function (req, res) {
+  // get the skills for this role
+  const skillsList = req.session.data['skillsCats']
+  const training = req.session.data['training']
+
+  // create an empty array to store a list of the categories
+  let skillCategories = [];
+  let trainingList = [];
+
+  // loop through the skills object looking for a matches against the returned checked items
+  skillsList.forEach(item => {
+    if (item.role === 'roled') {
+      skillCategories.push(item.category);
+    }
+  });
+  // loop through the skills object looking for a matches against the returned checked items
+  training.forEach(item => {
+    if (item.roleCat.includes('roled')) {
+      trainingList.push(item);
+    }
+  });
+
+  return res.render('v5/a/leader/requirements', {
+    'categories': skillCategories,
+    'training': trainingList
+  })
+})
+
+router.get('/v5/a/leader/courses', function (req, res) {
+  // get the skills for this role
+  const training = req.session.data['training']
+  // create an empty array to store a list of the categories
+  let trainingList = [];
+
+  // loop through the skills object looking for a matches against the returned checked items
+  training.forEach(item => {
+    if (item.roleCat.includes('roled')) {
+      trainingList.push(item);
+    }
+  });
+
+  console.log(trainingList)
+  return res.render('v5/a/leader/courses', {
+    'training': trainingList
+  })
+})
+
 function devModeRoute(req, res, next) {
   if (!req.session.data['devMode']) {
     console.log('no data found')

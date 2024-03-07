@@ -1,0 +1,22 @@
+<div class="proto-error">
+  <div class="">
+    <div class="proto-action-icon"></div>
+    <div class="proto-action-text">Branding:</div>
+
+    <form style="display:inline-block;vertical-align:top;" action="switchbrand" method="post">
+      <input type="hidden" name="brand" value="1" />
+      <button href="" class="proto-error-text-small {% if data['brand'] === '1' %}active{% endif %}">1</button>
+    </form>
+
+    <form style="display:inline-block;vertical-align:top;" action="switchbrand" method="post">
+      <input type="hidden" name="brand" value="4" />
+      <button href="" class="proto-error-text-small {% if data['brand'] === '4' %}active{% endif %}">4</button>
+    </form>
+
+    <form style="display:inline-block;vertical-align:top;" action="switchbrand" method="post">
+      <input type="hidden" name="brand" value="5" />
+      <button href="" class="proto-error-text-small {% if data['brand'] === '5' %}active{% endif %}">5</button>
+    </form>
+  </div>
+
+</div>
