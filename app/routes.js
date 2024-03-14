@@ -5,6 +5,7 @@
 
 const govukPrototypeKit = require('govuk-prototype-kit')
 const router = govukPrototypeKit.requests.setupRouter()
+const fs = require('fs-extra') // needed to import the json data
 
 router.use((req, res, next) => {
   const log = {
@@ -581,27 +582,52 @@ router.get('/v5/a/leader/courses', function (req, res) {
   })
 })
 
-function devModeRoute(req, res, next) {
-  if (!req.session.data['devMode']) {
-    console.log('no data found')
-    var devMode = req.query.devMode
-    if (devMode === 'true') {
-      console.log('devmode detected')
-      req.session.data['devMode'] = 'true'
-      console.log('local storage updated')
+// function to load in data files
+function loadJSONFromFile(fileName, path = 'app/data/') {
+  let jsonFile = fs.readFileSync(path + fileName)
+  return JSON.parse(jsonFile)
+}
+router.post("/datafile", function(req,res) {
+  // grab the value from the form and use it to build the file name
+  let grantsFile = req.session.data.selectedData
+  req.session.data.selectedFile = 'session-data-defaults-'+ contentFile +'.json'
+  console.log('setting data file as: session-data-defaults-' + contentFile + '.json')
+
+  // reload index page
+  res.redirect("/")
+})
+
+function allRoutes(req, res, next) {
+  // check the version number of the referer if it exists
+  if (req.get('Referrer')) {
+    var refererURL = req.get('Referrer') .split( '/' );
+    var refererVersion = refererURL[3]
+  }
+
+  var destURL = req.path .split( '/' );
+  const destVersion = destURL[1]
+
+  console.log('refererURL: ' + refererURL)
+  console.log('destURL: ' + destURL)
+
+  if (refererURL == null) {
+
+    console.log('version changed manually')
+
+    if (destVersion === req.session.data.headVersion) {
+      // reset data to the defaults
+      req.session.data = req.app.locals
     } else {
-      console.log('devmode not detected')
+      // change the data
+      req.session.data.selectedFile = 'session-data-defaults_'+ destVersion +'.json'
+      console.log('file:' + req.session.data.selectedFile)
+      req.session.data = loadJSONFromFile(req.session.data.selectedFile)
     }
-  } else {
-    console.log('data found and set to ' + req.session.data['devMode'])
   }
-  if (process.env.PROD === 'TRUE') {
-    req.session.data['local'] = ''
-  } else {
-    req.session.data['local'] = 'true'
-  }
+
+  console.log('version=' + destVersion)
   next()
 }
 
-router.get('/*', devModeRoute)
+router.get('/*', allRoutes)
 
