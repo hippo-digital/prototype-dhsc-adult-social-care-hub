@@ -610,18 +610,20 @@ function allRoutes(req, res, next) {
   console.log('refererURL: ' + refererURL)
   console.log('destURL: ' + destURL)
 
-  if (refererURL == null) {
+  if (refererURL == null || refererVersion == null) {
 
     console.log('version changed manually')
 
     if (destVersion === req.session.data.headVersion) {
       // reset data to the defaults
       req.session.data = req.app.locals
+      console.log('restoring default data')
     } else {
       // change the data
       req.session.data.selectedFile = 'session-data-defaults_'+ destVersion +'.json'
       console.log('file:' + req.session.data.selectedFile)
       req.session.data = loadJSONFromFile(req.session.data.selectedFile)
+      console.log('loading in ' + destVersion + ' data')
     }
   }
 
