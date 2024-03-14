@@ -602,6 +602,10 @@ function allRoutes(req, res, next) {
   if (req.get('Referrer')) {
     var refererURL = req.get('Referrer') .split( '/' );
     var refererVersion = refererURL[3]
+    if (refererVersion === '') {
+      console.log('link from homepage')
+      var homepageLink = 'true'
+    }
   }
 
   var destURL = req.path .split( '/' );
@@ -610,16 +614,17 @@ function allRoutes(req, res, next) {
   console.log('refererURL: ' + refererURL)
   console.log('destURL: ' + destURL)
 
-  if (refererURL == null || refererVersion == null) {
+  // if url hacked or the link was from the homepage
+  if (refererURL == null || homepageLink === 'true') {
 
-    console.log('version changed manually')
-
+    console.log('version number changed')
+    // check the change
     if (destVersion === req.session.data.headVersion) {
       // reset data to the defaults
       req.session.data = req.app.locals
       console.log('restoring default data')
     } else {
-      // change the data
+      // change the data to the corresponding file
       req.session.data.selectedFile = 'session-data-defaults_'+ destVersion +'.json'
       console.log('file:' + req.session.data.selectedFile)
       req.session.data = loadJSONFromFile(req.session.data.selectedFile)
@@ -627,6 +632,7 @@ function allRoutes(req, res, next) {
     }
   }
 
+  console.log(refererVersion)
   console.log('version=' + destVersion)
   next()
 }
