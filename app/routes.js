@@ -616,7 +616,7 @@ function allRoutes(req, res, next) {
 
   // if url hacked or the link was from the homepage
   if (refererURL == null || homepageLink === 'true') {
-    if (destVersion != null || destVersion != '' || destVersion != ',') {
+    if (destVersion != null || destVersion !== '' || destVersion !== ',') {
       console.log('version number changed')
       // check the change
       if (destVersion === req.session.data.headVersion) {
