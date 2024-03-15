@@ -1,10 +1,11 @@
 {% set serviceName = 'Working in adult social care' %}
 {% set brand = data['brand'] or '5' %}
+{% set section = 'careers' %}
 
 {% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
 
 {% block pageTitle %}
-  Care Workers: Qualifications and courses
+  Care Workers: Training and qualifications
 {% endblock %}
 
 {% block beforeContent %}
@@ -41,7 +42,7 @@
         <ul class="x-govuk-secondary-navigation__list">
           <li class="x-govuk-secondary-navigation__list-item ">
             <a class="x-govuk-secondary-navigation__link" href="./" aria-current="page">
-              About these job roles
+              About this category
             </a>
           </li>
           <li class="x-govuk-secondary-navigation__list-item ">
@@ -56,7 +57,7 @@
           </li>
           <li class="x-govuk-secondary-navigation__list-item x-govuk-secondary-navigation__list-item--current">
             <a class="x-govuk-secondary-navigation__link" href="courses">
-              Qualifications and courses
+              Training and qualifications
             </a>
           </li>
         </ul>
@@ -68,9 +69,9 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
 
-    <h2 class="govuk-heading-m">Qualifications and courses for Care or support workers</h2>
+    <h2 class="govuk-heading-l">Training and qualifications</h2>
 
-    <p class="nhsuk-u-reading-width">These recommended courses and training are quality assured to Department of Health and Social Care standards.</p>
+    <p class="nhsuk-u-reading-width">These recommended training courses and qualifications are quality assured to Department of Health and Social Care standards.</p>
     <p class="govuk-!-margin-bottom-8 nhsuk-u-reading-width">The quality assurance (QA) framework describes the checking and approval process.</p>
 
   </div>

@@ -1,5 +1,6 @@
 {% set serviceName = 'Working in adult social care' %}
 {% set brand = data['brand'] or '5' %}
+{% set section = 'careers' %}
 
 {% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
 
@@ -42,7 +43,7 @@
         <ul class="x-govuk-secondary-navigation__list">
           <li class="x-govuk-secondary-navigation__list-item x-govuk-secondary-navigation__list-item--current">
             <a class="x-govuk-secondary-navigation__link" href="./" aria-current="page">
-              About these job roles
+              About this category
             </a>
           </li>
           <li class="x-govuk-secondary-navigation__list-item">
@@ -57,13 +58,13 @@
           </li>
           <li class="x-govuk-secondary-navigation__list-item ">
             <a class="x-govuk-secondary-navigation__link" href="courses">
-              Qualifications and courses
+              Training and qualifications
             </a>
           </li>
         </ul>
       </nav>
 
-      <h2 class="govuk-heading-m">About this job role</h2>
+      <h2 class="govuk-heading-l">About this category</h2>
 
     </div>
   </div>
