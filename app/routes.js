@@ -616,19 +616,20 @@ function allRoutes(req, res, next) {
 
   // if url hacked or the link was from the homepage
   if (refererURL == null || homepageLink === 'true') {
-
-    console.log('version number changed')
-    // check the change
-    if (destVersion === req.session.data.headVersion) {
-      // reset data to the defaults
-      req.session.data = req.app.locals
-      console.log('restoring default data')
-    } else {
-      // change the data to the corresponding file
-      req.session.data.selectedFile = 'session-data-defaults_'+ destVersion +'.json'
-      console.log('file:' + req.session.data.selectedFile)
-      req.session.data = loadJSONFromFile(req.session.data.selectedFile)
-      console.log('loading in ' + destVersion + ' data')
+    if (destVersion != null) {
+      console.log('version number changed')
+      // check the change
+      if (destVersion === req.session.data.headVersion) {
+        // reset data to the defaults
+        req.session.data = req.app.locals
+        console.log('restoring default data')
+      } else {
+        // change the data to the corresponding file
+        req.session.data.selectedFile = 'session-data-defaults_'+ destVersion +'.json'
+        console.log('file:' + req.session.data.selectedFile)
+        req.session.data = loadJSONFromFile(req.session.data.selectedFile)
+        console.log('loading in ' + destVersion + ' data')
+      }
     }
   }
 
