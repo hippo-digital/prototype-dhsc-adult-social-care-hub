@@ -13,7 +13,7 @@ Practice leader: Knowledge and skills
   items: [
     {
       text: "Home",
-      href: "../careers"
+      href: "../index"
     },
     {
       text: "Professional development",
@@ -98,20 +98,24 @@ Practice leader: Knowledge and skills
       </ol>
     </div>
 
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-two-thirds" id="panelTop">
 
       {# render right side content #}
 
       {% for i in range(0, categories.length) -%}
 
-      <div class="govuk-tabs__panel govuk-tabs__panel--right nhsuk-u-padding-left-5" role="tabpanel" aria-labelledby="tab_skill{{i+1}}" id="skill{{i+1}}">
-        <h2 class="govuk-heading-l">{{ categories[i] }}</h2>
-
-        {% for n in range(0, data.skillsCats.length) -%}
-        {% if data.skillsCats[n].category === categories[i] and data.skillsCats[n].role === 'roled' %}
-        {{ data.skillsCats[n].description|safe }}
-        {% endif %}
-        {%- endfor %}
+      <details class="nhsuk-details nhsuk-expander govuk-tabs__panel govuk-tabs__panel--right" role="tabpanel" aria-labelledby="tab_skill{{i+1}}" id="skill{{i+1}}">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            <h2 class="govuk-heading-l">{{ categories[i] }}</h2>
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          {% for n in range(0, data.skillsCats.length) -%}
+          {% if data.skillsCats[n].category === categories[i] and data.skillsCats[n].role === 'roled' %}
+          {{ data.skillsCats[n].description|safe }}
+          {% endif %}
+          {%- endfor %}
 
         <details class="nhsuk-details nhsuk-expander">
           <summary class="nhsuk-details__summary">
@@ -248,13 +252,17 @@ Practice leader: Knowledge and skills
           {% endfor %}
 
         </div>
+        </div>
 
-      </div>
+      </details>
+
       {%- endfor %}
 
-    </div>
   </div>
 </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
 
 <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
   Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
@@ -285,4 +293,12 @@ Practice leader: Knowledge and skills
   </ul>
 </nav>
 
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block pageScripts %}
+{% include "includes/scripts-v5.html" %}
 {% endblock %}

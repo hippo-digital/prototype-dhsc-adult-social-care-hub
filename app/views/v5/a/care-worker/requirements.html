@@ -13,7 +13,7 @@
   items: [
     {
       text: "Home",
-      href: "../careers"
+      href: "../index"
     },
     {
       text: "Professional development",
@@ -250,7 +250,6 @@
             </div>
           </div>
 
-
       </details>
 
       {%- endfor %}
@@ -294,91 +293,10 @@
 
   </div>
 </div>
+</div>
 
-  <script>
+{% endblock %}
 
-    // Function to check the transition and call the above function if needed
-    let currentState
-    function checkForTransition() {
-      const width = window.innerWidth;
-      const isMobile = width < 641;
-      const isTablet = width >= 641;
-
-      console.log('isMobile: ' + isMobile);
-      console.log('isTablet: ' + isTablet);
-
-      // Transition from tablet to mobile
-      if (currentState === 'tablet' && isMobile) {
-        console.log('transitioned to mobile');
-        // Your tablet-specific JavaScript here
-
-        // Select all <div> elements with a specific class
-        const allDivs = document.querySelectorAll('div.govuk-tabs__panel--right')
-
-        allDivs.forEach((divs) => {
-          // Create a new <details> element
-          let details = document.createElement('details');
-
-          // Copy attributes from the div to the p
-          Array.from(divs.attributes).forEach(attr => {
-            details.setAttribute(attr.name, attr.value);
-          });
-
-          // Transfer the content
-          details.innerHTML = divs.innerHTML;
-
-          // Replace the div with the p in the DOM
-          divs.parentNode.replaceChild(details, divs);
-        });
-        currentState = 'mobile';
-      }
-      // Update the current state if it's tablet but not a transition
-      else if (isTablet) {
-        console.log('transitioned to tablet');
-
-        // Select all <details> elements with a specific class
-        const allDetails = document.querySelectorAll('details.govuk-tabs__panel--right')
-
-        allDetails.forEach((details) => {
-          // Create a new <div> element
-          let div = document.createElement('div');
-
-          // Copy attributes from the div to the p
-          Array.from(details.attributes).forEach(attr => {
-            div.setAttribute(attr.name, attr.value);
-          });
-
-          // Transfer the content
-          div.innerHTML = details.innerHTML;
-
-          // Replace the div with the p in the DOM
-          details.parentNode.replaceChild(div, details);
-        });
-        currentState = 'tablet';
-      }
-      // Update the current state if it's neither tablet nor a transition (e.g., desktop or mobile directly)
-      else if (!isTablet && !isMobile) {
-        currentState = 'other';
-      }
-    }
-
-    // Set initial state based on the window size when the script first runs
-    checkForTransition();
-    // Listen for window resize events
-    window.addEventListener('resize', checkForTransition);
-
-    // scrolling behaviors
-    const allTabs = document.querySelectorAll('a.govuk-tabs__tab')
-    // get top of panel
-    const topOfDetails = document.querySelector('#panelTop');
-    // Function to handle the click event on each anchor
-    allTabs.forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();  // Prevent the default anchor behavior
-        topOfDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
-
-  </script>
-
+{% block pageScripts %}
+  {% include "includes/scripts-v5.html" %}
 {% endblock %}
