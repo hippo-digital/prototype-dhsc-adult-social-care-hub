@@ -5,13 +5,12 @@
   <div class="govuk-header-account nhsuk-navigation-container">
     <div class="nhsuk-navigations govuk-width-container">
       <a class="govuk-header-account-link" href="">Log in</a>
-
     </div>
   </div>
 
-  <div class="govuk-header__container govuk-header__container--white govuk-width-container">
+  <div class="govuk-header__container govuk-header__container--flex govuk-header__container--white govuk-width-container">
 
-      <div class="govuk-header__logo govuk-header__logo--dh">
+      <div class="govuk-header__logo govuk-header__logo--flex govuk-header__logo--dh">
         <a href="/" class="govuk-header__link govuk-header__link--homepage">
 
           <svg focusable="false" role="img" class="govuk-header__logotype" width="114" height="35" viewBox="0 0 114 35" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="CARE.UK">
@@ -28,15 +27,12 @@
               </clipPath>
             </defs>
           </svg>
-          <p class="govuk-!-margin-top-2 govuk-!-font-weight-bold">{{ serviceName or 'Care Workforce Pathway' }}</p>
+          <p class="govuk-!-margin-top-2 nhsuk-u-margin-bottom-0 govuk-!-font-weight-bold">{{ serviceName or 'Care Workforce Pathway' }}</p>
         </a>
       </div>
 
-
-    <div class="govuk-header__logo--rev">
-
-      <div class="govuk-header__logo">
-        <svg clip-rule="evenodd" fill-rule="evenodd" width="103" height="82" stroke-linejoin="round" stroke-miterlimit="2"
+      <div class="govuk-header__logo--flex govuk-header__logo--flex-right">
+        <svg clip-rule="evenodd" fill-rule="evenodd" width="90" height="82" stroke-linejoin="round" stroke-miterlimit="2"
              viewBox="0 0 189 149" xmlns="http://www.w3.org/2000/svg">
           <g fill-rule="nonzero">
             <path d="m0 1049.05h2.704v-22.89-57.48h-2.704z" fill="#00ad93"
@@ -219,32 +215,36 @@
       </div>
 
     </div>
-  </div>
 
   <div class="nhsuk-navigation-container nhsuk-navigation-container--rev2">
     <nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
       <ul class="nhsuk-header__navigation-list">
         <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link" href="#">
+          <a class="nhsuk-header__navigation-link {% if section === 'home' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/a/index">
+            Home
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link {% if section === 'about' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/a/about">
             About adult social care
           </a>
         </li>
         <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--selected" href="/v4/a/careers" >
+          <a class="nhsuk-header__navigation-link {% if section === 'careers' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/a/careers" >
             Professional development
           </a>
         </li>
         <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link" href="#">
+          <a class="nhsuk-header__navigation-link {% if section === 'orgs' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/a/organisations">
             Information for employers
           </a>
         </li>
         <li class="nhsuk-mobile-menu-container">
           <button class="nhsuk-header__menu-toggle nhsuk-header__navigation-link" id="toggle-menu" aria-expanded="false">
             <span class="nhsuk-u-visually-hidden">Browse</span>
-            More
+            Menu
             <svg class="nhsuk-icon nhsuk-icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              <path fill="#00a188" d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
             </svg>
           </button>
         </li>
@@ -264,12 +264,12 @@
         <h2 class="govuk-footer__heading govuk-heading-m">Care Workforce Pathway</h2>
         <ul class="govuk-footer__list govuk-footer__list--columns-1">
           <li class="govuk-footer__list-item">
-            <a class="govuk-footer__link" href="#">
+            <a class="govuk-footer__link" href="/v5/a/index">
               Home
             </a>
           </li>
           <li class="govuk-footer__list-item">
-            <a class="govuk-footer__link" href="#">
+            <a class="govuk-footer__link" href="/v5/a/about">
               About us
             </a>
           </li>
@@ -327,7 +327,7 @@
   <div class="govuk-width-container">
     <div class="govuk-footer__copyright">
       <div class="govuk-footer__copyright-item">
-        © DHSC, [CARE]
+        © DHSC, {{ serviceName or 'Care Workforce Pathway' }}
       </div>
     </div>
   </div>
