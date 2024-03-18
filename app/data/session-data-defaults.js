@@ -11,28 +11,28 @@ module.exports = {
       "category": "Role category A",
       "name": "Entry-level roles",
       "url": "new-to-care/",
-      "description": "People working in adult social care help people who draw on care to be able to live their lives. These roles are the starting point for a career in adult social care."
+      "description": "The starting point for a career in adult social care. Job titles may include care assistant or junior care worker."
     },
     {
       "code": "roleb",
       "category": "Role category B",
       "name": "Care or support workers",
       "url": "care-worker/",
-      "description": "A care or support worker directly helps people who draw on care to be able to live their lives. This can be help with personal care, finances, or anything that helps a person live their life."
+      "description": "Directly helping people who draw on care to be able to live their lives. Job titles may include care worker, support worker, senior care worker."
     },
     {
       "code": "rolec",
       "category": "Role category C",
       "name": "Supervisors or leaders",
       "url": "supervisor/",
-      "description": "A supervisor or leader is a team leader or manages a team of care workers. This can be a care or support worker or someone from another sector who is now working in adult social care."
+      "description": "A team leader or someone who manages a team of care workers. Job titles may include care manager, care supervisor, team leader."
     },
     {
       "code": "roled",
       "category": "Role category D",
       "name": "Practice leaders",
       "url": "leader/",
-      "description": "A practice leader has experience in a specialism like autism or dementia and leads how to deliver specialist care. They are an expert in their chosen specialism."
+      "description": "Leads a care setting on how they deliver specialist care. They are an expert or champion in their chosen specialism. Job titles may include autism or dementia champion, care specialist."
     }
   ],
   "skillsCats": [
