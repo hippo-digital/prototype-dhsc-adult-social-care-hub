@@ -11,14 +11,14 @@ module.exports = {
       "category": "Role category A",
       "name": "Entry-level roles",
       "url": "new-to-care/",
-      "description": "The starting point for a career in adult social care. Job titles may include care assistant or junior care worker."
+      "description": "The starting point to giving direct care in adult social care. Job titles may include care assistant or junior care worker."
     },
     {
       "code": "roleb",
       "category": "Role category B",
       "name": "Care or support workers",
       "url": "care-worker/",
-      "description": "Directly helping people who draw on care to be able to live their lives. Job titles may include care worker, support worker, senior care worker."
+      "description": "Directly helping people who draw on care to be able to live their lives. Job titles may include care worker, support worker, senior care worker, care co-ordinator."
     },
     {
       "code": "rolec",
@@ -32,7 +32,7 @@ module.exports = {
       "category": "Role category D",
       "name": "Practice leaders",
       "url": "leader/",
-      "description": "Leads a care setting on how they deliver specialist care. They are an expert or champion in their chosen specialism. Job titles may include autism or dementia champion, care specialist."
+      "description": "Leads a care setting on how they deliver specialist care. They are an expert or champion in their chosen specialism. Job titles may include autism or dementia champion, specialist care worker, care specialist."
     }
   ],
   "skillsCats": [
