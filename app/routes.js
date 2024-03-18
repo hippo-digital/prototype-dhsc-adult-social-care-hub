@@ -638,5 +638,5 @@ function allRoutes(req, res, next) {
   next()
 }
 
-router.get('/*', allRoutes)
+router.get('/change', allRoutes)
 
