@@ -12,7 +12,7 @@ module.exports = {
       "name": "Entry-level roles",
       "url": "new-to-care/",
       "description": "The starting point to giving direct care in adult social care.",
-      "roles": "care assistant or junior care worker"
+      "roles": "care assistant, junior care worker."
     },
     {
       "code": "roleb",
