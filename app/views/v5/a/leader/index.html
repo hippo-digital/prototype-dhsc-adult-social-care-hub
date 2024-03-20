@@ -70,6 +70,12 @@ Practice leader: About these job roles
 
   <div class="govuk-grid-row">
 
+    <div class="govuk-grid-column-one-third">
+
+      <img style="width: 100%;" src="/public/images/role-d.jpg" alt="Image of a care work leader in adult social care">
+
+    </div>
+
     <div class="govuk-grid-column-two-thirds">
 
       <h3 class="govuk-heading-s">About this category</h3>
@@ -194,11 +200,23 @@ Practice leader: About these job roles
     </div>
     {% endset -%}
 
+      {% set digitalHtml %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">Digital skills</h2>
+          <p>As part of your knowledge and skill development, you can also to work to level 1 (digital skills for all) of the
+            <a href="https://beta.digitisingsocialcare.co.uk/digital-skills">Adult Social Care Digital Skills Framework</a>.</p>
+          <p>Within this role category, we would expect you to show all level 1 competencies. Some level 2 competencies (digital skills to go further) could also be utilised within this role category.</p>
+
+        </div>
+      </div>
+      {% endset -%}
+
     {% set behavioursHtml %}
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <h2 class="govuk-heading-m">Core behaviours</h2>
+          <h2 class="govuk-heading-m">Core behaviours for this role category</h2>
           <p>This section outlines the behaviours required to work within role category D. These are the things people must be doing in their job.</p>
 
           <ol class="govuk-list govuk-list--number govuk-list--spaced">
@@ -235,6 +253,13 @@ Practice leader: About these job roles
           id: "past-month",
           panel: {
             html: behavioursHtml
+          }
+        },
+        {
+          label: "Digital Skills",
+          id: "digital",
+          panel: {
+            html: digitalHtml
           }
         },
         {
