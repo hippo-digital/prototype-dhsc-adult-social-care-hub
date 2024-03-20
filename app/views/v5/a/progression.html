@@ -1,0 +1,72 @@
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '5' %}
+{% set section = 'about' %}
+
+{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+
+{% block pageTitle %}
+About adult social care
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "index"
+    },
+    {
+      text: "About adult social care",
+      href: "about"
+    },
+    {
+      text: "Career progression"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l">Career progression</h1>
+
+    <p class="nhsuk-u-reading-width">In adult social care, there are lots of different chances to progress, regardless of where you start or the roles you have previously done. There are many different places where you can work and different levels of help you can provide to people who draw on care and support, you can explore different settings and roles throughout your career or specialise in a specific area of adult social care.</p>
+
+      <p class="nhsuk-u-reading-width">Progression means different things to different people and can involve:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Moving sideways into a different job role, which may involve working in a new setting or with a person with different or more complicated needs</li>
+        <li>Moving up to a job where you have more responsibilities, such as line management where you will need to learn new skills.</li>
+      </ul>
+
+      <p class="nhsuk-u-reading-width">Progressing in your career is something you and your manager will work on together. But there are things you can do yourself to be more proactive in this process.</p>
+
+      <h2 class="govuk-heading-m">Qualifications:</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>funded qualifications which provide you with the skills and knowledge relevant to your role or your desired role.</li>
+        <li>apprenticeships designed to facilitate your progression whilst you work.</li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Training:</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>mandatory training is standard in any role, covering basic areas like moving and handling and health and safety, these help you provide the basic care needed safely, much of this training is provided as part of onboarding training when you start a role.</li>
+        <li>Many places of work will also provide additional training opportunities relevant to your environment and the people you will be caring for, either classroom-based or e-learning.</li>
+      </ul>
+      
+      <p class="nhsuk-u-reading-width">Skills and certifications necessary to progress in your career are set out in the workforce pathway. The pathway includes routes into more specialised or senior management roles.</p>
+
+      <p class="nhsuk-u-reading-width">In any setting or role, you should receive training and support that provides you with all the necessary information for that setting and the people you will support.</p>
+
+      <p class="nhsuk-u-reading-width">For people who are new to adult social the Care Certificate is recommended. This certificate provides a set of standards that cover everything you need to know to provide the best quality of care. Additionally, regular supervision and ongoing training and development are provided to support your growth in your role. The care certificate is also a recognised adult social care qualification, meaning the skills you learn whilst achieving it are transferable to other roles and employers within adult social care.</p>
+    </p>
+
+
+    </div>
+  </div>
+
+{% endblock %}

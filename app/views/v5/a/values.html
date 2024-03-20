@@ -1,0 +1,85 @@
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '5' %}
+{% set section = 'about' %}
+
+{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+
+{% block pageTitle %}
+About adult social care
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "index"
+    },
+    {
+      text: "About adult social care",
+      href: "about"
+    },
+    {
+      text: "Values"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l">Sector values</h1>
+
+    <h2 class="govuk-heading-m">
+    <p class="nhsuk-u-reading-width">These values were created together with people who have used care and support to show what is wanted from the people who help them.</p>
+
+      <p class="nhsuk-u-reading-width">All the work we do in adult social care must follow these values. It's important to focus on each person's needs and preferences. Working together with the person getting care and support is the most important thing we can do.</p>
+
+      <p class="nhsuk-u-reading-width">These values are the foundation of providing caring and person-centered care and support.</p>
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Be Kind, Compassionate, and Understanding</th>
+            <td class="govuk-table__cell">Be nice, caring, and understanding so you can see things from my perspective. Care about what matters to me, my health, and how I feel.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Be Honest, Trustworthy, and Dependable</th>
+            <td class="govuk-table__cell">Be truthful, someone I can trust, and always there when you say you will be. Keep our agreement about the care and support we've talked about. Keep things private to build trust between us.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Respect</th>
+            <td class="govuk-table__cell">Treat me, the people around me, and where I live with respect. Respect my choices and values about how I want to live my life. Understand your role in valuing and supporting my goals.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Be Brave and Stick to Your Principles</th>
+            <td class="govuk-table__cell">Be strong, brave, and committed to speaking up if something isn't right or could be better. Respect my choices and let me make decisions. Follow human rights, and fairness, and include me in planning my care and support.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">See Me as a Whole Person</th>
+            <td class="govuk-table__cell">Be curious and listen carefully to understand who I am, my strengths, and what I want to achieve. Make plans and decisions about me together with me.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Be Flexible, Open, and Ready to Learn</th>
+            <td class="govuk-table__cell">Be thoughtful, open-minded, and not quick to judge so we can learn and adjust how we work together over time.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Be Proud and Positive</th>
+            <td class="govuk-table__cell">Take pride in your work, and be friendly, positive, and eager to help so we can enjoy our time together.</td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+{% endblock %}
