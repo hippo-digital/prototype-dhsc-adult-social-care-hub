@@ -256,6 +256,16 @@
 </header>
 {% endblock %}
 
+{% block main %}
+
+  {% block beforeContent %}{% endblock %}
+  <main class="govuk-main-wrappers {%- if mainClasses %} {{ mainClasses }}{% endif %}" id="main-content" role="main" {%- if mainLang %} lang="{{ mainLang }}"{% endif %} style="background-color: #fff;">
+    {% block content %}{% endblock %}
+  </main>
+
+{% endblock %}
+
+
 
 
 {% block footer %}
