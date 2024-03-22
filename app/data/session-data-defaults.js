@@ -43,7 +43,7 @@ module.exports = {
     {
       "category": "Corporate induction, including understanding your role and personal development",
       "role": "rolea",
-      "description": "<p>A session employers run for their new team members. This may cover the organisation or setting you are about to start work in, your role, and how you should work.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">A session employers run for their new team members. This may cover the organisation or setting you are about to start work in, your role, and how you should work.</p>",
       "skills": [
         {
           "append": "You should",
@@ -74,7 +74,7 @@ module.exports = {
     {
       "category": "Demonstrating effective interpersonal skills",
       "role": "rolea",
-      "description": "<p>How you talk to people and respecting the way they prefer to be communicated with.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">How you talk to people and respecting the way they prefer to be communicated with.</p>",
       "skills": [
         {
           "append": "You should",
@@ -101,7 +101,7 @@ module.exports = {
     {
       "category": "Maintaining someone’s dignity while providing care and support",
       "role": "rolea",
-      "description": "<p>Treating people who draw on care with dignity and respect.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Treating people who draw on care with dignity and respect.</p>",
       "skills": [
         {
           "append": "You should",
@@ -132,7 +132,7 @@ module.exports = {
     {
       "category": "Duty of care",
       "role": "rolea",
-      "description": "<p>Your responsibility to ensure the health and safety of the people you work with.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Your responsibility to ensure the health and safety of the people you work with.</p>",
       "skills": [
         {
           "append": "You should",
@@ -171,7 +171,7 @@ module.exports = {
     {
       "category": "Understanding how to assist and move people safely",
       "role": "rolea",
-      "description": "<p>Knowing all the things involved in moving a person safely including things like equipment and legal guidelines.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Knowing all the things involved in moving a person safely including things like equipment and legal guidelines.</p>",
       "skills": [
         {
           "append": "You should",
@@ -202,7 +202,7 @@ module.exports = {
     {
       "category": "Understanding how to work in a person-centred way",
       "role": "rolea",
-      "description": "<p>Keeping the people who draw on care at the centre of everything you do.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Keeping the people who draw on care at the centre of everything you do.</p>",
       "skills": [
         {
           "append": "You should",
@@ -233,7 +233,7 @@ module.exports = {
     {
       "category": "Understanding duty of care and duty of candour",
       "role": "rolea",
-      "description": "<p>Knowing your responsibility to the people you care for and what procedures you must follow when things go wrong with care and treatment.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Knowing your responsibility to the people you care for and what procedures you must follow when things go wrong with care and treatment.</p>",
       "skills": [
         {
           "append": "You should",
@@ -260,7 +260,7 @@ module.exports = {
     {
       "category": "Using and managing data, and data security",
       "role": "rolea",
-      "description": "<p>Keeping information and how you handle it safe and secure.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Keeping information and how you handle it safe and secure.</p>",
       "skills": [
         {
           "append": "You should",
@@ -310,7 +310,7 @@ module.exports = {
     {
       "category": "Understand the importance of supporting others to maintain good fluid and nutrition intake",
       "role": "rolea",
-      "description": "<p>Taking care of those who draw on care through what they eat and drink.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Taking care of those who draw on care through what they eat and drink.</p>",
       "skills": [
         {
           "append": "You should",
@@ -325,7 +325,7 @@ module.exports = {
     {
       "category": "Awareness of mental health, dementia, autism and learning disabilities (linked to Tier 1 of competence frameworks below)",
       "role": "rolea",
-      "description": "<p>Knowing information about these different needs and how to support people that have them.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Knowing information about these different needs and how to support people that have them.</p>",
       "skills": [
         {
           "append": "You should",
@@ -356,7 +356,7 @@ module.exports = {
     {
       "category": "Ensuring equality, diversity and inclusion are part of your practice",
       "role": "rolea",
-      "description": "<p>Including everyone and knowing how to respect and adapt their unique needs.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Including everyone and knowing how to respect and adapt their unique needs.</p>",
       "skills": [
         {
           "append": "You should",
@@ -375,7 +375,7 @@ module.exports = {
     {
       "category": "Being safe and secure online",
       "role": "rolea",
-      "description": "<p>Knowing what to do to make sure you stay safe online.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Knowing what to do to make sure you stay safe online.</p>",
       "skills": [
         {
           "append": "You should",
@@ -402,7 +402,7 @@ module.exports = {
     {
       "category": "Use technology to support person-centred care",
       "role": "rolea",
-      "description": "<p>Support those who draw on care by using technology to help them live better lives.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Support those who draw on care by using technology to help them live better lives.</p>",
       "skills": [
         {
           "append": "You should",
@@ -429,7 +429,7 @@ module.exports = {
     {
       "category": "Introduction to health, safety and wellbeing",
       "role": "rolea",
-      "description": "<p>Knowing what to do to keep those you support safe and healthy.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Knowing what to do to keep those you support safe and healthy.</p>",
       "skills": [
         {
           "append": "You should",
@@ -464,7 +464,7 @@ module.exports = {
     {
       "category": "Understanding medication management and good practice",
       "role": "rolea",
-      "description": "<p>Knowing about medication and what to do to administer it safely.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Knowing about medication and what to do to administer it safely.</p>",
       "skills": [
         {
           "append": "You should",
@@ -506,7 +506,7 @@ module.exports = {
     {
       "category": "Understanding the importance of resilience and coping skills when delivering care and support",
       "role": "rolea",
-      "description": "<p>Handling challenging situations while you support those who draw on care.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Handling challenging situations while you support those who draw on care.</p>",
       "skills": [
         {
           "append": "Understand how to manage:",
@@ -521,7 +521,7 @@ module.exports = {
     {
       "category": "Food hygiene for people who serve food and drink",
       "role": "rolea",
-      "description": "<p>Staying safe with food and drink as part of supporting those who draw on care.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Staying safe with food and drink as part of supporting those who draw on care.</p>",
       "skills": [
         {
           "append": "You should",
@@ -560,7 +560,7 @@ module.exports = {
     {
       "category": "Understanding the importance of supporting others to maintain good oral health",
       "role": "rolea",
-      "description": "<p>Helping those who draw on care to have good oral health.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Helping those who draw on care to have good oral health.</p>",
       "skills": [
         {
           "append": "You should",
@@ -602,7 +602,7 @@ module.exports = {
     {
       "category": "Understanding the benefits of reflective practice in providing care and support",
       "role": "rolea",
-      "description": "<p>Knowing how reflecting on situations and how you work can help you provide better care.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">Knowing how reflecting on situations and how you work can help you provide better care.</p>",
       "skills": [
         {
           "append": "You should",
@@ -613,7 +613,7 @@ module.exports = {
     {
       "category": "Oliver McGowan training",
       "role": "rolea",
-      "description": "<p>The Oliver McGowan Mandatory Training on learning disability and autism, supports adult social care staff to have the right knowledge and skills to provide safe and compassionate care for people with a learning disability and autistic people.</p>",
+      "description": "<p class=\"nhsuk-lede-text\">The Oliver McGowan Mandatory Training on learning disability and autism, supports adult social care staff to have the right knowledge and skills to provide safe and compassionate care for people with a learning disability and autistic people.</p>",
       "skills": [
         {
           "append": "",
