@@ -613,7 +613,7 @@ module.exports = {
     {
       "category": "Oliver McGowan training",
       "role": "rolea",
-      "description": "",
+      "description": "<p>The Oliver McGowan Mandatory Training on learning disability and autism, supports adult social care staff to have the right knowledge and skills to provide safe and compassionate care for people with a learning disability and autistic people.</p>",
       "skills": [
         {
           "append": "",
