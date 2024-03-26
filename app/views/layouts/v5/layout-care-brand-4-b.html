@@ -13,7 +13,7 @@
     <div class="govuk-header__logo govuk-header__logo--dh">
       <a href="/" class="govuk-header__link govuk-header__link--homepage">
 
-        <svg clip-rule="evenodd" fill-rule="evenodd" width="103" height="82" stroke-linejoin="round" stroke-miterlimit="2"
+        <svg clip-rule="evenodd" fill-rule="evenodd" width="90" height="82" stroke-linejoin="round" stroke-miterlimit="2"
              viewBox="0 0 189 149" xmlns="http://www.w3.org/2000/svg">
           <g fill-rule="nonzero">
             <path d="m0 1049.05h2.704v-22.89-57.48h-2.704z" fill="#00ad93"
@@ -196,16 +196,16 @@
     </div>
 
 
-    <div class="govuk-header__logo--rev">
+    <div class="govuk-header__logo--rev" style="text-align: right;">
 
-      <div class="govuk-header__content">
-        <a href="#" class="govuk-header__link govuk-header__service-name govuk-header__link--white">
-          {{ serviceName or 'Care Workforce Pathway' }}
-        </a>
-      </div>
+<!--      <div class="govuk-header__content">-->
+<!--        <a href="#" class="govuk-header__link govuk-header__service-name govuk-header__link&#45;&#45;white">-->
+<!--          {{ serviceName or 'Care Workforce Pathway' }}-->
+<!--        </a>-->
+<!--      </div>-->
 
       <div class="govuk-header__logo">
-        <svg focusable="false" role="img" class="govuk-header__logotype" width="114" height="35" viewBox="0 0 114 35" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="CARE.UK">
+        <svg style="margin-right: 0;" focusable="false" role="img" class="govuk-header__logotype" width="114" height="35" viewBox="0 0 114 35" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="CARE.UK">
           <g clip-path="url(#clip0_120_5922)">
             <path d="M0 35H113.577V0.00123978H0V35Z" fill="#00a188"/>
             <path d="M29.8009 4.39965L28.0219 10.1818C26.0405 9.04997 24.0188 8.48387 21.0267 8.48387C13.4248 8.48387 10.3923 13.8211 10.3923 19.1585C10.3923 23.8488 13.2228 26.5174 18.1558 26.5174C20.7841 26.5174 23.2911 25.9513 25.2723 24.9406L24.4635 31.006C22.6036 31.6122 19.5306 32.0977 16.9428 32.0977C8.00674 32.0977 2.62891 26.8815 2.62891 18.9562C2.62891 9.6157 9.13894 2.90378 19.854 2.90378C23.8572 2.90378 27.2131 3.42944 29.8009 4.39965Z" fill="#white"/>
@@ -219,6 +219,7 @@
             </clipPath>
           </defs>
         </svg>
+        <p class="govuk-!-margin-top-2 nhsuk-u-margin-bottom-0 govuk-!-font-weight-bold">{{ serviceName or 'Care Workforce Pathway' }}</p>
       </div>
 
     </div>
