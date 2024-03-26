@@ -33,7 +33,7 @@ module.exports = {
     {
       "code": "roled",
       "category": "Role category D",
-      "name": "Practice leaders",
+      "name": "Practice leaders (new)",
       "url": "leader/",
       "description": "Leads a care setting on how they deliver specialist care. They are an expert or champion in their chosen specialism.",
       "roles": "autism or dementia champion, specialist care worker, care specialist."
