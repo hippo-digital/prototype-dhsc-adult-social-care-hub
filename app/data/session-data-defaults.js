@@ -35,8 +35,8 @@ module.exports = {
       "category": "Role category D",
       "name": "Practice leaders (new)",
       "url": "leader/",
-      "description": "Leads a care setting on how they deliver care for a specialism such as autism or dementia. They are an expert or champion in their chosen field.",
-      "roles": "autism or dementia champion, dementia or autism specialist."
+      "description": "Leads a care setting on how they deliver care for a specialism or area of practice like learning disability or dementia including coaching and mentoring.",
+      "roles": "champion or specialist senior care worker in an area of practice such as mental health or autism"
     }
   ],
   "skillsCats": [
