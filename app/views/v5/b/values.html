@@ -10,21 +10,26 @@ About adult social care
 {% endblock %}
 
 {% block beforeContent %}
-{{ govukBreadcrumbs({
-  items: [
-    {
-      text: "Home",
-      href: "index"
-    },
-    {
-      text: "About adult social care",
-      href: "about"
-    },
-    {
-      text: "Values"
-    }
-  ]
-}) }}
+<div class="govuk-main-wrapper govuk-main-wrapper--bread">
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
+      classes: "careuk-breadcrumbs--green",
+      items: [
+        {
+          text: "Home",
+          href: "index"
+        },
+        {
+          text: "About adult social care",
+          href: "about"
+        },
+        {
+          text: "Values"
+        }
+      ]
+    }) }}
+  </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -84,5 +89,6 @@ About adult social care
 
     </div>
   </div>
-
+  </div>
+</div>
 {% endblock %}

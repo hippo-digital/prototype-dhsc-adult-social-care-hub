@@ -9,6 +9,8 @@ Entry-level roles: About these job roles
 {% endblock %}
 
 {% block beforeContent %}
+<div class="govuk-main-wrapper govuk-main-wrapper--bread-white">
+  <div class="govuk-width-container">
   {{ govukBreadcrumbs({
   classes: "careuk-breadcrumbs",
   items: [
@@ -29,6 +31,8 @@ Entry-level roles: About these job roles
     }
   ]
   }) }}
+</div>
+</div>
 {% endblock %}
 
 {% block content %}

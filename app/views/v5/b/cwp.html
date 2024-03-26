@@ -5,30 +5,38 @@
 
 {% extends "layouts/v5/layout-care-brand-" + brand + "-" + target + ".html" %}
 
+
 {% block pageTitle %}
 Career pathways - Professional development
 {% endblock %}
 
 {% block beforeContent %}
-{{ govukBreadcrumbs({
-  items: [
-    {
-      text: "Home",
-      href: "index"
-    },
-    {
-      text: "Professional development",
-      href: "careers"
-    },
-    {
-      text: "Career pathways"
-    }
-  ]
-}) }}
+<div class="govuk-main-wrapper govuk-main-wrapper--bread">
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
+      classes: "careuk-breadcrumbs--green",
+      items: [
+        {
+          text: "Home",
+          href: "index"
+        },
+        {
+          text: "Professional development",
+          href: "careers"
+        },
+        {
+          text: "Career pathways"
+        }
+      ]
+    }) }}
+  </div>
+</div>
 {% endblock %}
 
 {% block content %}
 
+<div class="govuk-main-wrapper careuk-main-wrapper--green">
+  <div class="govuk-width-container">
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">Adult social care career pathways</h1>
@@ -88,6 +96,8 @@ Career pathways - Professional development
       </li>
 
     </ul>
+  </div>
+</div>
   </div>
 </div>
 

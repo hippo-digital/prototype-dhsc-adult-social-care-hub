@@ -11,7 +11,7 @@
   <div class="govuk-header__container govuk-header__container--flex govuk-header__container--white govuk-width-container">
 
       <div class="govuk-header__logo govuk-header__logo--flex govuk-header__logo--dh">
-        <a href="/v5/a/" class="govuk-header__link govuk-header__link--homepage">
+        <a href="/v5/b/" class="govuk-header__link govuk-header__link--homepage">
 
           <svg focusable="false" role="img" class="govuk-header__logotype" width="114" height="35" viewBox="0 0 114 35" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="CARE.UK">
             <g clip-path="url(#clip0_120_5922)">
@@ -222,22 +222,22 @@
     <nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
       <ul class="nhsuk-header__navigation-list">
         <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link {% if section === 'home' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/a/index">
+          <a class="nhsuk-header__navigation-link {% if section === 'home' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/b/index">
             Home
           </a>
         </li>
         <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link {% if section === 'about' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/a/about">
+          <a class="nhsuk-header__navigation-link {% if section === 'about' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/b/about">
             About adult social care
           </a>
         </li>
         <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link {% if section === 'careers' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/a/careers" >
+          <a class="nhsuk-header__navigation-link {% if section === 'careers' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/b/careers" >
             Professional development
           </a>
         </li>
         <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link {% if section === 'orgs' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/a/organisations">
+          <a class="nhsuk-header__navigation-link {% if section === 'orgs' %}nhsuk-header__navigation-link--selected{% endif %}" href="/v5/b/organisations">
             Information for employers
           </a>
         </li>
@@ -258,11 +258,7 @@
 
 {% block main %}
 
-<div class="govuk-main-wrapper" style="background-color: #fff; padding: 0">
-  <div class="govuk-width-container">
-  {% block beforeContent %}{% endblock %}
-  </div>
-</div>
+{% block beforeContent %}{% endblock %}
 
 <main class="govuk-main-wrappers {%- if mainClasses %} {{ mainClasses }}{% endif %}" id="main-content" role="main" {%- if mainLang %} lang="{{ mainLang }}"{% endif %} style="background-color: #fff;">
   {% block content %}{% endblock %}
@@ -281,12 +277,12 @@
         <h2 class="govuk-footer__heading govuk-heading-m">{{ serviceName or 'Care Workforce Pathway' }}</h2>
         <ul class="govuk-footer__list govuk-footer__list--columns-1">
           <li class="govuk-footer__list-item">
-            <a class="govuk-footer__link" href="/v5/a/index">
+            <a class="govuk-footer__link" href="/v5/b/index">
               Home
             </a>
           </li>
           <li class="govuk-footer__list-item">
-            <a class="govuk-footer__link" href="/v5/a/about">
+            <a class="govuk-footer__link" href="/v5/b/about">
               About us
             </a>
           </li>

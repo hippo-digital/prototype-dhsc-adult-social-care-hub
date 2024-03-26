@@ -10,22 +10,27 @@ About adult social care
 {% endblock %}
 
 {% block beforeContent %}
-{{ govukBreadcrumbs({
-  items: [
-    {
-      text: "Home",
-      href: "index"
-    },
-    {
-    text: "About adult social care"
-    }
-  ]
-}) }}
+<div class="govuk-main-wrapper govuk-main-wrapper--bread">
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
+      classes: "careuk-breadcrumbs--green",
+      items: [
+        {
+          text: "Home",
+          href: "index"
+        },
+        {
+        text: "About adult social care"
+        }
+      ]
+    }) }}
+  </div>
+</div>
 {% endblock %}
 
 {% block content %}
 
-<div class="govuk-main-wrapper careuk-main-wrapper--nav">
+<div class="govuk-main-wrapper careuk-main-wrapper--green">
   <div class="govuk-width-container">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
@@ -49,7 +54,7 @@ About adult social care
 
       <p>People usually contact their local authority for short-term or long-term care. Local authorities assess the needs and later do a financial needs assessment which calculates how much of the care is paid for buy the local authority and how much by the person. </p>
       
-      <ul class="govuk-grid-row nhsuk-card-group">
+      <ul class="govuk-grid-row nhsuk-card-group ">
 
         <li class="govuk-grid-column-one-half nhsuk-card-group__item">
           <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">

@@ -7,8 +7,18 @@
 }
 
 .careuk-main-wrapper--green {
-  background-color: #F2FBFA;
   padding-top: 50px;
+  background-color: govuk-colour("pale-green");
+}
+
+.govuk-main-wrapper--bread {
+  background-color: govuk-colour("pale-green");
+  padding: 0;
+}
+
+.govuk-main-wrapper--bread-white {
+  background-color: #fff;
+  padding: 0;
 }
 
 // breadcrumbs overide
@@ -16,6 +26,17 @@
 .careuk-breadcrumbs {
   margin: 0;
   padding-top: 15px;
+  .govuk-main-wrapper & {
+    background-color: #FFFFFF;
+  }
+}
+
+.careuk-breadcrumbs--green {
+  margin: 0;
+  padding-top: 15px;
+  .govuk-main-wrapper & {
+    background-color: govuk-colour("pale-green");
+  }
 }
 
 // secondary navigation

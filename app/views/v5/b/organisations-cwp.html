@@ -10,25 +10,31 @@ Information for employers
 {% endblock %}
 
 {% block beforeContent %}
-{{ govukBreadcrumbs({
-  items: [
-    {
-      text: "Home",
-      href: "index"
-    },
-    {
-      text: "Information for employers",
-      href: "organisations"
-    },
-    {
-    text: "The care workforce pathway"
-    }
-  ]
-}) }}
+<div class="govuk-main-wrapper govuk-main-wrapper--bread">
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
+      classes: "careuk-breadcrumbs--green",
+      items: [
+        {
+          text: "Home",
+          href: "index"
+        },
+        {
+          text: "Information for employers",
+          href: "organisations"
+        },
+        {
+        text: "The care workforce pathway"
+        }
+      ]
+    }) }}
+  </div>
+</div>
 {% endblock %}
 
 {% block content %}
-
+<div class="govuk-main-wrapper careuk-main-wrapper--green">
+  <div class="govuk-width-container">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
@@ -195,5 +201,6 @@ Information for employers
 
   </div>
 </div>
-
+</div>
+</div>
 {% endblock %}

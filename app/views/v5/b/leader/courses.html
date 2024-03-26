@@ -10,6 +10,8 @@ Practice leader: Qualifications and courses
 {% endblock %}
 
 {% block beforeContent %}
+<div class="govuk-main-wrapper govuk-main-wrapper--bread-white">
+  <div class="govuk-width-container">
   {{ govukBreadcrumbs({
   classes: "careuk-breadcrumbs",
   items: [
@@ -30,6 +32,8 @@ Practice leader: Qualifications and courses
     }
   ]
   }) }}
+</div>
+</div>
 {% endblock %}
 
 {% block content %}
