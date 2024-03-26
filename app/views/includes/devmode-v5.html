@@ -1,4 +1,20 @@
 <div class="proto-error">
+
+  <div class="">
+    <div class="proto-action-icon"></div>
+    <div class="proto-action-text">Content:</div>
+
+    <form style="display:inline-block;vertical-align:top;" action="switch" method="post">
+      <input type="hidden" name="target" value="a" />
+      <button href="" class="proto-error-text {% if data['target'] === 'a' %}active{% endif %}">A</button>
+    </form>
+
+    <form style="display:inline-block;vertical-align:top;" action="switch" method="post">
+      <input type="hidden" name="target" value="b" />
+      <button href="" class="proto-error-text {% if data['target'] === 'b' %}active{% endif %}">B</button>
+    </form>
+  </div>
+
   <div class="">
     <div class="proto-action-icon"></div>
     <div class="proto-action-text">Branding:</div>
