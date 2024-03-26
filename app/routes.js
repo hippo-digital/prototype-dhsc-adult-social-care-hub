@@ -378,26 +378,28 @@ router.post('/v5/:test/:role/switch', function (req, res) {
 })
 
 router.post('/v5/:test/:role/switchbrand', function (req, res) {
-  // trim out the white space we we can count it easier
+  // trim out the white space we can count it easier
   let brand = req.session.data['brand']
   let target = req.session.data['target']
   var url = req.get('Referrer') .split( '/' );
-  // /b/supervisor/switch-to-a
   if (target === 'a'){
-    res.redirect('/v5/' + url[4] + '/' + url[5] + '/' + url[6] )
+    console.log('url is:' + url)
+    res.redirect('/v5/a/' + url[5] + '/' + url[6])
   } else {
-    res.redirect('/v5/' + url[4] + '/' + url[5] + '/' + url[6] )
+    res.redirect('/v5/b/' + url[5] + '/' + url[6])
   }
 })
 
 router.post('/v5/:test/switch', function (req, res) {
-  // trim out the white space we we can count it easier
+  // trim out the white space we can count it easier
   let target = req.session.data['target']
+  let brand = req.session.data['brand']
   var url = req.get('Referrer') .split( '/' );
   if (target === 'a'){
-    res.redirect('/v5/a/careers')
+    console.log('url is:' + url)
+    res.redirect('/v5/a/' + url[5] )
   } else {
-    res.redirect('/v5/b/careers')
+    res.redirect('/v5/b/' + url[5] )
   }
 })
 
@@ -405,11 +407,7 @@ router.post('/v5/:test/switchbrand', function (req, res) {
   // trim out the white space we we can count it easier
   let target = req.session.data['target']
   var url = req.get('Referrer') .split( '/' );
-  if (target === 'a'){
-    res.redirect('/v5/a/careers')
-  } else {
-    res.redirect('/v5/b/careers')
-  }
+  res.redirect('/v5/' + url[4] + '/' + url[5])
 })
 
 router.get('/v5/a/new-to-care/requirements', function (req, res) {
