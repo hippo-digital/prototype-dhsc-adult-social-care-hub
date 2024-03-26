@@ -1,0 +1,93 @@
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '5' %}
+{% set section = 'careers' %}
+
+{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+
+{% block pageTitle %}
+Career pathways - Professional development
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "index"
+    },
+    {
+      text: "Professional development",
+      href: "careers"
+    },
+    {
+      text: "Career pathways"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Adult social care career pathways</h1>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h2 class="govuk-heading-m">The first 4 career pathways to support adult social care careers in England.</h2>
+
+    <ul class="govuk-grid-row nhsuk-card-group">
+
+      {% for i in range(0, data['roleCats'].length) -%}
+
+      <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <span class="govuk-caption-l">{{ data['roleCats'][i].category }}</span>
+            <h2 class="nhsuk-card__heading nhsuk-heading-l" style="margin-top: 0.5rem;">
+              <a class="nhsuk-card__link" href="{{ data['roleCats'][i].url }}">{{ data['roleCats'][i].name }}</a>
+            </h2>
+            <p class="nhsuk-card__description">{{ data['roleCats'][i].description }} <br> </p>
+            <p class="nhsuk-card__description">Jobs may include: {{ data['roleCats'][i].roles}}</p>
+            <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+              <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+              <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                <path d="M15.438 13l-3.771 3.771" />
+                <path data-name="Path" d="M11.667 9.229L15.438 13" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </li>
+
+      {%- endfor %}
+
+    </ul>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <ul class="govuk-grid-row nhsuk-card-group">
+
+      <li class="govuk-grid-column-full nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--topic ">
+          <img class="nhsuk-card__img" src="/public/images/cwp.svg" style="width: 100%; padding: 2rem; padding-bottom: 0;" alt="">
+          <div class="nhsuk-card__content nhsuk-card__content--primary">
+            <h2 class="govuk-heading-m">How it works</h2>
+            <p>The career pathways are designed to help people understand career options in adult social care in England. This information is not relevant for social work. It helps you see where you are in your career and directly links to recommended courses and training.</p>
+            <p>For now the pathway includes direct care and support roles shown as 4 role categories. Each category covers a job role that may have different job titles depending on the organisation or employer.</p>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

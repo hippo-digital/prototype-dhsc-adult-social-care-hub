@@ -1,0 +1,304 @@
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '5' %}
+{% set section = 'careers' %}
+
+{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+
+{% block pageTitle %}
+Practice leader: Knowledge and skills
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "../index"
+    },
+    {
+      text: "Professional development",
+      href: "../careers"
+    },
+    {
+      text: "Career pathways",
+      href: "../cwp"
+    },
+    {
+      text: "Practice leaders"
+    }
+  ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <span class="govuk-caption-xl">Role category D</span>
+      <h1 class="govuk-heading-xl nhsuk-u-margin-bottom-3">Practice leaders</h1>
+
+      <nav class="x-govuk-secondary-navigation nhsuk-u-margin-bottom-6" aria-label="Secondary menu">
+        <ul class="x-govuk-secondary-navigation__list">
+          <li class="x-govuk-secondary-navigation__list-item ">
+            <a class="x-govuk-secondary-navigation__link" href="./" aria-current="page">
+              Overview
+            </a>
+          </li>
+          <li class="x-govuk-secondary-navigation__list-item x-govuk-secondary-navigation__list-item--current">
+            <a class="x-govuk-secondary-navigation__link" href="requirements">
+              Knowledge and skills
+            </a>
+          </li>
+          <li class="x-govuk-secondary-navigation__list-item ">
+            <a class="x-govuk-secondary-navigation__link" href="development">
+              Areas of specialism
+            </a>
+          </li>
+          <li class="x-govuk-secondary-navigation__list-item ">
+            <a class="x-govuk-secondary-navigation__link" href="courses">
+              Training and qualifications
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <h2 class="govuk-heading-l">Knowledge and skills</h2>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <p>As a practice leader in adult social care you should have these knowledge and skills to do your job.</p>
+      <p>You can get these knowledge and skills by:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>getting experience as you work</li>
+        <li>doing a qualification or course</li>
+        <li>watching other people or shadowing them</li>
+        </ul>
+    </div>
+  </div>
+
+<div data-module="govuk-tabs">
+
+  <div class="govuk-grid-row govuk-tabs--right">
+    <div class="govuk-grid-column-one-third">
+
+      {# render left side tabs #}
+
+      <ol class="nhsuk-list nhsuk-list--number govuk-list--spaced govuk-tabs__list govuk-tabs__list--right">
+        {% for i in range(0, categories.length) -%}
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--right govuk-tabs__list-item--selected" role="presentation">
+          <a href="#skill{{ i+1 }}" class="govuk-tabs__tab" id="tab_skill{{ i+1 }}" role="tab" aria-controls="skill{{ i+1 }}" aria-selected="true" tabindex="-1">{{ categories[i] }}</a>
+        </li>
+        {%- endfor %}
+      </ol>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds" id="panelTop">
+
+      {# render right side content #}
+
+      {% for i in range(0, categories.length) -%}
+
+      <details class="nhsuk-details nhsuk-expander govuk-tabs__panel govuk-tabs__panel--right" role="tabpanel" aria-labelledby="tab_skill{{i+1}}" id="skill{{i+1}}">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            <h2 class="govuk-heading-l">{{ categories[i] }}</h2>
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          {% for n in range(0, data.skillsCats.length) -%}
+          {% if data.skillsCats[n].category === categories[i] and data.skillsCats[n].role === 'roled' %}
+          {{ data.skillsCats[n].description|safe }}
+          {% endif %}
+          {%- endfor %}
+
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Skills breakdown
+          </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <h3 class="govuk-heading-s">You should:</h3>
+
+            <ul class="nhsuk-list  nhsuk-list--tick">
+
+              {% for j in range(0, data.skillsCats.length) -%}
+              {% if data.skillsCats[j].category === categories[i] and data.skillsCats[j].role === 'roled' %}
+              {% for m in range(0, data.skillsCats[j].skills.length) -%}
+
+              <li><svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
+                <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+              </svg>{{ data.skillsCats[j].skills[m].skill }}</li>
+
+              {%- endfor %}
+              {% endif %}
+              {%- endfor %}
+            </ul>
+          </div>
+        </details>
+
+
+
+        {% set unique_title = [] %}
+        {% for item in training %}
+          {% if categories[i] in item.skillsCat %}
+            {% if unique_title.indexOf(item.title) === -1 %}
+              {% set _ = unique_title.push(item.title) %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {% if unique_title.length == 0 %}
+        <h3 class="govuk-heading-m govuk-!-margin-top-8 govuk-!-margin-bottom-6">No training opportunities available for this knowledge and skill category</h3>
+        {% else%}
+        <h3 class="govuk-heading-m govuk-!-margin-top-8 govuk-!-margin-bottom-6">Training opportunities ({{ unique_title.length }})</h3>
+        {% endif %}
+
+        <div class="search-card__container">
+
+          {% set unique_titles = [] %}
+          {% for course in training %}
+          {% if categories[i] in course.skillsCat %}
+          {% if unique_titles.indexOf(course.title) === -1 %}
+          {% set _ = unique_titles.push(course.title) %}
+
+          <div class="search-card" style="background-color: #fff;padding: 1rem;margin-bottom: 1rem; border: 1px solid #99DED4;">
+
+            <div class="search-card__name">
+
+              <h4 class="govuk-heading-m govuk-!-margin-bottom-1">
+                {{ course.title }}
+              </h4>
+
+              <p class="govuk-!-font-size-16 govuk-!-margin-bottom-4 govuk-!-margin-top-4">{{ course.audience }}</p>
+
+              {# first set this as a variable and then we can override if there are multiple providers #}
+
+              {% set providers %}
+              <ul class="govuk-list govuk-list--spaced">
+                <li class="govuk-!-padding-left-0">
+                  <strong>Provider:</strong> {{ course.awardingOrganisation }}<br>
+                  <strong>Code:</strong> {{ course.code }}<br>
+                  {% if course.link !== '' %}
+                  <strong>External Link:</strong> <a href="{{ course.link }}" target="_blank">{{ course.title }}</a>
+                  {% endif %}
+                </li>
+              </ul>
+              {% endset %}
+
+              {# check if there is more than 1 provider #}
+
+              {% set provider_count = 0 %}
+              {% for item in training %}
+                {% if item.title == course.title %}
+                  {# multiple detected #}
+                  {% set provider_count = provider_count +1 %}
+                {% endif %}
+              {% endfor %}
+
+              {% if provider_count > 1 %}
+
+              {% set providers %}
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              {{ provider_count }} providers available
+            </span>
+                </summary>
+                <div class="govuk-details__text">
+                  <ul class="govuk-list govuk-list--spaced govuk-list--bullet">
+                    {% for item in training %}
+                    {% if item.title == course.title %}
+                    <li class="govuk-!-padding-left-0">
+                      <strong>Provider:</strong> {{ item.awardingOrganisation }}<br>
+                      <strong>Code:</strong> {{ item.code }}<br>
+                      <strong>Duration:</strong> {{ item.duration }}<br>
+                      {% if item.link !== '' %}
+                      <strong>External Link:</strong> <a href="{{ item.link }}" target="_blank">{{ item.title }}</a>
+                      {% endif %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+              </details>
+              {% endset %}
+
+              {% endif %}
+
+              {{ providers | safe }}
+
+            </div>
+
+            <div class="search-card__status govuk-!-margin-top-2">
+              {{ 'Reimbursable' | tag | safe }}<br>
+              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-3" >Type: {{ course.type }}</p>
+              <!--          <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Code: {{ course.code }}</p>-->
+              {% if provider_count == 1 %}
+              <p class="govuk-!-font-size-14 govuk-!-margin-bottom-0 govuk-!-margin-top-0">Total learning time:<br>{{ course.totalLearningTime }}</p>
+              {% endif %}
+            </div>
+
+          </div>
+
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+
+        </div>
+        </div>
+
+      </details>
+
+      {%- endfor %}
+
+  </div>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+<p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
+  Page last updated: 15 March 2024. <br><a href="#"> Notify me when this page changes</a>
+</p>
+
+<nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+  <ul class="nhsuk-list nhsuk-pagination__list">
+    <li class="nhsuk-pagination-item--previous">
+      <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="./">
+        <span class="nhsuk-pagination__title">Previous</span>
+        <span class="nhsuk-u-visually-hidden">:</span>
+        <span class="nhsuk-pagination__page">About these job roles</span>
+        <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+          <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>
+        </svg>
+      </a>
+    </li>
+    <li class="nhsuk-pagination-item--next">
+      <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="development">
+        <span class="nhsuk-pagination__title">Next</span>
+        <span class="nhsuk-u-visually-hidden">:</span>
+        <span class="nhsuk-pagination__page">Areas of specialism</span>
+        <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+          <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block pageScripts %}
+{% include "includes/scripts-v5.html" %}
+{% endblock %}

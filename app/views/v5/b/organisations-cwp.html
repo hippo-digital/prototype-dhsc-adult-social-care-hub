@@ -1,0 +1,198 @@
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '5' %}
+{% set section = 'orgs' %}
+
+{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+
+{% block pageTitle %}
+Information for employers
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "index"
+    },
+    {
+      text: "Information for employers",
+      href: "organisations"
+    },
+    {
+    text: "The care workforce pathway"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">The care workforce pathway</h1>
+
+      <p class="nhsuk-lede-text nhsuk-u-margin-bottom-4">The care workforce pathway sets out what a career in adult social care looks like. It also shows the level of knowledge, experience and skills required to deliver high-quality, personalised, care and support.</p>
+
+      <p>It may empower people working in adult social care to develop their career. This is by showing how they can get skills, access learning and career development, and progress in a way that works for them.</p>
+
+    </div>
+
+    <div class="nhsuk-grid-column-one-third nhsuk-u-margin-top-6 nhsuk-u-margin-bottom-6">
+      <h3 class="govuk-heading-m">Further reading</h3>
+      <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+        <li><a href="https://www.gov.uk/government/publications/care-workforce-pathway-for-adult-social-care" target="_blank">Read about the background of the care workforce pathway</a></li>
+        <li><a href="https://www.gov.uk/government/publications/care-workforce-pathway-for-adult-social-care/care-workforce-pathway-for-adult-social-care-overview#universal-sector-values" target="_blank">Find out how we generated our universal sector values</a></li>
+        <li><a href="https://www.gov.uk/government/calls-for-evidence/care-workforce-pathway-for-adult-social-care-call-for-evidence" target="_blank">Read the original call for evidence</a></li>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-4">Role categories A-D (direct care roles)</h2>
+
+      <p>The pathway currently focuses on people working in direct care roles and includes four role categories:</p>
+
+      <ul class="govuk-grid-row nhsuk-card-group">
+
+        {% for i in range(0, data['roleCats'].length) -%}
+
+        <li class="govuk-grid-column-one-quarter nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--topic nhsuk-card--topic--light-green nhsuk-card--clickable">
+            <!--            <img class="nhsuk-card__img" src="https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg" alt="">-->
+            <div class="nhsuk-card__content nhsuk-card__content--primary nhsuk-u-padding-4">
+              <h2 class="nhsuk-card__heading nhsuk-heading-s">
+                <span class="govuk-caption-m nhsuk-u-margin-bottom-2">{{ data['roleCats'][i].category }}</span>
+                <a class="nhsuk-card__link" href="./{{ data['roleCats'][i].url }}">{{ data['roleCats'][i].name }}</a>
+              </h2>
+              <!--              <p class="nhsuk-card__description">Description</p>-->
+              <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#CCEFE9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+
+      {%- endfor %}
+
+      </ul>
+
+      <h2 class="govuk-heading-m">Next steps for the pathway</h2>
+
+      <p>We are developing further role categories for:</p>
+
+      <ul class="govuk-list--bullet govuk-list">
+        <li>Deputy manager</li>
+        <li>Registered manager</li>
+        <li>Enhanced/complex care</li>
+        <li>Personal assistant</li>
+      </ul>
+
+      <p>We will be engaging further with the sector for insight and feedback on what knowledge, skills and behaviours each of these require.</p>
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-6">How to adopt the care workforce pathway</h2>
+
+      <p>The pathway is designed to set the direction of learning and development across the adult social care sector. We recommend that any employer in the sector should consider the pathway and think about how they can apply it.</p>
+
+      <p>We will continue to add resources to the pathway to help people across the sector use it widely. This includes a new digital product that will link through to training opportunities.</p>
+
+      {% set smallHtml %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <h2 class="govuk-heading-m">How to use the pathway</h2>
+
+          <h3 class="govuk-heading-s">Use the new adult social care pathway values</h3>
+          <p>The values were co-designed with representatives from the sector. Everyone in adult social care should recognise and have these values. These may complement any existing organisation values you have.</p>
+
+          <h3 class="govuk-heading-s">Map onto the pathway job roles</h3>
+          <p>Look at how your current organisational structures and job roles map onto the pathway. You may choose to adapt to the pathway or identify gaps where they do or do not apply to your organisation.</p>
+          
+          <h3 class="govuk-heading-s">Guide career conversations</h3>
+          <p>The pathway is in the public domain and available to access and use by anyone interested in it. Workers in adult social care can take it away and read it or you can show and discuss it with them.</p>
+        </div>
+      </div>
+      {% endset -%}
+
+      {% set mediumHtml %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <h2 class="govuk-heading-m">How to use the pathway</h2>
+
+          <h3 class="govuk-heading-s">Use the new adult social care pathway values</h3>
+          <p>The values were co-designed with representatives from the sector. Everyone in adult social care should recognise and have these values. These may complement any existing organisation values you have.</p>
+
+          <h3 class="govuk-heading-s">Map onto the pathway job roles</h3>
+          <p>Look at how your current organisational structures and job roles map onto the pathway. You may choose to adapt to the pathway or identify gaps where they do or do not apply to your organisation.</p> 
+            
+          <h3 class="govuk-heading-s">Guide career conversations</h3>
+          
+          <p>The pathway is in the public domain and available to access and use by anyone interested in it. You may choose to share the pathway directly with your teams or discuss it with them as a team or during individual career conversations.</p>
+        
+         <p>Some organisations may already have existing career management tools or software. They will need to review how to include the pathway in career management conversations and interactions.</p>
+        </div>
+      </div>
+      {% endset -%}
+
+      {% set largeHtml %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <h2 class="govuk-heading-m">How to use the pathway</h2>
+
+          <h3 class="govuk-heading-s">Use the new adult social care pathway values</h3>
+          <p>The values were co-designed with representatives from the sector. Everyone in adult social care should recognise and have these values. These may complement any existing organisation values you have.</p>
+
+          <h3 class="govuk-heading-s">Map onto the pathway job roles</h3>
+          <p>Look at how your current organisational structures and job roles map onto the pathway. You may choose to adapt to the pathway or identify gaps where they do or do not apply to your organisation.</p>
+            
+          <p>If your organisation already uses career management tools you may review how to make use of the pathway to complement your tool. We also welcome feedback on how you are using the pathway to improve it and share helpful use cases with other organisations.</p>
+
+          <h3 class="govuk-heading-s">Guide career conversations</h3>
+          <p>The pathway is in the public domain and available to access and use by anyone interested in it. Workers in adult social care can take it away and read it or you can show and discuss it with them.</p>
+
+          <p>Larger organisations may already have existing career management tools or software. They will need to review how to include the pathway in career management conversations and interactions.</p>
+        </div>
+      </div>
+      {% endset -%}
+
+      {{ govukTabs({
+      items: [
+        {
+          label: "Small organisations",
+          id: "small",
+          panel: {
+            html: smallHtml
+          }
+        },
+        {
+          label: "Medium sized organisations",
+          id: "medium",
+          panel: {
+            html: mediumHtml
+          }
+        },
+        {
+          label: "Large organisations",
+          id: "large",
+          panel: {
+            html: largeHtml
+          }
+        }
+      ]
+    }) }}
+
+  </div>
+</div>
+
+{% endblock %}

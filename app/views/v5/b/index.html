@@ -1,0 +1,301 @@
+{% set serviceName = 'Working in adult social care' %}
+{% set brand = data['brand'] or '5' %}
+{% set section = 'home' %}
+
+{% extends "layouts/v5/layout-care-brand-" + brand + "-home.html" %}
+
+{% block pageTitle %}
+Working in adult social care - Homepage
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+  .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after {
+    border-color: #007967;
+  }
+
+  .nhsuk-hero--image {
+    margin-bottom: 40px;
+    background-color: #fff;
+  }
+
+  @media only screen and (min-width: 40.0625em) {
+    .nhsuk-hero--image {
+      margin-bottom: 70px;
+    }
+  }
+
+</style>
+<section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description" style="background-image: url(&quot;/public/images/carousel.jpg&quot;);">
+  <script>
+    function randomImage() {
+      var images =[
+        "/public/images/carousel-2.jpg"
+      ];
+
+      var size = images.length;
+      var x = Math.floor(size * Math.random());
+      var element = document.getElementsByClassName('nhsuk-hero--image');
+      if (element.length > 0) {
+        element[0].style["background-image"] = "url(" + images[x] + ")";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", randomImage);
+  </script>
+  <div class="nhsuk-hero__overlay">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+          <div class="nhsuk-hero-content" style="background-color: #007967;">
+            <h1 class="nhsuk-u-margin-bottom-3">Work in adult social care in England</h1>
+            <p class="nhsuk-body-l nhsuk-u-margin-bottom-0">Make a real difference to people’s lives every day</p>
+            <span class="nhsuk-hero__arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="govuk-main-wrapper" style="background-color: #fff;">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+
+        <h2 class="govuk-heading-l">Career pathways</h2>
+        <p class="nhsuk-u-reading-width">The first 4 career pathways to guide adult social care workers in England. Find out how to develop your career in a way that works for you.</p>
+
+        <div class="nhsuk-action-link">
+          <a class="nhsuk-action-link__link" href="cwp">
+            <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+            </svg>
+            <span class="nhsuk-action-link__text">Find out more about the care workforce pathway</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-one-half">
+
+        <h2 class="govuk-heading-l">Skills Record</h2>
+        <p class="nhsuk-u-reading-width">A free digital resource for adult social care workers in England to keep their learning, training, and development in one place.</p>
+
+        <div class="nhsuk-action-link">
+          <a class="nhsuk-action-link__link" href="#">
+            <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+            </svg>
+            <span class="nhsuk-action-link__text">Find out more about the digital Skills Record</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="govuk-main-wrapper" style="background-color: #F2FBFA; padding-bottom: 0  ">
+<div class="govuk-width-container">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h2 class="govuk-heading-l">Start working in adult social care</h2>
+
+<!--      <p class="nhsuk-u-reading-width">If you’re looking for meaningful work where you can make a difference to people’s lives every day, there are a variety of care roles for you. Hear from others working in care and find out how they turned their passion for helping others into a career in care.</p>-->
+
+      <ul class="govuk-grid-row nhsuk-card-group">
+
+        <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+            <img alt="" class="nhsuk-card__img" src="/public/images/home-1.jpg">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="about">What you need to start work</a>
+              </h2>
+              <p class="nhsuk-card__description">You don’t need qualifications or experience to start working in adult social care. What is really important are your values and attitude.</p>
+              <svg aria-hidden="true" class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" focusable="false" height="27" width="27" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13.333" cy="13.333" fill="" r="13.333"/>
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771"/>
+                  <path d="M11.667 9.229L15.438 13" data-name="Path"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+
+        <li class="govuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--topic nhsuk-card--clickable">
+            <img alt="" class="nhsuk-card__img" src="/public/images/home-2.jpg">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="#">What the work is like</a>
+              </h2>
+              <p class="nhsuk-card__description">Hear from others working in adult social care and find out how they turned their passion for helping others into a career in care.</p>
+              <svg aria-hidden="true" class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" focusable="false" height="27" width="27" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13.333" cy="13.333" fill="" r="13.333"/>
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771"/>
+                  <path d="M11.667 9.229L15.438 13" data-name="Path"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+
+<div class="govuk-main-wrapper" style="background-color: #fff;">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <h2 class="govuk-heading-l">Industry news</h2>
+
+        <ul class="govuk-grid-row nhsuk-card-group">
+          <li class="govuk-grid-column-two-thirds nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+              <div class="nhsuk-card__content nhsuk-card__content--secondary">
+                <p class="govuk-!-font-size-16 nhsuk-u-margin-bottom-1" style="color: #354550;">
+                  <strong>06 March 2024</strong></p>
+                <h2 class="nhsuk-card__heading nhsuk-heading-m nhsuk-u-margin-bottom-3 nhsuk-u-padding-top-0">
+                  <a class="nhsuk-card__link" href="#">Is adult social care for you?</a>
+                </h2>
+
+                <p class="nhsuk-card__description nhsuk-u-reading-width">You don’t necessarily need qualifications or experience to work in social care. What’s really important is your values and attitude.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="govuk-grid-column-two-thirds nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+              <div class="nhsuk-card__content nhsuk-card__content--secondary">
+                <p class="govuk-!-font-size-16 nhsuk-u-margin-bottom-1" style="color: #354550;">
+                  <strong>04 March 2024</strong></p>
+                <h2 class="nhsuk-card__heading nhsuk-heading-m nhsuk-u-margin-bottom-3 nhsuk-u-padding-top-0">
+                  <a class="nhsuk-card__link" href="#">What's it like to work in care?</a>
+                </h2>
+                <p class="nhsuk-card__description">Hear from others working in care and find out how they turned their passion for helping others into a career in care.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="govuk-grid-column-two-thirds nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+              <div class="nhsuk-card__content nhsuk-card__content--secondary">
+                <p class="govuk-!-font-size-16 nhsuk-u-margin-bottom-1" style="color: #354550;">
+                  <strong>10 January 2024</strong></p>
+                <h2 class="nhsuk-card__heading nhsuk-heading-m nhsuk-u-margin-bottom-3 nhsuk-u-padding-top-0">
+                  <a class="nhsuk-card__link" href="#">Skills for Care response to Government reform package announcement</a>
+                </h2>
+                <p class="nhsuk-card__description">Skills for Care responds to Government reform package announcement.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="govuk-grid-column-two-thirds nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+              <div class="nhsuk-card__content nhsuk-card__content--secondary">
+                <p class="govuk-!-font-size-16 nhsuk-u-margin-bottom-1" style="color: #354550;">
+                  <strong>08 January 2024</strong></p>
+                <h2 class="nhsuk-card__heading nhsuk-heading-m nhsuk-u-margin-bottom-3 nhsuk-u-padding-top-0">
+                  <a class="nhsuk-card__link" href="#">Skills for Care is supporting providers to #KeepLearning this year</a>
+                </h2>
+                <p class="nhsuk-card__description">Throughout January and February Skills for Care is running a campaign to inspire social care workers to #KeepLearning.</p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-main-wrapper" style="background-color: #F2FBFA; padding-bottom: 0  ">
+  <div class="govuk-width-container">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <h2 class="govuk-heading-l">Other care services</h2>
+
+        <p>Find other services in care</p>
+
+        <ul class="govuk-grid-row nhsuk-card-group">
+
+          <li class="govuk-grid-column-one-third nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--topic nhsuk-card--topic--green nhsuk-card--clickable">
+              <div class="nhsuk-card__content nhsuk-card__content--primary">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="#">Digitising social care</a>
+                </h2>
+                <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                  <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                  <g data-name="Group 1" fill="none" stroke="#00594C" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                    <path d="M15.438 13l-3.771 3.771" />
+                    <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </li>
+
+          <li class="govuk-grid-column-one-third nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--topic nhsuk-card--topic--green nhsuk-card--clickable">
+              <div class="nhsuk-card__content nhsuk-card__content--primary">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="#">Find social care jobs</a>
+                </h2>
+                <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                  <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                  <g data-name="Group 1" fill="none" stroke="#00594C" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                    <path d="M15.438 13l-3.771 3.771" />
+                    <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </li>
+
+          <li class="govuk-grid-column-one-third nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--topic nhsuk-card--topic--green nhsuk-card--clickable">
+              <div class="nhsuk-card__content nhsuk-card__content--primary">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="#">Training Fund Reimbursement Scheme</a>
+                </h2>
+                <svg class="nhsuk-icon nhsuk-icon nhsuk-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                  <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                  <g data-name="Group 1" fill="none" stroke="#00594C" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                    <path d="M15.438 13l-3.771 3.771" />
+                    <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  {% endblock %}
