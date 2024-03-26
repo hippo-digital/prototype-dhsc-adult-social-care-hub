@@ -1,8 +1,9 @@
 {% set serviceName = 'Working in adult social care' %}
 {% set brand = data['brand'] or '5' %}
+{% set target = data['target'] or 'a' %}
 {% set section = 'careers' %}
 
-{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+{% extends "layouts/v5/layout-care-brand-" + brand + "-" + target + ".html" %}
 
 {% block pageTitle %}
 Entry-level roles: Areas for development

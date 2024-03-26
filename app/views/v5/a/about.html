@@ -1,8 +1,9 @@
 {% set serviceName = 'Working in adult social care' %}
 {% set brand = data['brand'] or '5' %}
+{% set target = data['target'] or 'a' %}
 {% set section = 'about' %}
 
-{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+{% extends "layouts/v5/layout-care-brand-" + brand + "-" + target + ".html" %}
 
 {% block pageTitle %}
 About adult social care
@@ -29,11 +30,11 @@ About adult social care
 
       <h1 class="govuk-heading-l">About adult social care</h1>
 
-      <p>People working in adult social care help people who draw on care to be able to live their lives. The care may involve: </p>
+      <p>People working in adult social care help people who draw on care to be able to live their lives. The care may involve:</p>
       <ul class="govuk-list govuk-list--bullet">
         <li>personal care like washing and dressing</li>
         <li>staying active in their communities</li>
-        <li>support with everyday life </li>
+        <li>support with everyday life</li>
         <li>supporting people to live independently</li>
       </ul>
 
