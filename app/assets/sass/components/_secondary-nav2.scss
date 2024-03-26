@@ -1,0 +1,147 @@
+// wrappers
+
+.careuk-main-wrapper--nav {
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #33BDA9;
+  padding-bottom: 0;
+}
+
+.careuk-main-wrapper--green {
+  background-color: #F2FBFA;
+  padding-top: 50px;
+}
+
+// breadcrumbs overide
+
+.careuk-breadcrumbs {
+  margin: 0;
+  padding-top: 15px;
+}
+
+// secondary navigation
+
+.careuk-secondary-nav {
+  //font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+@media print {
+  .careuk-secondary-nav {
+    font-family: sans-serif;
+  }
+}
+@media (min-width: 40.0625em) {
+  .careuk-secondary-nav {
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+  }
+}
+@media print {
+  .careuk-secondary-nav {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.careuk-secondary-nav__link {
+  text-decoration: underline;
+  padding: 14px 20px 16px;
+  .careuk-secondary-nav__list-item--current & {
+    text-decoration: none;
+    background-color: govuk-colour("pale-green");
+    border: 2px solid govuk-colour("dark-mint-green");
+    border-bottom: none;
+  }
+}
+@media print {
+  .careuk-secondary-nav__link {
+    font-family: sans-serif;
+  }
+}
+.careuk-secondary-nav__link:hover {
+  text-decoration: underline;
+}
+.careuk-secondary-nav__link:focus {
+  outline: 3px solid transparent;
+  color: #0b0c0c;
+  background-color: #ffdd00;
+  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+  text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.careuk-secondary-nav__link:link {
+  color: #000;
+}
+.careuk-secondary-nav__link:visited {
+  color: #000;
+}
+.careuk-secondary-nav__link:hover {
+  color: #000;
+  text-decoration: none;
+}
+.careuk-secondary-nav__link:active {
+  color: #00594C;
+  text-decoration: none;
+}
+.careuk-secondary-nav__link:focus {
+  color: #00594C;
+}
+.careuk-secondary-nav__link:not(:hover):not(:active) {
+  //text-decoration: underline;
+}
+.careuk-secondary-nav__link::after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.careuk-secondary-nav__list {
+  //box-shadow: inset 0 -1px 0 govuk-colour("dark-mint-green");
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.careuk-secondary-nav__list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.careuk-secondary-nav__list-item {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  //margin-right: 26px;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  position: relative;
+}
+@media (min-width: 40.0625em) {
+  .careuk-secondary-nav__list-item {
+    padding-bottom: 12px;
+  }
+}
+
+.careuk-secondary-nav__list-item:last-child {
+  margin-right: 0;
+}
+
+//.careuk-secondary-nav__list-item--current {
+//  border-bottom: 5px solid govuk-colour("dark-mint-green");
+//  padding-bottom: 5px;
+//
+//}
+//@media (min-width: 40.0625em) {
+//  .careuk-secondary-nav__list-item--current {
+//    //padding-bottom: 10px;
+//  }
+//}

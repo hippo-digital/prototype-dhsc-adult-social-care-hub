@@ -1,8 +1,9 @@
 {% set serviceName = 'Working in adult social care' %}
 {% set brand = data['brand'] or '5' %}
+{% set target = data['target'] or 'b' %}
 {% set section = 'careers' %}
 
-{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+{% extends "layouts/v5/layout-care-brand-" + brand + "-" + target + ".html" %}
 
 {% block pageTitle %}
 Supervisor or leader: Areas for development
@@ -10,6 +11,7 @@ Supervisor or leader: Areas for development
 
 {% block beforeContent %}
   {{ govukBreadcrumbs({
+  classes: "careuk-breadcrumbs",
   items: [
     {
       text: "Home",
@@ -32,44 +34,53 @@ Supervisor or leader: Areas for development
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
+<div class="govuk-main-wrapper careuk-main-wrapper--nav">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
 
       <span class="govuk-caption-xl">Role category C</span>
-      <h1 class="govuk-heading-xl nhsuk-u-margin-bottom-3">Supervisors or leaders</h1>
+      <h1 class="govuk-heading-xl nhsuk-u-margin-bottom-5">Supervisors or leaders</h1>
 
-      <nav class="x-govuk-secondary-navigation nhsuk-u-margin-bottom-6" aria-label="Secondary menu">
-        <ul class="x-govuk-secondary-navigation__list">
-          <li class="x-govuk-secondary-navigation__list-item ">
-            <a class="x-govuk-secondary-navigation__link" href="./" aria-current="page">
+      <nav class="careuk-secondary-nav" aria-label="Secondary menu">
+        <ul class="careuk-secondary-nav__list">
+          <li class="careuk-secondary-nav__list-item ">
+            <a class="careuk-secondary-nav__link" href="./" aria-current="page">
               Overview
             </a>
           </li>
-          <li class="x-govuk-secondary-navigation__list-item ">
-            <a class="x-govuk-secondary-navigation__link" href="requirements">
+          <li class="careuk-secondary-nav__list-item ">
+            <a class="careuk-secondary-nav__link" href="requirements">
               Knowledge and skills
             </a>
           </li>
-          <li class="x-govuk-secondary-navigation__list-item x-govuk-secondary-navigation__list-item--current">
-            <a class="x-govuk-secondary-navigation__link" href="development">
+          <li class="careuk-secondary-nav__list-item careuk-secondary-nav__list-item--current">
+            <a class="careuk-secondary-nav__link" href="development">
               Areas of specialism
             </a>
           </li>
-          <li class="x-govuk-secondary-navigation__list-item ">
-            <a class="x-govuk-secondary-navigation__link" href="courses">
+          <li class="careuk-secondary-nav__list-item ">
+            <a class="careuk-secondary-nav__link" href="courses">
               Training and qualifications
             </a>
           </li>
         </ul>
       </nav>
 
-      <h2 class="govuk-heading-l">Areas of specialism</h2>
-
     </div>
-  </div>
+    </div>
 
-  <div class="govuk-grid-row">
+  </div>
+</div>
+
+
+<div class="govuk-main-wrapper careuk-main-wrapper--green">
+  <div class="govuk-width-container">
+
+    <div class="govuk-grid-row nhsuk-u-margin-bottom-4">
     <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l">Areas of specialism</h2>
 
       <p>This section outlines the opportunities available within role category C to specialise in one or more areas, as well as the opportunities to develop within role category C or to progress into another role.</p>
 
@@ -81,7 +92,7 @@ Supervisor or leader: Areas for development
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
 
-    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <!-- <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"> -->
 
     {% set specialismsHtml %}
 
@@ -197,6 +208,7 @@ Supervisor or leader: Areas for development
   </div>
 </div>
 
-
+  </div>
+</div>
 
 {% endblock %}

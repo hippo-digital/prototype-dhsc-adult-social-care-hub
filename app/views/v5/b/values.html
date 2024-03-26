@@ -1,8 +1,9 @@
 {% set serviceName = 'Working in adult social care' %}
 {% set brand = data['brand'] or '5' %}
+{% set target = data['target'] or 'b' %}
 {% set section = 'about' %}
 
-{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
+{% extends "layouts/v5/layout-care-brand-" + brand + "-" + target + ".html" %}
 
 {% block pageTitle %}
 About adult social care
@@ -28,8 +29,10 @@ About adult social care
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
+<div class="govuk-main-wrapper careuk-main-wrapper--nav">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
 
       <h1 class="govuk-heading-l">Sector values</h1>
 

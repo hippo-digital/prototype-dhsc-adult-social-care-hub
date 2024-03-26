@@ -1,9 +1,9 @@
 {% set serviceName = 'Working in adult social care' %}
 {% set brand = data['brand'] or '5' %}
+{% set target = data['target'] or 'b' %}
 {% set section = 'careers' %}
 
-{% extends "layouts/v5/layout-care-brand-" + brand + ".html" %}
-
+{% extends "layouts/v5/layout-care-brand-" + brand + "-" + target + ".html" %}
 
 {% block pageTitle %}
   Care Workers: About these job roles
@@ -11,310 +11,304 @@
 
 {% block beforeContent %}
   {{ govukBreadcrumbs({
-  items: [
-    {
-      text: "Home",
-      href: "../index"
-    },
-    {
-      text: "Professional development",
-      href: "../careers"
-    },
-    {
-      text: "Career pathways",
-      href: "../cwp"
-    },
-    {
-      text: "Care or support workers"
-    }
-  ]
+    classes: "careuk-breadcrumbs",
+    items: [
+      {
+        text: "Home",
+        href: "../index"
+      },
+      {
+        text: "Professional development",
+        href: "../careers"
+      },
+      {
+        text: "Career pathways",
+        href: "../cwp"
+      },
+      {
+        text: "Care or support workers"
+      }
+    ]
   }) }}
 {% endblock %}
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
-
-      <span class="govuk-caption-xl">Role category B</span>
-      <h1 class="govuk-heading-xl nhsuk-u-margin-bottom-3">Care or support workers</h1>
-
-      <nav class="x-govuk-secondary-navigation nhsuk-u-margin-bottom-6" aria-label="Secondary menu">
-        <ul class="x-govuk-secondary-navigation__list">
-          <li class="x-govuk-secondary-navigation__list-item x-govuk-secondary-navigation__list-item--current">
-            <a class="x-govuk-secondary-navigation__link" href="./" aria-current="page">
-              Overview
-            </a>
-          </li>
-          <li class="x-govuk-secondary-navigation__list-item">
-            <a class="x-govuk-secondary-navigation__link" href="requirements">
-              Knowledge and skills
-            </a>
-          </li>
-          <li class="x-govuk-secondary-navigation__list-item ">
-            <a class="x-govuk-secondary-navigation__link" href="development">
-              Areas of specialism
-            </a>
-          </li>
-          <li class="x-govuk-secondary-navigation__list-item ">
-            <a class="x-govuk-secondary-navigation__link" href="courses">
-              Training and qualifications
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-<!--      <h2 class="govuk-heading-l">Overview</h2>-->
-
-    </div>
-  </div>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
-
-      <img style="width: 100%;" src="/public/images/role-b.jpg" alt="Image of a care worker in adult social care">
-
-    </div>
-
-    <div class="govuk-grid-column-two-thirds">
-
-      <h2 class="govuk-heading-l">About this category</h2>
-      <p>Jobs may include: care worker, support worker, senior care worker, care co-ordinator.</p>
-      
-      <p>What you do: help those who draw on care to be able to live their lives. This might be with personal care, finances, or anything to help a person live their life.</p>
-      
-      <p>Where you work: various settings including people's own homes, residential settings, supported independent living.</p>
-
-      <p>Time spent in this category: 0-7 years, or as long as you want if you are happy in this category.</p>      
-
-    </div>
-  </div>
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
-    {% set progressionHtml %}
-
-        <h2 class="govuk-heading-m">The experience or training you need</h3>
-          <p>To get started: adult social care values, organisation induction, experience from an entry-level care role.</p>
-          <p>To do more: consider a level 2 Diploma or Apprenticeship in Health and Social Care.</p>
-          <p>To become more senior: level 2 or 3 Diploma or Apprenticeship in Health and Social Care.</p>
-         
-          <h2 class="govuk-heading-s">How to get experience</h3>
-            <p>One way to become a care worker is to start in an entry-level role such as a care assistant or support worker. This lets you:</p>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>get important experience caring for other people</li>
-              <li>develop your values which are needed to work in adult social care</li>
-              <li>understand the kind of work involved in adult social care</li>
-              </ul>      
-
-            <h2 class="govuk-heading-m">What else you can do </h2>
+<div class="govuk-main-wrapper careuk-main-wrapper--nav">
+  <div class="govuk-width-container">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
-        <p>Other options for someone doing a job in this category are to:</p>
-        <ul class="govuk-list govuk-list--bullet">
-          <li><a href=\"development">specialise in an area of practice</a> like autism or dementia</li>
-          <li>do more as a care or support worker by doing <a href=\"">learning and training</a></li>
-          <li>do a more senior role</li>
-        </ul>
 
-        <h2 class="govuk-heading-m">Other job roles to consider</h2>
-        <p>Other job roles you might consider are:</p>
-        <ul class="govuk-list govuk-list--bullet">
-          <li>Supervisor or leader. Related qualifications are the Level 4 Diploma in Health Care and Diploma in Management Studies.</li>
-          <li>Practice leader. You should have experience and qualifications in a specialism such as autism or dementia.</li>
-          <li>Deputy manager</li>
-        </ul>
+        <span class="govuk-caption-xl">Role category B</span>
+        <h1 class="govuk-heading-xl nhsuk-u-margin-bottom-5">Care or support workers</h1>
 
-  <!--  <div class="nhsuk-action-link">
-            <a class="nhsuk-action-link__link" href="#">
-              <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
-               <path d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-            </svg>
-            <span class="nhsuk-action-link__text">Search for care worker jobs</span> 
-          </a>
-        </div> -->
-      </div>
-    </div>
-  
-    {% endset -%}
-
-    {% set caseStudyHtml %}
-
-    <h2 class="govuk-heading-m">Case study - Paul</h2>
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <p>Paul recognises the value in the previous training and development he has done during his time as a care worker and begins to think about what further learning and development he wants to complete. During his time as a care worker, he has done his Care Certificate qualification and previously chose to develop his skills and knowledge in dementia care to better support the people living in the care home.</p>
-        <p>Paul has his year one appraisal and speaks to his manager about what his next steps could be as part of his learning and development. His manager recommends the Level 3 Diploma in Adult Care as a way for him to further grow his knowledge and skills and, after agreeing with Paul that he wants to do it, makes arrangements for him to start this qualification.</p>
-        <p>His training provider maps his previous learning that he has done against the Level 3 qualification he wants to undertake so that he doesn’t have to repeat any previous learning. He is given an individual learning plan that he will follow until he completes the qualification. He chooses a number of optional units for himself that he can use within his specific practice and setting.</p>
-        <p>As Paul works through completing the qualification in his current role, he consolidates his learning embedding it into his practice and showing how he is delivering high-quality person-centred care. In Paul’s ongoing role as a care worker, he will maintain continous professional development by undertaking learning and development which he can use to support the people living in the care home.</p>
-        <p>Paul has recently received additional training to carry out a delegated healthcare activity for one of the people he supports. The healthcare activity has been delegated to him by a Registered Nurse from the local community nursing team who remains accountable for the decision to delegate in the person’s best interest, even though it is Paul who is carrying out the activity.  He is carrying out Percutaneous Endoscopic Gastrostomy (PEG) feeds, by following the Care Plan and the training he has been given, ensuring he continues to deliver safe and person-centred care. The delegated healthcare and clinical safety is monitored by the Registered Nurse who retains accountability and responsibility of the activity.</p>
-      </div>
-      <div class="govuk-grid-column-one-third">
-        <img style="width: 100%;" src="/public/images/role-b.jpg" alt="Image of a care worker in adult social care">
-      </div>
-    </div>
-
-    {% endset -%}
-
-    {% set valuesHtml %}
-          <h2 class="govuk-heading-m">Sector values</h2>
-    <p>Everyone working in adult social care must have these values.</p>
-
-    {{ govukInsetText({
-    html: "<a href=\"#\">Read more about the sector values</a>.",
-    classes: "govuk-inset-text--green"
-    }) }}
-
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
-        <table class="govuk-table">
-          <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Respect</th>
-            <td class="govuk-table__cell">Treat me, the people around me and where I live with respect. Respect my values and my choices about the life I want to lead, and respect your role to value and uphold my goals</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">See the whole person</th>
-            <td class="govuk-table__cell">Be curious and listen carefully to understand the unique person I am with strengths, abilities and aspirations. Make plans and decisions about me, with me</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Honest, trustworthy and reliable</th>
-            <td class="govuk-table__cell">Be honest, trustworthy and reliable so you turn up when you say you will and provide the care and support we have agreed. Be discreet and confidential to build up a trusting relationship between us</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Kind, compassionate and empathetic</th>
-            <td class="govuk-table__cell">Be kind, compassionate and empathetic so you can see things from my point of view, with concern for what matters to me, my wellbeing and health</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Courageous and principled</th>
-            <td class="govuk-table__cell">Show strength, courage and commitment to speak out if something isn’t right or could be better, and to step back when I am exercising my choice and control. Act according to principles of human rights, equity and inclusion as well as my personalised care and support plan amending</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Flexible, open and learning</th>
-            <td class="govuk-table__cell">Be reflective, open and non-judgmental so we can learn and adapt how we work together in the longer term</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Proud and positive</th>
-            <td class="govuk-table__cell">Take pride in your work and have a friendly, positive and proactive attitude so we can enjoy spending time together</td>
-          </tr>
-          </tbody>
-        </table>
+        <nav aria-label="Secondary menu" class="careuk-secondary-nav">
+          <ul class="careuk-secondary-nav__list">
+            <li class="careuk-secondary-nav__list-item careuk-secondary-nav__list-item--current">
+              <a aria-current="page" class="careuk-secondary-nav__link" href="./">
+                Overview
+              </a>
+            </li>
+            <li class="careuk-secondary-nav__list-item">
+              <a class="careuk-secondary-nav__link" href="requirements">
+                Knowledge and skills
+              </a>
+            </li>
+            <li class="careuk-secondary-nav__list-item ">
+              <a class="careuk-secondary-nav__link" href="development">
+                Areas of specialism
+              </a>
+            </li>
+            <li class="careuk-secondary-nav__list-item ">
+              <a class="careuk-secondary-nav__link" href="courses">
+                Training and qualifications
+              </a>
+            </li>
+          </ul>
+        </nav>
 
       </div>
     </div>
-    {% endset -%}
-
-      {% set digitalHtml %}
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-          <h2 class="govuk-heading-m">Digital skills</h2>
-          <p>As part of your knowledge and skill development, you can also to work to level 1 (digital skills for all) of the
-            <a href="https://beta.digitisingsocialcare.co.uk/digital-skills">Adult Social Care Digital Skills Framework</a>.</p>
-
-          <p>Within this role category, we would expect you to show all level 1 competencies.</p>
-        </div>
-      </div>
-      {% endset -%}
-
-    {% set behavioursHtml %}
-
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-heading-m">Core behaviours for this role category</h2>
-        <p>Behaviours show the values in what you do and how you act. These are the behaviours you need to work as a care or support worker.</p>
-        <p>The behaviours should also meet the needs of the people you care for in the way that they need it.</p>
-        <ol class="govuk-list govuk-list--number govuk-list--spaced">
-          <li>Treat all individuals equitably and with a professional manner in the workplace.</li>
-          <li>Take responsibility for own actions, demonstrating resilience, determination and impartiality when managing difficult situations.</li>
-          <li>Build and maintain positive relationships with others and seek their views when needed.</li>
-          <li>Take an organised approach to time-sensitive tasks, and act in an open and approachable when completing tasks with others.</li>
-          <li>Be open to new digital knowledge and skills which may enhance performance in the care sector.</li>
-          <li>Act in a flexible, creative, innovative and proactive way when problem solving, taking account of best practice.</li>
-          <li>Be adaptable and act in an open and responsive way to feedback.</li>
-          <li>Be caring, compassionate and empathetic towards others, acknowledging the differences between individuals.</li>
-        </ol>
-      </div>
-    </div>
-
-
-    {% endset -%}
-
-    {{ govukTabs({
-      items: [
-        {
-          label: "Career progression",
-          id: "past-day",
-          panel: {
-            html: progressionHtml
-          }
-        },
-        {
-          label: "Values",
-          id: "past-week",
-          panel: {
-            html: valuesHtml
-          }
-        },
-        {
-          label: "Behaviours",
-          id: "past-month",
-          panel: {
-            html: behavioursHtml
-          }
-        },
-        {
-          label: "Digital Skills",
-          id: "digital",
-          panel: {
-            html: digitalHtml
-          }
-        },
-        {
-          label: "Case Study",
-          id: "past-year",
-          panel: {
-            html: caseStudyHtml
-          }
-        }
-      ]
-    }) }}
-
-      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
-        Page last updated: 15 March 2024. <br><a href="#">Notify me when this page changes</a>
-      </p>
-
-      <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
-        <ul class="nhsuk-list nhsuk-pagination__list">
-<!--          <li class="nhsuk-pagination-item&#45;&#45;previous">-->
-<!--            <a class="nhsuk-pagination__link nhsuk-pagination__link&#45;&#45;prev" href="#">-->
-<!--              <span class="nhsuk-pagination__title">Previous</span>-->
-<!--              <span class="nhsuk-u-visually-hidden">:</span>-->
-<!--              <span class="nhsuk-pagination__page">Overview</span>-->
-<!--              <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">-->
-<!--                <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>-->
-<!--              </svg>-->
-<!--            </a>-->
-<!--          </li>-->
-          <li class="nhsuk-pagination-item--next">
-            <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="requirements">
-              <span class="nhsuk-pagination__title">Next</span>
-              <span class="nhsuk-u-visually-hidden">:</span>
-              <span class="nhsuk-pagination__page">Requirements of this role</span>
-              <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
-                <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
 
   </div>
 </div>
 
+
+<div class="govuk-main-wrapper careuk-main-wrapper--green">
+  <div class="govuk-width-container">
+
+    <div class="govuk-grid-row nhsuk-u-margin-bottom-4">
+      <div class="govuk-grid-column-one-third">
+        <img alt="Image of a care worker in adult social care" src="/public/images/role-b.jpg" style="width: 100%;">
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-l">About this category</h2>
+        <p>Jobs may include: care worker, support worker, senior care worker, care co-ordinator.</p>
+        <p>What you do: help those who draw on care to be able to live their lives. This might be with personal care, finances, or anything to help a person live their life.</p>
+        <p>Where you work: various settings including people's own homes, residential settings, supported independent living.</p>
+        <p>Time spent in this category: 0-7 years, or as long as you want if you are happy in this category.</p>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <!-- <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"> -->
+
+        {% set progressionHtml %}
+
+        <h3 class="govuk-heading-m">The experience or training you need</h3>
+        <p>To get started: adult social care values, organisation induction, experience from an entry-level care role.</p>
+        <p>To do more: consider a level 2 Diploma or Apprenticeship in Health and Social Care.</p>
+        <p>To become more senior: level 2 or 3 Diploma or Apprenticeship in Health and Social Care.</p>
+
+        <h3 class="govuk-heading-s">How to get experience</h3>
+        <p>One way to become a care worker is to start in an entry-level role such as a care assistant or support worker. This lets you:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>get important experience caring for other people</li>
+          <li>develop your values which are needed to work in adult social care</li>
+          <li>understand the kind of work involved in adult social care</li>
+        </ul>
+
+        <h3 class="govuk-heading-m">What else you can do </h3>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <p>Other options for someone doing a job in this category are to:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                <a href=\"development">specialise in an area of practice</a>
+                like autism or dementia
+              </li>
+              <li>do more as a care or support worker by doing
+                <a href=\"">learning and training</a>
+              </li>
+              <li>do a more senior role</li>
+            </ul>
+
+            <h3 class="govuk-heading-m">Other job roles to consider</h3>
+            <p>Other job roles you might consider are:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Supervisor or leader. Related qualifications are the Level 4 Diploma in Health Care and Diploma in Management Studies.</li>
+              <li>Practice leader. You should have experience and qualifications in a specialism such as autism or dementia.</li>
+              <li>Deputy manager</li>
+            </ul>
+
+          </div>
+        </div>
+
+        {% endset -%}
+
+        {% set caseStudyHtml %}
+
+        <h2 class="govuk-heading-m">Case study - Paul</h2>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <p>Paul recognises the value in the previous training and development he has done during his time as a care worker and begins to think about what further learning and development he wants to complete. During his time as a care worker, he has done his Care Certificate qualification and previously chose to develop his skills and knowledge in dementia care to better support the people living in the care home.</p>
+            <p>Paul has his year one appraisal and speaks to his manager about what his next steps could be as part of his learning and development. His manager recommends the Level 3 Diploma in Adult Care as a way for him to further grow his knowledge and skills and, after agreeing with Paul that he wants to do it, makes arrangements for him to start this qualification.</p>
+            <p>His training provider maps his previous learning that he has done against the Level 3 qualification he wants to undertake so that he doesn’t have to repeat any previous learning. He is given an individual learning plan that he will follow until he completes the qualification. He chooses a number of optional units for himself that he can use within his specific practice and setting.</p>
+            <p>As Paul works through completing the qualification in his current role, he consolidates his learning embedding it into his practice and showing how he is delivering high-quality person-centred care. In Paul’s ongoing role as a care worker, he will maintain continous professional development by undertaking learning and development which he can use to support the people living in the care home.</p>
+            <p>Paul has recently received additional training to carry out a delegated healthcare activity for one of the people he supports. The healthcare activity has been delegated to him by a Registered Nurse from the local community nursing team who remains accountable for the decision to delegate in the person’s best interest, even though it is Paul who is carrying out the activity. He is carrying out Percutaneous Endoscopic Gastrostomy (PEG) feeds, by following the Care Plan and the training he has been given, ensuring he continues to deliver safe and person-centred care. The delegated healthcare and clinical safety is monitored by the Registered Nurse who retains accountability and responsibility of the activity.</p>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <img alt="Image of a care worker in adult social care" src="/public/images/care-worker.jpg" style="width: 100%;">
+          </div>
+        </div>
+
+        {% endset -%}
+
+        {% set valuesHtml %}
+        <h2 class="govuk-heading-m">Sector values</h2>
+        <p>Everyone working in adult social care must have these values.</p>
+
+        {{ govukInsetText({
+        html: "
+        <a href=\"#\">Read more about the sector values</a>
+        .",
+        classes: "govuk-inset-text--green"
+        }) }}
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Respect</th>
+                <td class="govuk-table__cell">Treat me, the people around me and where I live with respect. Respect my values and my choices about the life I want to lead, and respect your role to value and uphold my goals</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">See the whole person</th>
+                <td class="govuk-table__cell">Be curious and listen carefully to understand the unique person I am with strengths, abilities and aspirations. Make plans and decisions about me, with me</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Honest, trustworthy and reliable</th>
+                <td class="govuk-table__cell">Be honest, trustworthy and reliable so you turn up when you say you will and provide the care and support we have agreed. Be discreet and confidential to build up a trusting relationship between us</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Kind, compassionate and empathetic</th>
+                <td class="govuk-table__cell">Be kind, compassionate and empathetic so you can see things from my point of view, with concern for what matters to me, my wellbeing and health</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Courageous and principled</th>
+                <td class="govuk-table__cell">Show strength, courage and commitment to speak out if something isn’t right or could be better, and to step back when I am exercising my choice and control. Act according to principles of human rights, equity and inclusion as well as my personalised care and support plan amending</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Flexible, open and learning</th>
+                <td class="govuk-table__cell">Be reflective, open and non-judgmental so we can learn and adapt how we work together in the longer term</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Proud and positive</th>
+                <td class="govuk-table__cell">Take pride in your work and have a friendly, positive and proactive attitude so we can enjoy spending time together</td>
+              </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+        {% endset -%}
+
+        {% set digitalHtml %}
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m">Digital skills</h2>
+            <p>As part of your knowledge and skill development, you can also to work to level 1 (digital skills for all) of the
+              <a href="https://beta.digitisingsocialcare.co.uk/digital-skills">Adult Social Care Digital Skills Framework</a>
+              .
+            </p>
+
+            <p>Within this role category, we would expect you to show all level 1 competencies.</p>
+          </div>
+        </div>
+        {% endset -%}
+
+        {% set behavioursHtml %}
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m">Core behaviours for this role category</h2>
+            <p>Behaviours show the values in what you do and how you act. These are the behaviours you need to work as a care or support worker.</p>
+            <p>The behaviours should also meet the needs of the people you care for in the way that they need it.</p>
+            <ol class="govuk-list govuk-list--number govuk-list--spaced">
+              <li>Treat all individuals equitably and with a professional manner in the workplace.</li>
+              <li>Take responsibility for own actions, demonstrating resilience, determination and impartiality when managing difficult situations.</li>
+              <li>Build and maintain positive relationships with others and seek their views when needed.</li>
+              <li>Take an organised approach to time-sensitive tasks, and act in an open and approachable when completing tasks with others.</li>
+              <li>Be open to new digital knowledge and skills which may enhance performance in the care sector.</li>
+              <li>Act in a flexible, creative, innovative and proactive way when problem solving, taking account of best practice.</li>
+              <li>Be adaptable and act in an open and responsive way to feedback.</li>
+              <li>Be caring, compassionate and empathetic towards others, acknowledging the differences between individuals.</li>
+            </ol>
+          </div>
+        </div>
+
+
+        {% endset -%}
+
+        {{ govukTabs({
+        items: [
+          {
+            label: "Career progression",
+            id: "past-day",
+            panel: {
+              html: progressionHtml
+            }
+          },
+          {
+            label: "Values",
+            id: "past-week",
+            panel: {
+              html: valuesHtml
+            }
+          },
+          {
+            label: "Behaviours",
+            id: "past-month",
+            panel: {
+              html: behavioursHtml
+            }
+          },
+          {
+            label: "Digital Skills",
+            id: "digital",
+            panel: {
+              html: digitalHtml
+            }
+          },
+          {
+            label: "Case Study",
+            id: "past-year",
+            panel: {
+              html: caseStudyHtml
+            }
+          }
+        ]
+      }) }}
+
+        <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
+          Page last updated: 15 March 2024.
+          <br>
+          <a href="#">Notify me when this page changes</a>
+        </p>
+
+        <nav aria-label="Pagination" class="nhsuk-pagination" role="navigation">
+          <ul class="nhsuk-list nhsuk-pagination__list">
+            <li class="nhsuk-pagination-item--next">
+              <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="requirements">
+                <span class="nhsuk-pagination__title">Next</span>
+                <span class="nhsuk-u-visually-hidden">:</span>
+                <span class="nhsuk-pagination__page">Requirements of this role</span>
+                <svg aria-hidden="true" class="nhsuk-icon nhsuk-icon__arrow-right" height="34" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
 {% endblock %}
