@@ -5,7 +5,7 @@
 {% extends "layouts/v5/layout-care-brand-" + brand + "-" + target + ".html" %}
 
 {% block pageTitle %}
-Entry-level roles: About these job roles
+Entry-level roles: About this category
 {% endblock %}
 
 {% block beforeContent %}
@@ -148,8 +148,8 @@ Entry-level roles: About these job roles
     {% endset -%}
 
     {% set valuesHtml %}
-    <h2 class="govuk-heading-m">Sector values</h2>
-    <p>Values are the golden thread underpinning behaviours.</p>
+    <h2 class="govuk-heading-m">Adult social care values</h2>
+    <p>Everyone working in adult social care must have these values.</p>
 
     {{ govukInsetText({
     html: "<a href=\"#\">Read more about the sector values</a>.",
@@ -198,10 +198,10 @@ Entry-level roles: About these job roles
     {% set behavioursHtml %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m">The behaviours you need</h2>
+        <p>Behaviours show the values in what you do and how you act. These are the behaviours you need to work as a care or support worker.</p>
+        <p>The behaviours should also meet the needs of the people you care for in the way that they need it.</p>
 
-        <h2 class="govuk-heading-m">Core behaviours for this role category</h2>
-        <p>Behaviours are the way that values are demonstrated in practice. These are the behaviours required to work as a Care worker. These are the things people must be doing in their job.</p>
-        <p>All behaviours should be delivered in the context of person-centred care and co-production.</p>
         <ol class="govuk-list govuk-list--number govuk-list--spaced">
           <li>Act in an ethical and professional manner in the workplace (professionalism).</li>
           <li>Build and maintain positive relationships with colleagues and adults in a care setting (teamworking).</li>

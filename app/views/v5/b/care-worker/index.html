@@ -6,7 +6,7 @@
 {% extends "layouts/v5/layout-care-brand-" + brand + "-" + target + ".html" %}
 
 {% block pageTitle %}
-  Care Workers: About these job roles
+  Care Workers: About this category
 {% endblock %}
 
 {% block beforeContent %}
@@ -90,9 +90,13 @@
       <div class="govuk-grid-column-two-thirds">
 
         <p>Jobs may include: care worker, support worker, senior care worker, care co-ordinator.</p>
+
         <p>What you do: help those who draw on care to be able to live their lives. This might be with personal care, finances, or anything to help a person live their life.</p>
+
         <p>Where you work: various settings including people's own homes, residential settings, supported independent living.</p>
+
         <p>Time spent in this category: 0-7 years, or as long as you want if you are happy in this category.</p>
+
       </div>
     </div>
 
@@ -122,12 +126,9 @@
             <p>Other options for someone doing a job in this category are to:</p>
             <ul class="govuk-list govuk-list--bullet">
               <li>
-                <a href=\"development">specialise in an area of practice</a>
-                like autism or dementia
+                <a href="development">specialise in an area of practice</a> like autism or dementia
               </li>
-              <li>do more as a care or support worker by doing
-                <a href=\"">learning and training</a>
-              </li>
+              <li>do more as a care or support worker by doing <a href="courses">learning and training</a></li>
               <li>do a more senior role</li>
             </ul>
 
@@ -163,7 +164,7 @@
         {% endset -%}
 
         {% set valuesHtml %}
-        <h2 class="govuk-heading-m">Sector values</h2>
+        <h2 class="govuk-heading-m">Adult social care values</h2>
         <p>Everyone working in adult social care must have these values.</p>
 
         {{ govukInsetText({
@@ -230,7 +231,7 @@
 
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-two-thirds">
-            <h2 class="govuk-heading-m">Core behaviours for this role category</h2>
+            <h2 class="govuk-heading-m">The behaviours you need</h2>
             <p>Behaviours show the values in what you do and how you act. These are the behaviours you need to work as a care or support worker.</p>
             <p>The behaviours should also meet the needs of the people you care for in the way that they need it.</p>
             <ol class="govuk-list govuk-list--number govuk-list--spaced">
