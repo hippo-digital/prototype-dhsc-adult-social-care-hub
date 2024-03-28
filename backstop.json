@@ -11,140 +11,176 @@
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
     {
+      "label": "home",
+      "url": "http://localhost:3000/v5/b/index"
+    },
+    {
+      "label": "about",
+      "url": "http://localhost:3000/v5/b/about"
+    },
+    {
+      "label": "about-values",
+      "url": "http://localhost:3000/v5/b/values"
+    },
+    {
       "label": "careers",
-      "url": "http://localhost:3000/v4/a/careers"
+      "url": "http://localhost:3000/v5/b/careers"
     },
     {
       "label": "cwp",
-      "url": "http://localhost:3000/v4/a/cwp"
+      "url": "http://localhost:3000/v5/b/cwp"
+    },
+    {
+      "label": "organisations",
+      "url": "http://localhost:3000/v5/b/organisations"
+    },
+    {
+      "label": "organisations-cwp",
+      "url": "http://localhost:3000/v5/b/organisations-cwp"
     },
     {
       "label": "newtocare-about",
-      "url": "http://localhost:3000/v4/a/new-to-care"
+      "url": "http://localhost:3000/v5/b/new-to-care"
     },
     {
       "label": "newtocare-values",
-      "url": "http://localhost:3000/v4/a/new-to-care/#past-week"
+      "url": "http://localhost:3000/v5/b/new-to-care/#past-week"
     },
     {
       "label": "newtocare-behaviors",
-      "url": "http://localhost:3000/v4/a/new-to-care/#past-month"
+      "url": "http://localhost:3000/v5/b/new-to-care/#past-month"
+    },
+    {
+      "label": "newtocare-digital",
+      "url": "http://localhost:3000/v5/b/new-to-care/#digital"
     },
     {
       "label": "newtocare-casestudy",
-      "url": "http://localhost:3000/v4/a/new-to-care/#past-year"
+      "url": "http://localhost:3000/v5/b/new-to-care/#past-year"
     },
     {
       "label": "newtocare-skills",
-      "url": "http://localhost:3000/v4/a/new-to-care/requirements"
+      "url": "http://localhost:3000/v5/b/new-to-care/requirements"
     },
     {
       "label": "newtocare-development",
-      "url": "http://localhost:3000/v4/a/new-to-care/development"
+      "url": "http://localhost:3000/v5/b/new-to-care/development"
     },
     {
       "label": "newtocare-development-other",
-      "url": "http://localhost:3000/v4/a/new-to-care/development#past-week"
+      "url": "http://localhost:3000/v5/b/new-to-care/development#past-week"
     },
     {
       "label": "newtocare-courses",
-      "url": "http://localhost:3000/v4/a/new-to-care/courses"
+      "url": "http://localhost:3000/v5/b/new-to-care/courses"
     },
     {
       "label": "careworker-about",
-      "url": "http://localhost:3000/v4/a/care-worker"
+      "url": "http://localhost:3000/v5/b/care-worker"
     },
     {
       "label": "careworker-values",
-      "url": "http://localhost:3000/v4/a/care-worker/#past-week"
+      "url": "http://localhost:3000/v5/b/care-worker/#past-week"
     },
     {
       "label": "careworker-behaviors",
-      "url": "http://localhost:3000/v4/a/care-worker/#past-month"
+      "url": "http://localhost:3000/v5/b/care-worker/#past-month"
+    },
+    {
+      "label": "careworker-digital",
+      "url": "http://localhost:3000/v5/b/care-worker/#digital"
     },
     {
       "label": "careworker-casestudy",
-      "url": "http://localhost:3000/v4/a/care-worker/#past-year"
+      "url": "http://localhost:3000/v5/b/care-worker/#past-year"
     },
     {
       "label": "careworker-skills",
-      "url": "http://localhost:3000/v4/a/care-worker/requirements"
+      "url": "http://localhost:3000/v5/b/care-worker/requirements"
     },
     {
       "label": "careworker-development",
-      "url": "http://localhost:3000/v4/a/care-worker/development"
+      "url": "http://localhost:3000/v5/b/care-worker/development"
     },
     {
       "label": "careworker-development-other",
-      "url": "http://localhost:3000/v4/a/care-worker/development#past-week"
+      "url": "http://localhost:3000/v5/b/care-worker/development#past-week"
     },
     {
       "label": "careworker-courses",
-      "url": "http://localhost:3000/v4/a/care-worker/courses"
+      "url": "http://localhost:3000/v5/b/care-worker/courses"
     },
     {
       "label": "supervisor-about",
-      "url": "http://localhost:3000/v4/a/supervisor"
+      "url": "http://localhost:3000/v5/b/supervisor"
     },
     {
       "label": "supervisor-values",
-      "url": "http://localhost:3000/v4/a/supervisor/#past-week"
+      "url": "http://localhost:3000/v5/b/supervisor/#past-week"
     },
     {
       "label": "supervisor-behaviors",
-      "url": "http://localhost:3000/v4/a/supervisor/#past-month"
+      "url": "http://localhost:3000/v5/b/supervisor/#past-month"
+    },
+    {
+      "label": "supervisor-digital",
+      "url": "http://localhost:3000/v5/b/supervisor/#digital"
     },
     {
       "label": "supervisor-casestudy",
-      "url": "http://localhost:3000/v4/a/supervisor/#past-year"
+      "url": "http://localhost:3000/v5/b/supervisor/#past-year"
     },
     {
       "label": "supervisor-skills",
-      "url": "http://localhost:3000/v4/a/supervisor/requirements"
+      "url": "http://localhost:3000/v5/b/supervisor/requirements"
     },
     {
       "label": "supervisor-development",
-      "url": "http://localhost:3000/v4/a/supervisor/development"
+      "url": "http://localhost:3000/v5/b/supervisor/development"
     },
     {
       "label": "supervisor-development-other",
-      "url": "http://localhost:3000/v4/a/supervisor/development#past-week"
+      "url": "http://localhost:3000/v5/b/supervisor/development#past-week"
     },
     {
       "label": "supervisor-courses",
-      "url": "http://localhost:3000/v4/a/supervisor/courses"
+      "url": "http://localhost:3000/v5/b/supervisor/courses"
     },
     {
       "label": "leader-about",
-      "url": "http://localhost:3000/v4/a/leader"
+      "url": "http://localhost:3000/v5/b/leader"
     },
     {
       "label": "leader-values",
-      "url": "http://localhost:3000/v4/a/leader/#past-week"
+      "url": "http://localhost:3000/v5/b/leader/#past-week"
     },
     {
       "label": "leader-behaviors",
-      "url": "http://localhost:3000/v4/a/leader/#past-month"
+      "url": "http://localhost:3000/v5/b/leader/#past-month"
+    },
+    {
+      "label": "leader-digital",
+      "url": "http://localhost:3000/v5/b/leader/#digital"
     },
     {
       "label": "leader-casestudy",
-      "url": "http://localhost:3000/v4/a/leader/#past-year"
+      "url": "http://localhost:3000/v5/b/leader/#past-year"
     },
     {
       "label": "leader-skills",
-      "url": "http://localhost:3000/v4/a/leader/requirements"
+      "url": "http://localhost:3000/v5/b/leader/requirements"
     },
     {
       "label": "leader-development",
-      "url": "http://localhost:3000/v4/a/leader/development"
+      "url": "http://localhost:3000/v5/b/leader/development"
     },
     {
       "label": "leader-development-other",
-      "url": "http://localhost:3000/v4/a/leader/development#past-week"
+      "url": "http://localhost:3000/v5/b/leader/development#past-week"
     },
     {
       "label": "leader-courses",
-      "url": "http://localhost:3000/v4/a/leader/courses"
+      "url": "http://localhost:3000/v5/b/leader/courses"
     }
   ],
   "paths": {
