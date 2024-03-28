@@ -6,12 +6,12 @@
 
     <form style="display:inline-block;vertical-align:top;" action="switch" method="post">
       <input type="hidden" name="target" value="a" />
-      <button href="" class="proto-error-text {% if data['target'] === 'a' %}active{% endif %}">A</button>
+      <button href="" class="proto-error-text {% if data['target'] === 'a' or target === 'a' %}active{% endif %}">A</button>
     </form>
 
     <form style="display:inline-block;vertical-align:top;" action="switch" method="post">
       <input type="hidden" name="target" value="b" />
-      <button href="" class="proto-error-text {% if data['target'] === 'b' %}active{% endif %}">B</button>
+      <button href="" class="proto-error-text {% if data['target'] === 'b' or target === 'b' %}active{% endif %}">B</button>
     </form>
   </div>
 
@@ -21,17 +21,17 @@
 
     <form style="display:inline-block;vertical-align:top;" action="switchbrand" method="post">
       <input type="hidden" name="brand" value="1" />
-      <button href="" class="proto-error-text-small {% if data['brand'] === '1' %}active{% endif %}">1</button>
+      <button href="" class="proto-error-text-small {% if data['brand'] === '1' or brand === '1' %}active{% endif %}">1</button>
     </form>
 
     <form style="display:inline-block;vertical-align:top;" action="switchbrand" method="post">
       <input type="hidden" name="brand" value="4" />
-      <button href="" class="proto-error-text-small {% if data['brand'] === '4' %}active{% endif %}">4</button>
+      <button href="" class="proto-error-text-small {% if data['brand'] === '4' or brand === '4' %}active{% endif %}">4</button>
     </form>
 
     <form style="display:inline-block;vertical-align:top;" action="switchbrand" method="post">
       <input type="hidden" name="brand" value="5" />
-      <button href="" class="proto-error-text-small {% if data['brand'] === '5' %}active{% endif %}">5</button>
+      <button href="" class="proto-error-text-small {% if data['brand'] === '5' or brand === '5' %}active{% endif %}">5</button>
     </form>
   </div>
 
