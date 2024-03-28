@@ -64,12 +64,13 @@ a:visited {
   color: govuk-colour("dark-green");
   display: block;
   font-size: inherit;
-  padding: 16px 12px;
+  padding: 5px 12px;
   text-decoration: underline;
   white-space: nowrap;
 }
 @media (min-width: 40.0625em) {
   .nhsuk-header__navigation-link {
+    padding: 16px 12px;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
